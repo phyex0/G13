@@ -18,5 +18,5 @@ public class G13 {
         // TODO code application logic here
         System.out.println("Deneme");
     }*/
-    
+    // abanbaalfwrlg
 }

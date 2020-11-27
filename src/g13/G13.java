@@ -11,12 +11,5 @@ package g13;
  */
 public class G13 {
 
-    /**
-     * @param args the command line arguments
-     *//*
-    public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("Deneme");
-    }*/
-    // abanbaalfwrlg
+   
 }

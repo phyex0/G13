@@ -14,7 +14,7 @@ package com.mycompany.g13;
 public class Client {
     private String name;
     private String phoneNumber;
-    public int star;
+    public int star=0;
 
     public Client() {
     }

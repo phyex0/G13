@@ -14,7 +14,7 @@ package com.mycompany.g13;
 public class Client {
     private String name;
     private String phoneNumber;
-    public double star;
+    public int star;
 
     public Client() {
     }
@@ -35,11 +35,11 @@ public class Client {
         this.phoneNumber = phoneNumber;
     }
 
-    public double getStar() {
+    public int getStar() {
         return star;
     }
 
-    public void setStar(double star) {
+    public void setStar(int star) {
         this.star = star;
     }
     

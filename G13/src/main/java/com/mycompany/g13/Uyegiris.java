@@ -84,6 +84,8 @@ public  Client loginClient;
             try{
               loginClient = repo.findByPhoneNumber(phoneNumber);
               JOptionPane.showMessageDialog(error,"SUCCESS!!");
+              
+              uyebilgileri.setText(loginClient.toString());
             
             }catch(Exception e){
                 System.out.println("not found");

@@ -1,20 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.g13;
 
-/**
- *
- * @author MONSTER
- */
 public abstract class Products {
+    
     private double product_price;
     private String product_name;
 
-    public Products() {
-    }
+    public Products() {}
 
     public Products(double product_price, String product_name) {
         this.product_price = product_price;
@@ -43,6 +34,5 @@ public abstract class Products {
         return this.product_name+" is "+this.product_price+"$..";
     }
     
-   
-    
+       
 }

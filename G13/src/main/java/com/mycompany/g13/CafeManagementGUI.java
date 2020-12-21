@@ -1,18 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.g13;
 
+import com.mycompany.g13.repository.ClientRepository;
+import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
-/**
- *
- * @author MONSTER
- */
+
+@SpringBootApplication
 public class CafeManagementGUI extends javax.swing.JFrame {
+    
+   public static JFrame error;
 
     /**
      * Creates new form CafeManagementGUI
@@ -2609,7 +2609,16 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+    public static ClientRepository repo;
     public static void main(String args[]) {
+        ConfigurableApplicationContext configurableApplicationContext = SpringApplication.run(CafeManagementGUI.class,args);
+        repo = configurableApplicationContext.getBean(ClientRepository.class);
+        error= new JFrame();
+        
+        
+        
+        
+        
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.

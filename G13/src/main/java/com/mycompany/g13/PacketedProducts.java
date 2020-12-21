@@ -1,20 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.g13;
 
-/**
- *
- * @author MONSTER
- */
 public class PacketedProducts extends Products {
     private String kafein,profile,aroma;
 
-    public PacketedProducts() {
-        
-    }
+    public PacketedProducts() {}
 
     public PacketedProducts(String kafein, String profile, String aroma, double product_price, String product_name) {
         super(product_price, product_name);
@@ -48,11 +37,6 @@ public class PacketedProducts extends Products {
     }
 
     @Override
-    public String toString() {
-        return super.toString(); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
     public void setProduct_name(String product_name) {
         super.setProduct_name(product_name); //To change body of generated methods, choose Tools | Templates.
     }
@@ -72,6 +56,9 @@ public class PacketedProducts extends Products {
         return super.getProduct_price(); //To change body of generated methods, choose Tools | Templates.
     }
     
-    
+    @Override
+    public String toString() {
+        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

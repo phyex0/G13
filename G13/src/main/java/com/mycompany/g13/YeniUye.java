@@ -1,20 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.g13;
 
-/**
- *
- * @author Admin
- */
-public class YeniUye extends javax.swing.JFrame {
+import static com.mycompany.g13.CafeManagementGUI.error;
+import static com.mycompany.g13.CafeManagementGUI.repo;
+import com.mycompany.g13.Model.Client;
+import javax.swing.JOptionPane;
 
+public class YeniUye extends javax.swing.JFrame {
     /**
      * Creates new form YeniUye
      */
     public YeniUye() {
+       
         initComponents();
     }
 
@@ -42,8 +38,19 @@ public class YeniUye extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("TEL NO:");
 
+        isim.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                isimActionPerformed(evt);
+            }
+        });
+
         yeniuyeb.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         yeniuyeb.setText("OK");
+        yeniuyeb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yeniuyebActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -82,12 +89,58 @@ public class YeniUye extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+    
+    private void yeniuyebActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yeniuyebActionPerformed
+        // TODO: check input then add db
+       
+        String name= isim.getText(),phoneNumber=telno1.getText();
+       
+        
+        if(name.matches("^[a-zA-Z ]{3,100}$")&& phoneNumber.trim().matches("\\d{10}")){
+            Client c= new Client(phoneNumber,name,0);
+            try{
+                repo.save(c);
+                JOptionPane.showMessageDialog(error,"SUCCESS!!");
+            
+            }catch(Exception e){
+                //TODO: print a message this user already exists..
+                JOptionPane.showMessageDialog(error,"This user already exists!!");
+            
+            }
+        
+        
+        }
+        else{
+            //TODO:print a message wrong input
+            JOptionPane.showMessageDialog(error,"Your Phone number or Name includes wrong characters!");
+        }
+        
+        
+        
+        
+        
+        
+      
+      
+       
+        
+        
+        
+        
+    }//GEN-LAST:event_yeniuyebActionPerformed
+
+    private void isimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isimActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_isimActionPerformed
 
     /**
      * @param args the command line arguments
-     */
+     */ 
+   
+    
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
+        
+       /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
@@ -111,11 +164,19 @@ public class YeniUye extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
+       
+       
+        
+  
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
-                new YeniUye().setVisible(true);
+                new YeniUye().setVisible(true); 
+                System.out.println("denemeee");
             }
         });
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

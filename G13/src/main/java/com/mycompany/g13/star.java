@@ -87,37 +87,37 @@ public class star extends javax.swing.JFrame {
 
         smallcoffestar1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         smallcoffestar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/star.png"))); // NOI18N
-        smallcoffestar1.setText("10");
+        smallcoffestar1.setText("20");
         smallcoffestar1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
         smallcoffestar2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         smallcoffestar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/star.png"))); // NOI18N
-        smallcoffestar2.setText("10");
+        smallcoffestar2.setText("30");
         smallcoffestar2.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
         smallcoffestar3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         smallcoffestar3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/star.png"))); // NOI18N
-        smallcoffestar3.setText("10");
+        smallcoffestar3.setText("50");
         smallcoffestar3.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
         smallcoffestar4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         smallcoffestar4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/star.png"))); // NOI18N
-        smallcoffestar4.setText("10");
+        smallcoffestar4.setText("200");
         smallcoffestar4.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
         smallcoffestar5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         smallcoffestar5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/star.png"))); // NOI18N
-        smallcoffestar5.setText("10");
+        smallcoffestar5.setText("500");
         smallcoffestar5.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
         smallcoffestar6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         smallcoffestar6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/star.png"))); // NOI18N
-        smallcoffestar6.setText("10");
+        smallcoffestar6.setText("60");
         smallcoffestar6.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
         smallcoffestar7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         smallcoffestar7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/star.png"))); // NOI18N
-        smallcoffestar7.setText("10");
+        smallcoffestar7.setText("300");
         smallcoffestar7.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -129,12 +129,9 @@ public class star extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel1))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel5)
                             .addComponent(jLabel6)))

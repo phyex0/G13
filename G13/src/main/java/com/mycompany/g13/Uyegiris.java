@@ -39,6 +39,11 @@ public class Uyegiris extends javax.swing.JFrame {
 
         telnobutton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         telnobutton.setText("OK");
+        telnobutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                telnobuttonActionPerformed(evt);
+            }
+        });
 
         uyebilgileri.setColumns(20);
         uyebilgileri.setRows(5);
@@ -90,6 +95,23 @@ public class Uyegiris extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void telnobuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telnobuttonActionPerformed
+        // TODO add your handling code here:
+        String phoneNumber= telno.getText();
+        if(phoneNumber.trim().matches("\\d{10}")){
+            try{
+              loginClient = repo.findByPhoneNumber(phoneNumber);
+              JOptionPane.showMessageDialog(error,"SUCCESS!!");
+              uyebilgileri.setText(loginClient.toString());
+            
+            }catch(Exception e){
+                System.out.println("not found");
+                JOptionPane.showMessageDialog(error,"FAILED!!");
+            
+            }
+        }
+    }//GEN-LAST:event_telnobuttonActionPerformed
 public  Client loginClient;
     /**
      * @param args the command line arguments

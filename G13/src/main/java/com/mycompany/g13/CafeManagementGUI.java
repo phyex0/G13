@@ -509,6 +509,11 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         yenisiparis.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         yenisiparis.setForeground(new java.awt.Color(255, 255, 255));
         yenisiparis.setText("YENİ SİPARİŞ");
+        yenisiparis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yenisiparisActionPerformed(evt);
+            }
+        });
 
         jTextArea6.setEditable(false);
         jTextArea6.setBackground(new java.awt.Color(253, 253, 235));
@@ -2811,6 +2816,11 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         new odeme().setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void yenisiparisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yenisiparisActionPerformed
+        // TODO add your handling code here:
+        packedcafchange(buttonpan);
+    }//GEN-LAST:event_yenisiparisActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2880,60 +2890,10 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private javax.swing.JPanel buttonpan;
     private javax.swing.JRadioButton buyuk;
     private javax.swing.JCheckBox cb_blonde;
-    private javax.swing.JCheckBox cb_blonde1;
-    private javax.swing.JCheckBox cb_blonde10;
-    private javax.swing.JCheckBox cb_blonde2;
-    private javax.swing.JCheckBox cb_blonde3;
-    private javax.swing.JCheckBox cb_blonde4;
-    private javax.swing.JCheckBox cb_blonde5;
-    private javax.swing.JCheckBox cb_blonde6;
-    private javax.swing.JCheckBox cb_blonde7;
-    private javax.swing.JCheckBox cb_blonde8;
-    private javax.swing.JCheckBox cb_blonde9;
     private javax.swing.JCheckBox cb_dark;
-    private javax.swing.JCheckBox cb_dark1;
-    private javax.swing.JCheckBox cb_dark10;
-    private javax.swing.JCheckBox cb_dark2;
-    private javax.swing.JCheckBox cb_dark3;
-    private javax.swing.JCheckBox cb_dark4;
-    private javax.swing.JCheckBox cb_dark5;
-    private javax.swing.JCheckBox cb_dark6;
-    private javax.swing.JCheckBox cb_dark7;
-    private javax.swing.JCheckBox cb_dark8;
-    private javax.swing.JCheckBox cb_dark9;
     private javax.swing.JCheckBox cb_kafein;
-    private javax.swing.JCheckBox cb_kafein1;
-    private javax.swing.JCheckBox cb_kafein10;
-    private javax.swing.JCheckBox cb_kafein2;
-    private javax.swing.JCheckBox cb_kafein3;
-    private javax.swing.JCheckBox cb_kafein4;
-    private javax.swing.JCheckBox cb_kafein5;
-    private javax.swing.JCheckBox cb_kafein6;
-    private javax.swing.JCheckBox cb_kafein7;
-    private javax.swing.JCheckBox cb_kafein8;
-    private javax.swing.JCheckBox cb_kafein9;
     private javax.swing.JCheckBox cb_medium;
-    private javax.swing.JCheckBox cb_medium1;
-    private javax.swing.JCheckBox cb_medium10;
-    private javax.swing.JCheckBox cb_medium2;
-    private javax.swing.JCheckBox cb_medium3;
-    private javax.swing.JCheckBox cb_medium4;
-    private javax.swing.JCheckBox cb_medium5;
-    private javax.swing.JCheckBox cb_medium6;
-    private javax.swing.JCheckBox cb_medium7;
-    private javax.swing.JCheckBox cb_medium8;
-    private javax.swing.JCheckBox cb_medium9;
     private javax.swing.JCheckBox cb_normal;
-    private javax.swing.JCheckBox cb_normal1;
-    private javax.swing.JCheckBox cb_normal10;
-    private javax.swing.JCheckBox cb_normal2;
-    private javax.swing.JCheckBox cb_normal3;
-    private javax.swing.JCheckBox cb_normal4;
-    private javax.swing.JCheckBox cb_normal5;
-    private javax.swing.JCheckBox cb_normal6;
-    private javax.swing.JCheckBox cb_normal7;
-    private javax.swing.JCheckBox cb_normal8;
-    private javax.swing.JCheckBox cb_normal9;
     private javax.swing.JPanel hediyelik;
     private javax.swing.JPanel icecek;
     private javax.swing.JButton icecekb;
@@ -3037,32 +2997,12 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox7;
     private javax.swing.JCheckBox jCheckBox8;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
@@ -3086,17 +3026,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel27;
     private javax.swing.JPanel jPanel28;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel37;
-    private javax.swing.JPanel jPanel38;
-    private javax.swing.JPanel jPanel39;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel40;
-    private javax.swing.JPanel jPanel41;
-    private javax.swing.JPanel jPanel42;
-    private javax.swing.JPanel jPanel43;
-    private javax.swing.JPanel jPanel44;
-    private javax.swing.JPanel jPanel45;
-    private javax.swing.JPanel jPanel46;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;

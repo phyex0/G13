@@ -608,9 +608,12 @@
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="eb" green="fd" red="fd" type="rgb"/>
+                      <Color blue="f4" green="f4" red="f9" type="rgb"/>
                     </Property>
                     <Property name="columns" type="int" value="20"/>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="f4" green="f4" red="f9" type="rgb"/>
+                    </Property>
                     <Property name="rows" type="int" value="2"/>
                     <Property name="tabSize" type="int" value="2"/>
                   </Properties>
@@ -2492,10 +2495,10 @@
                                                   <Component id="jButton37" max="32767" attributes="0"/>
                                                   <Component id="jButton38" max="32767" attributes="0"/>
                                               </Group>
-                                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="1" attributes="0">
-                                                  <Component id="jButton39" min="-2" pref="145" max="-2" attributes="0"/>
-                                                  <Component id="jButton40" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="jButton39" pref="174" max="32767" attributes="0"/>
+                                                  <Component id="jButton40" pref="0" max="32767" attributes="0"/>
                                               </Group>
                                               <EmptySpace max="32767" attributes="0"/>
                                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -2542,7 +2545,7 @@
                             <Component class="javax.swing.JButton" name="jButton35">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -2550,13 +2553,19 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/gingerbread-latte_tcm95-66840_w1024_n.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Gingerbread Latte"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton36">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -2564,13 +2573,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/toffeeNutLattee50px.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Toffee Nut Latte"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton37">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -2578,13 +2594,21 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/caffe-latte_tcm95-64101_w1024_n.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Caff&#xe8; Latte"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="horizontalTextPosition" type="int" value="4"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton38">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -2592,13 +2616,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/flat-white_tcm95-64105_w1024_n.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Flat White"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton39">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -2606,13 +2637,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/caffe-mocha_tcm95-64107_w1024_n.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Caff&#xe8; Mocha"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton40">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -2620,13 +2658,19 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/iced-caffe-mocha_tcm95-64108_w1024_n.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Buzlu Caff&#xe8; Mocha"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 7]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton41">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -2634,13 +2678,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/espresso_tcm95-64118_w1024_n.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Espresso"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton42">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -2648,13 +2699,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/espresso-con-panna_tcm95-65451_w1024_n.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Espresso Con Panna"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton43">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -2662,7 +2720,14 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/espresso-macchiato_tcm95-65452_w1024_n.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Espresso Macchiato"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Container class="javax.swing.JPanel" name="jPanel23">
@@ -2687,7 +2752,7 @@
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jButton63" min="-2" pref="123" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jButton64" pref="110" max="32767" attributes="0"/>
+                                          <Component id="jButton64" pref="144" max="32767" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -2848,10 +2913,10 @@
                                                   <Component id="jButton71" max="32767" attributes="0"/>
                                               </Group>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jButton73" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jButton72" min="-2" pref="243" max="-2" attributes="0"/>
-                                                  <Component id="jButton74" min="-2" pref="243" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="jButton73" max="32767" attributes="0"/>
+                                                  <Component id="jButton72" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="jButton74" alignment="0" max="32767" attributes="0"/>
                                               </Group>
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           </Group>
@@ -2889,7 +2954,7 @@
                             <Component class="javax.swing.JButton" name="jButton59">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -2897,7 +2962,14 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/gingerbread-frappuccino.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Gingerbread Frappuccino"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                               <Events>
                                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton59ActionPerformed"/>
@@ -3037,7 +3109,7 @@
                             <Component class="javax.swing.JButton" name="jButton70">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -3045,13 +3117,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/toffeenut-frappuccino.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Toffee Nut Frappuccino"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton71">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -3059,13 +3138,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/caramel-cream-frappuccino.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Caramel Frappuccino"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton72">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -3073,13 +3159,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/vanilla-cream-frappuccino.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Vanilla Cream Frappuccino"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton73">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -3087,13 +3180,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/strawberries-cream-frappuccino.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Strawberries &amp; Cream Frappuccino"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton74">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -3101,7 +3201,14 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/chai-cream-frap.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Chai Cream Frappuccino"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                           </SubComponents>
@@ -3331,7 +3438,7 @@
                             <Component class="javax.swing.JButton" name="jButton80">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -3339,13 +3446,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/teavana-english-breakfast.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="English Breakfast"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton81">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -3353,13 +3467,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/teavana-earl-grey.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Earl Grey"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton82">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -3367,13 +3488,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/hibiscus.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Hibiscus"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton83">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -3381,13 +3509,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/youthberry.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Youthberry "/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton84">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -3395,13 +3530,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/iced-shaken-peach-green-tea-lemonade.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Peach Green Tea &amp; Lemonade"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton85">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -3409,13 +3551,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/iced-shaken-black-tea.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Iced Shaken Black Tea"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton86">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -3423,7 +3572,14 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/iced-shaken-green-tea.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Iced Shaken Green Tea"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                           </SubComponents>
@@ -3470,11 +3626,11 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jPanel26" max="32767" attributes="0"/>
                                           <Group type="102" attributes="0">
-                                              <Component id="jButton92" min="-2" pref="143" max="-2" attributes="0"/>
+                                              <Component id="jButton92" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           </Group>
-                                          <Component id="jPanel26" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
@@ -3627,7 +3783,7 @@
                             <Component class="javax.swing.JButton" name="jButton92">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="1"/>
@@ -3635,7 +3791,14 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/turk-kahvesi.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="T&#xfc;rk Kahvesi"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                           </SubComponents>
@@ -3682,23 +3845,26 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jPanel27" max="32767" attributes="0"/>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jButton98" min="-2" pref="123" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jButton100" min="-2" pref="173" max="-2" attributes="0"/>
+                                                  <Component id="jButton100" min="-2" pref="215" max="-2" attributes="0"/>
                                                   <Component id="jButton99" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jButton101" min="-2" pref="173" max="-2" attributes="0"/>
+                                                  <Component id="jButton101" alignment="0" min="-2" pref="215" max="-2" attributes="0"/>
                                               </Group>
-                                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                  <Component id="jButton102" max="32767" attributes="0"/>
-                                                  <Component id="jButton103" max="32767" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="jButton103" min="-2" pref="235" max="-2" attributes="0"/>
+                                                  <Component id="jButton102" min="-2" max="-2" attributes="0"/>
                                               </Group>
+                                              <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Component id="jPanel27" max="32767" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -3860,7 +4026,7 @@
                             <Component class="javax.swing.JButton" name="jButton98">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="1"/>
@@ -3868,13 +4034,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="2" name="C:\Users\dell\Documents\GitHub\G13\G13\img\Hayat-Su.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value=" Su"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton99">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="1"/>
@@ -3882,13 +4055,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Feel-More-Karisik-Meyve-Suyu.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Kar&#x131;&#x15f;&#x131;k Meyve Suyu"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton100">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="1"/>
@@ -3896,13 +4076,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Feel-More-Portakal-Suyu_.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Portakal Suyu"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton101">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="1"/>
@@ -3910,13 +4097,20 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Feel-More-Limonata.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Limonata"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton102">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="1"/>
@@ -3924,14 +4118,21 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/San-Pellegrino-Portakalli-Gazli-icecek.png"/>
+                                </Property>
                                 <Property name="mnemonic" type="int" value="32"/>
                                 <Property name="text" type="java.lang.String" value="Portakall&#x131; Gazl&#x131; &#x130;&#xe7;ecek"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton103">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="1"/>
@@ -3939,8 +4140,15 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/San-Pellegrino-Limonlu-Gazli-icecek.png"/>
+                                </Property>
                                 <Property name="mnemonic" type="int" value="32"/>
                                 <Property name="text" type="java.lang.String" value=" Limonlu Gazl&#x131; &#x130;&#xe7;ecek"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                                  <Insets value="[2, 2, 2, 14]"/>
+                                </Property>
                               </Properties>
                             </Component>
                           </SubComponents>

@@ -2863,6 +2863,17 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             public void run() {
                 new CafeManagementGUI().setVisible(true);
                 
+                //TODO: zaman dilimini güncelleme olayını çöz.
+                
+                /*
+                DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss MM/dd/yyyy "); 
+                while(true){
+                    LocalDateTime now = LocalDateTime.now();  
+                    System.out.println();
+                    jTextArea6.setText(dtf.format(now));
+                }
+                */
+                
             }
         });
     }

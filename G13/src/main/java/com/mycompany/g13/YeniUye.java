@@ -9,9 +9,12 @@ public class YeniUye extends javax.swing.JFrame {
     /**
      * Creates new form YeniUye
      */
+
     public YeniUye() {
        
         initComponents();
+   
+    
     }
 
     /**
@@ -35,7 +38,7 @@ public class YeniUye extends javax.swing.JFrame {
         setTitle("YENİ ÜYE");
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel1.setBackground(new java.awt.Color(209, 209, 251));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("İSİM:");
@@ -116,9 +119,12 @@ public class YeniUye extends javax.swing.JFrame {
         
         if(name.matches("^[a-zA-Z ]{3,100}$")&& phoneNumber.trim().matches("\\d{10}")){
             Client c= new Client(phoneNumber,name,0);
+           
             try{
                 repo.save(c);
                 JOptionPane.showMessageDialog(error,"SUCCESS!!");
+                
+               
             
             }catch(Exception e){
                 //TODO: print a message this user already exists..

@@ -11,6 +11,7 @@ public class Uyegiris extends javax.swing.JFrame {
     /**
      * Creates new form Uyegiris
      */
+    
     public Uyegiris() {
         initComponents();
     }
@@ -31,7 +32,7 @@ public class Uyegiris extends javax.swing.JFrame {
         setTitle("ÜYE GİRİŞİ");
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel1.setBackground(new java.awt.Color(209, 209, 249));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/phone-call.png"))); // NOI18N
@@ -100,10 +101,13 @@ public class Uyegiris extends javax.swing.JFrame {
         // TODO add your handling code here:
         String phoneNumber= telno.getText();
         if(phoneNumber.trim().matches("\\d{10}")){
+           
             try{
               loginClient = repo.findByPhoneNumber(phoneNumber);
               JOptionPane.showMessageDialog(error,"SUCCESS!!");
               uyebilgileri.setText(loginClient.toString());
+              
+             
             
             }catch(Exception e){
                 System.out.println("not found");

@@ -38,7 +38,7 @@ public class odeme extends javax.swing.JFrame {
         bankakredi = new javax.swing.JRadioButton();
         nakit = new javax.swing.JRadioButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("ÖDEME ŞEKLİ");
         setBackground(new java.awt.Color(26, 89, 120));
 
@@ -120,6 +120,7 @@ public class odeme extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**

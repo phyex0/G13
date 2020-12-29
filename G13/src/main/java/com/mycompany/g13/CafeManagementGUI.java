@@ -2320,7 +2320,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jButton98.setBackground(new java.awt.Color(14, 30, 21));
         jButton98.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton98.setForeground(new java.awt.Color(255, 255, 255));
-        jButton98.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\Documents\\GitHub\\G13\\G13\\img\\Hayat-Su.png")); // NOI18N
+        jButton98.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Hayat-Su.png"))); // NOI18N
         jButton98.setText(" Su");
         jButton98.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton98.setMargin(new java.awt.Insets(2, 2, 2, 14));

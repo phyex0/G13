@@ -103,11 +103,11 @@ public class Uyegiris extends javax.swing.JFrame {
         if(phoneNumber.trim().matches("\\d{10}")){
            
             try{
-              loginClient = repo.findByPhoneNumber(phoneNumber);
-              JOptionPane.showMessageDialog(error,"SUCCESS!!");
-              uyebilgileri.setText(loginClient.toString());
-              CafeManagementGUI.packedcafchange( CafeManagementGUI.userpan);
-             CafeManagementGUI.jTextArea5.setText(loginClient.toString());
+                loginClient = repo.findByPhoneNumber(phoneNumber);
+                JOptionPane.showMessageDialog(error,"SUCCESS!!");
+                uyebilgileri.setText(loginClient.toString());
+                CafeManagementGUI.packedcafchange( CafeManagementGUI.userpan);
+                CafeManagementGUI.jTextArea5.setText(loginClient.toString());
              
             
                      

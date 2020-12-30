@@ -572,7 +572,8 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jTextArea6.setLineWrap(true);
         jTextArea6.setRows(1);
         jTextArea6.setTabSize(0);
-        jTextArea6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextArea6.setBorder(null);
+        jTextArea6.setCaretColor(new java.awt.Color(232, 230, 191));
         jTextArea6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jTextArea6.setMargin(new java.awt.Insets(20, 20, 20, 20));
         jScrollPane6.setViewportView(jTextArea6);
@@ -2841,7 +2842,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 772, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 772, Short.MAX_VALUE)
         );
 
         pack();

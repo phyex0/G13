@@ -86,17 +86,26 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         panedrink.validate();
     }
     
-    public void packedcafchange(JPanel panel){
+    public static void packedcafchange(JPanel panel){
     
-        paketkahve.removeAll();
-        paketkahve.add(panel);
-        paketkahve.repaint();
-        paketkahve.validate();
+        girispan.removeAll();
+        girispan.add(panel);
+        girispan.repaint();
+        girispan.validate();
     
     
     }
     
+    public void filterpan(JPanel panel){
     
+        paketkahvepan.removeAll();
+        paketkahvepan.add(panel);
+        paketkahvepan.repaint();
+        paketkahvepan.validate();
+    
+    
+    
+    }
     
     
     /**
@@ -122,7 +131,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jTextArea3 = new javax.swing.JTextArea();
         jTextField1 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        paketkahve = new javax.swing.JLayeredPane();
+        girispan = new javax.swing.JLayeredPane();
         buttonpan = new javax.swing.JPanel();
         uyeg = new javax.swing.JButton();
         yenig = new javax.swing.JButton();
@@ -158,28 +167,6 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jButton13 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
         jButton15 = new javax.swing.JButton();
-        kahve = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
-        jButton24 = new javax.swing.JButton();
-        jButton25 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
-        jPanel21 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        cb_blonde = new javax.swing.JCheckBox();
-        cb_medium = new javax.swing.JCheckBox();
-        cb_dark = new javax.swing.JCheckBox();
-        cb_normal = new javax.swing.JCheckBox();
-        cb_kafein = new javax.swing.JCheckBox();
         panefood = new javax.swing.JLayeredPane();
         sandavic = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
@@ -294,6 +281,42 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jButton101 = new javax.swing.JButton();
         jButton102 = new javax.swing.JButton();
         jButton103 = new javax.swing.JButton();
+        paketkahvepan = new javax.swing.JLayeredPane();
+        allpan = new javax.swing.JPanel();
+        jPanel33 = new javax.swing.JPanel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jButton28 = new javax.swing.JButton();
+        jButton29 = new javax.swing.JButton();
+        jButton30 = new javax.swing.JButton();
+        jButton31 = new javax.swing.JButton();
+        jButton32 = new javax.swing.JButton();
+        jButton33 = new javax.swing.JButton();
+        jButton34 = new javax.swing.JButton();
+        jButton105 = new javax.swing.JButton();
+        jButton106 = new javax.swing.JButton();
+        jButton107 = new javax.swing.JButton();
+        jButton108 = new javax.swing.JButton();
+        jButton109 = new javax.swing.JButton();
+        blondepan = new javax.swing.JPanel();
+        jPanel29 = new javax.swing.JPanel();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jButton115 = new javax.swing.JButton();
+        jButton116 = new javax.swing.JButton();
+        mediumpan = new javax.swing.JPanel();
+        jPanel30 = new javax.swing.JPanel();
+        jButton110 = new javax.swing.JButton();
+        jButton111 = new javax.swing.JButton();
+        jButton112 = new javax.swing.JButton();
+        jButton113 = new javax.swing.JButton();
+        jButton114 = new javax.swing.JButton();
+        jComboBox3 = new javax.swing.JComboBox<>();
+        darkpan = new javax.swing.JPanel();
+        jPanel31 = new javax.swing.JPanel();
+        jButton117 = new javax.swing.JButton();
+        jButton118 = new javax.swing.JButton();
+        jButton119 = new javax.swing.JButton();
+        jButton120 = new javax.swing.JButton();
+        jComboBox4 = new javax.swing.JComboBox<>();
         jPanel7 = new javax.swing.JPanel();
         kucuk = new javax.swing.JRadioButton();
         orta = new javax.swing.JRadioButton();
@@ -377,7 +400,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo.png"))); // NOI18N
         jLabel4.setToolTipText("");
 
-        paketkahve.setLayout(new java.awt.CardLayout());
+        girispan.setLayout(new java.awt.CardLayout());
 
         buttonpan.setBackground(new java.awt.Color(247, 242, 242));
 
@@ -422,7 +445,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        paketkahve.add(buttonpan, "card3");
+        girispan.add(buttonpan, "card3");
 
         userpan.setBackground(new java.awt.Color(247, 242, 242));
         userpan.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -461,7 +484,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
 
         userpan.add(jPanel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, -1));
 
-        paketkahve.add(userpan, "card2");
+        girispan.add(userpan, "card2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -479,7 +502,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                         .addGap(43, 43, 43)
                         .addComponent(jLabel4)
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(paketkahve))
+                    .addComponent(girispan))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -488,7 +511,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
-                .addComponent(paketkahve, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(girispan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -544,8 +567,9 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jTextArea6.setLineWrap(true);
         jTextArea6.setRows(1);
         jTextArea6.setTabSize(0);
-        jTextArea6.setBorder(null);
+        jTextArea6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTextArea6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTextArea6.setMargin(new java.awt.Insets(20, 20, 20, 20));
         jScrollPane6.setViewportView(jTextArea6);
 
         jButton104.setBackground(new java.awt.Color(255, 51, 51));
@@ -614,7 +638,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(order, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -637,7 +661,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(82, 82, 82))
         );
 
         order.getAccessibleContext().setAccessibleName("");
@@ -773,213 +797,6 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         hediyelik.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 400));
 
         jLayeredPane1.add(hediyelik, "card2");
-
-        kahve.setBackground(new java.awt.Color(236, 231, 231));
-        kahve.setPreferredSize(new java.awt.Dimension(650, 400));
-        kahve.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel5.setBackground(new java.awt.Color(236, 231, 231));
-        jPanel5.setPreferredSize(new java.awt.Dimension(650, 400));
-
-        jButton16.setBackground(new java.awt.Color(0, 102, 51));
-        jButton16.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton16.setForeground(new java.awt.Color(255, 255, 255));
-        jButton16.setText("Blonde Espresso");
-
-        jButton17.setBackground(new java.awt.Color(0, 102, 51));
-        jButton17.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton17.setForeground(new java.awt.Color(255, 255, 255));
-        jButton17.setText("CAFFE VERONA");
-
-        jButton18.setBackground(new java.awt.Color(0, 102, 51));
-        jButton18.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton18.setForeground(new java.awt.Color(255, 255, 255));
-        jButton18.setText("VERANDA BLEND");
-
-        jButton19.setBackground(new java.awt.Color(0, 102, 51));
-        jButton19.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton19.setForeground(new java.awt.Color(255, 255, 255));
-        jButton19.setText("KENYA");
-
-        jButton20.setBackground(new java.awt.Color(0, 102, 51));
-        jButton20.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton20.setForeground(new java.awt.Color(255, 255, 255));
-        jButton20.setText("ETHİOPİA");
-
-        jButton21.setBackground(new java.awt.Color(0, 102, 51));
-        jButton21.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton21.setForeground(new java.awt.Color(255, 255, 255));
-        jButton21.setText("COLOMBİA NARİNO");
-
-        jButton22.setBackground(new java.awt.Color(0, 102, 51));
-        jButton22.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton22.setForeground(new java.awt.Color(255, 255, 255));
-        jButton22.setText("HOUSE BLEND");
-        jButton22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton22ActionPerformed(evt);
-            }
-        });
-
-        jButton23.setBackground(new java.awt.Color(0, 102, 51));
-        jButton23.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton23.setForeground(new java.awt.Color(255, 255, 255));
-        jButton23.setText("PIKE PLACE ROAST");
-
-        jButton24.setBackground(new java.awt.Color(0, 102, 51));
-        jButton24.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton24.setForeground(new java.awt.Color(255, 255, 255));
-        jButton24.setText("GUATEMALA ANTIGUA");
-
-        jButton25.setBackground(new java.awt.Color(0, 102, 51));
-        jButton25.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton25.setForeground(new java.awt.Color(255, 255, 255));
-        jButton25.setText("DECAF ESPRESSO ROAST");
-
-        jButton26.setBackground(new java.awt.Color(0, 102, 51));
-        jButton26.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton26.setForeground(new java.awt.Color(255, 255, 255));
-        jButton26.setText("ESPRESSO ROAST");
-
-        jButton27.setBackground(new java.awt.Color(0, 102, 51));
-        jButton27.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton27.setForeground(new java.awt.Color(255, 255, 255));
-        jButton27.setText("SUMATRA");
-
-        jPanel21.setBackground(new java.awt.Color(247, 242, 242));
-        jPanel21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel6.setText("Kafein:");
-
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel7.setText("Kavurma Profili:");
-
-        cb_blonde.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        cb_blonde.setText("BLONDE");
-
-        cb_medium.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        cb_medium.setText("MEDIUM");
-
-        cb_dark.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        cb_dark.setText("DARK");
-
-        cb_normal.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        cb_normal.setText("NORMAL");
-
-        cb_kafein.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        cb_kafein.setText("KAFEINSIZ");
-
-        javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
-        jPanel21.setLayout(jPanel21Layout);
-        jPanel21Layout.setHorizontalGroup(
-            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel21Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel6))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel21Layout.createSequentialGroup()
-                        .addComponent(cb_blonde)
-                        .addGap(18, 18, 18)
-                        .addComponent(cb_medium)
-                        .addGap(18, 18, 18)
-                        .addComponent(cb_dark))
-                    .addGroup(jPanel21Layout.createSequentialGroup()
-                        .addComponent(cb_normal)
-                        .addGap(18, 18, 18)
-                        .addComponent(cb_kafein)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel21Layout.setVerticalGroup(
-            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel21Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(cb_blonde)
-                    .addComponent(cb_medium)
-                    .addComponent(cb_dark))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(cb_normal)
-                    .addComponent(cb_kafein))
-                .addGap(15, 15, 15))
-        );
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(19, 19, 19)
-                        .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton21))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(19, 19, 19)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(17, 17, 17)
-                        .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(jPanel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(11, 11, 11)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(6, 6, 6)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(6, 6, 6)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(6, 6, 6)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        kahve.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 400));
-
-        jLayeredPane1.add(kahve, "card3");
 
         panefood.setMinimumSize(new java.awt.Dimension(610, 400));
         panefood.setPreferredSize(new java.awt.Dimension(650, 400));
@@ -2446,6 +2263,369 @@ public class CafeManagementGUI extends javax.swing.JFrame {
 
         jLayeredPane1.add(panedrink, "card6");
 
+        paketkahvepan.setLayout(new java.awt.CardLayout());
+
+        allpan.setBackground(new java.awt.Color(234, 229, 229));
+        allpan.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel33.setBackground(new java.awt.Color(234, 229, 229));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "TAMAMI", "BLONDE", "MEDIUM", "DARK" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+
+        jButton28.setBackground(new java.awt.Color(0, 102, 51));
+        jButton28.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton28.setForeground(new java.awt.Color(255, 255, 255));
+        jButton28.setText("Blonde Espresso");
+
+        jButton29.setBackground(new java.awt.Color(0, 102, 51));
+        jButton29.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton29.setForeground(new java.awt.Color(255, 255, 255));
+        jButton29.setText("VERANDA BLEND");
+
+        jButton30.setBackground(new java.awt.Color(0, 102, 51));
+        jButton30.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton30.setForeground(new java.awt.Color(255, 255, 255));
+        jButton30.setText("COLOMBİA NARİNO");
+
+        jButton31.setBackground(new java.awt.Color(0, 102, 51));
+        jButton31.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton31.setForeground(new java.awt.Color(255, 255, 255));
+        jButton31.setText("ETHİOPİA");
+
+        jButton32.setBackground(new java.awt.Color(0, 102, 51));
+        jButton32.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton32.setForeground(new java.awt.Color(255, 255, 255));
+        jButton32.setText("PIKE PLACE ROAST");
+
+        jButton33.setBackground(new java.awt.Color(0, 102, 51));
+        jButton33.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton33.setForeground(new java.awt.Color(255, 255, 255));
+        jButton33.setText("KENYA");
+
+        jButton34.setBackground(new java.awt.Color(0, 102, 51));
+        jButton34.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton34.setForeground(new java.awt.Color(255, 255, 255));
+        jButton34.setText("HOUSE BLEND");
+        jButton34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton34ActionPerformed(evt);
+            }
+        });
+
+        jButton105.setBackground(new java.awt.Color(0, 102, 51));
+        jButton105.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton105.setForeground(new java.awt.Color(255, 255, 255));
+        jButton105.setText("GUATEMALA ANTIGUA");
+
+        jButton106.setBackground(new java.awt.Color(0, 102, 51));
+        jButton106.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton106.setForeground(new java.awt.Color(255, 255, 255));
+        jButton106.setText("CAFFE VERONA");
+
+        jButton107.setBackground(new java.awt.Color(0, 102, 51));
+        jButton107.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton107.setForeground(new java.awt.Color(255, 255, 255));
+        jButton107.setText("DECAF ESPRESSO ROAST");
+
+        jButton108.setBackground(new java.awt.Color(0, 102, 51));
+        jButton108.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton108.setForeground(new java.awt.Color(255, 255, 255));
+        jButton108.setText("ESPRESSO ROAST");
+
+        jButton109.setBackground(new java.awt.Color(0, 102, 51));
+        jButton109.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton109.setForeground(new java.awt.Color(255, 255, 255));
+        jButton109.setText("SUMATRA");
+
+        javax.swing.GroupLayout jPanel33Layout = new javax.swing.GroupLayout(jPanel33);
+        jPanel33.setLayout(jPanel33Layout);
+        jPanel33Layout.setHorizontalGroup(
+            jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel33Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel33Layout.createSequentialGroup()
+                        .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel33Layout.createSequentialGroup()
+                                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel33Layout.createSequentialGroup()
+                                        .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jButton32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel33Layout.createSequentialGroup()
+                                        .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButton30))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jButton34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jButton33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jButton107, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton108, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton109, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(jPanel33Layout.createSequentialGroup()
+                                .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton105, javax.swing.GroupLayout.DEFAULT_SIZE, 205, Short.MAX_VALUE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton106, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(33, 33, 33))
+                    .addGroup(jPanel33Layout.createSequentialGroup()
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+        );
+        jPanel33Layout.setVerticalGroup(
+            jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel33Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton105, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton106, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
+                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel33Layout.createSequentialGroup()
+                        .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel33Layout.createSequentialGroup()
+                        .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton34, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton107, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(6, 6, 6)
+                        .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton33, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton108, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(6, 6, 6)
+                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton109, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        allpan.add(jPanel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 400));
+
+        paketkahvepan.add(allpan, "card2");
+
+        blondepan.setBackground(new java.awt.Color(234, 229, 229));
+        blondepan.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel29.setBackground(new java.awt.Color(234, 229, 229));
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "TAMAMI", "BLONDE", "MEDIUM", "DARK" }));
+        jComboBox2.setSelectedIndex(1);
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
+
+        jButton115.setBackground(new java.awt.Color(0, 102, 51));
+        jButton115.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton115.setForeground(new java.awt.Color(255, 255, 255));
+        jButton115.setText("Blonde Espresso");
+
+        jButton116.setBackground(new java.awt.Color(0, 102, 51));
+        jButton116.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton116.setForeground(new java.awt.Color(255, 255, 255));
+        jButton116.setText("VERANDA BLEND");
+
+        javax.swing.GroupLayout jPanel29Layout = new javax.swing.GroupLayout(jPanel29);
+        jPanel29.setLayout(jPanel29Layout);
+        jPanel29Layout.setHorizontalGroup(
+            jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel29Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton115, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton116, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(445, Short.MAX_VALUE))
+        );
+        jPanel29Layout.setVerticalGroup(
+            jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel29Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton115, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton116, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 215, Short.MAX_VALUE)
+                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        blondepan.add(jPanel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 400));
+
+        paketkahvepan.add(blondepan, "card3");
+
+        mediumpan.setBackground(new java.awt.Color(234, 229, 229));
+        mediumpan.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel30.setBackground(new java.awt.Color(234, 229, 229));
+
+        jButton110.setBackground(new java.awt.Color(0, 102, 51));
+        jButton110.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton110.setForeground(new java.awt.Color(255, 255, 255));
+        jButton110.setText("KENYA");
+
+        jButton111.setBackground(new java.awt.Color(0, 102, 51));
+        jButton111.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton111.setForeground(new java.awt.Color(255, 255, 255));
+        jButton111.setText("COLOMBİA NARİNO");
+
+        jButton112.setBackground(new java.awt.Color(0, 102, 51));
+        jButton112.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton112.setForeground(new java.awt.Color(255, 255, 255));
+        jButton112.setText("HOUSE BLEND");
+        jButton112.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton112ActionPerformed(evt);
+            }
+        });
+
+        jButton113.setBackground(new java.awt.Color(0, 102, 51));
+        jButton113.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton113.setForeground(new java.awt.Color(255, 255, 255));
+        jButton113.setText("GUATEMALA ANTIGUA");
+
+        jButton114.setBackground(new java.awt.Color(0, 102, 51));
+        jButton114.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton114.setForeground(new java.awt.Color(255, 255, 255));
+        jButton114.setText("PIKE PLACE ROAST");
+
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "TAMAMI", "BLONDE", "MEDIUM", "DARK" }));
+        jComboBox3.setSelectedIndex(2);
+        jComboBox3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel30Layout = new javax.swing.GroupLayout(jPanel30);
+        jPanel30.setLayout(jPanel30Layout);
+        jPanel30Layout.setHorizontalGroup(
+            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel30Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel30Layout.createSequentialGroup()
+                        .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton113, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton112, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton110, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton111, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton114, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(236, Short.MAX_VALUE))
+        );
+        jPanel30Layout.setVerticalGroup(
+            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel30Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton113, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton114, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
+                .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton112, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton111, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
+                .addComponent(jButton110, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 165, Short.MAX_VALUE)
+                .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        mediumpan.add(jPanel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 400));
+
+        paketkahvepan.add(mediumpan, "card4");
+
+        darkpan.setBackground(new java.awt.Color(234, 229, 229));
+        darkpan.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel31.setBackground(new java.awt.Color(234, 229, 229));
+
+        jButton117.setBackground(new java.awt.Color(0, 102, 51));
+        jButton117.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton117.setForeground(new java.awt.Color(255, 255, 255));
+        jButton117.setText("CAFFE VERONA");
+
+        jButton118.setBackground(new java.awt.Color(0, 102, 51));
+        jButton118.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton118.setForeground(new java.awt.Color(255, 255, 255));
+        jButton118.setText("DECAF ESPRESSO ROAST");
+
+        jButton119.setBackground(new java.awt.Color(0, 102, 51));
+        jButton119.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton119.setForeground(new java.awt.Color(255, 255, 255));
+        jButton119.setText("ESPRESSO ROAST");
+
+        jButton120.setBackground(new java.awt.Color(0, 102, 51));
+        jButton120.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton120.setForeground(new java.awt.Color(255, 255, 255));
+        jButton120.setText("SUMATRA");
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "TAMAMI", "BLONDE", "MEDIUM", "DARK" }));
+        jComboBox4.setSelectedIndex(3);
+        jComboBox4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox4ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel31Layout = new javax.swing.GroupLayout(jPanel31);
+        jPanel31.setLayout(jPanel31Layout);
+        jPanel31Layout.setHorizontalGroup(
+            jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel31Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel31Layout.createSequentialGroup()
+                        .addGroup(jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton118, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton117, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton120, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton119)))
+                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(230, Short.MAX_VALUE))
+        );
+        jPanel31Layout.setVerticalGroup(
+            jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel31Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton118, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton119, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton120, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton117, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 222, Short.MAX_VALUE)
+                .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        darkpan.add(jPanel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 400));
+
+        paketkahvepan.add(darkpan, "card5");
+
+        jLayeredPane1.add(paketkahvepan, "card6");
+
         jPanel3.add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 52, 635, -1));
 
         jPanel7.setBackground(new java.awt.Color(232, 230, 191));
@@ -2484,7 +2664,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 470, -1, 267));
+        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 470, -1, 280));
 
         jPanel8.setBackground(new java.awt.Color(232, 230, 191));
         jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SÜT", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
@@ -2542,7 +2722,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(166, 470, -1, -1));
+        jPanel3.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(166, 470, -1, 280));
 
         jPanel9.setBackground(new java.awt.Color(232, 230, 191));
         jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ŞURUP", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
@@ -2591,7 +2771,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
+                .addContainerGap()
                 .addComponent(jCheckBox1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jCheckBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2607,10 +2787,10 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addComponent(jCheckBox7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jCheckBox8)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 470, -1, 267));
+        jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 470, -1, 280));
 
         javax.swing.GroupLayout MainPanelLayout = new javax.swing.GroupLayout(MainPanel);
         MainPanel.setLayout(MainPanelLayout);
@@ -2625,9 +2805,9 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         );
         MainPanelLayout.setVerticalGroup(
             MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -2638,7 +2818,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 772, Short.MAX_VALUE)
         );
 
         pack();
@@ -2648,14 +2828,14 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private void uyegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uyegActionPerformed
         // TODO add your handling code here:
         new Uyegiris().setVisible(true);  
-        packedcafchange(userpan);
+       
     }//GEN-LAST:event_uyegActionPerformed
 
     private void yenigActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yenigActionPerformed
         // TODO add your handling code here:
         
        new YeniUye().setVisible(true);
-       packedcafchange(userpan);
+      
         
     }//GEN-LAST:event_yenigActionPerformed
 
@@ -2667,12 +2847,9 @@ public class CafeManagementGUI extends javax.swing.JFrame {
 
     private void kahvelerbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kahvelerbActionPerformed
         // TODO add your handling code here:
-         menuchange(kahve);
+        LayeredPanelChange(paketkahvepan);
+         
     }//GEN-LAST:event_kahvelerbActionPerformed
-
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
@@ -2918,6 +3095,112 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton41ActionPerformed
 
+    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton34ActionPerformed
+
+    private void jButton112ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton112ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton112ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+        if(jComboBox1.getSelectedIndex()==0){
+        jComboBox1.setSelectedIndex(0);
+            filterpan(allpan);
+        
+            }
+        else if(jComboBox1.getSelectedIndex()==1){
+         jComboBox1.setSelectedIndex(0);
+            filterpan(blondepan);
+          
+            }
+        else if(jComboBox1.getSelectedIndex()==2){
+         jComboBox1.setSelectedIndex(0);
+            filterpan(mediumpan);
+          
+            }
+        else if(jComboBox1.getSelectedIndex()==3){
+        jComboBox1.setSelectedIndex(0);
+            filterpan(darkpan);
+          
+            }
+        
+        
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+         if(jComboBox2.getSelectedIndex()==0){
+       jComboBox2.setSelectedIndex(1);
+             filterpan(allpan);
+        
+            }
+        else if(jComboBox2.getSelectedIndex()==1){
+           jComboBox2.setSelectedIndex(1);
+            filterpan(blondepan);
+       
+            }
+        else if(jComboBox2.getSelectedIndex()==2){
+        jComboBox2.setSelectedIndex(1);
+            filterpan(mediumpan);
+         
+            }
+        else if(jComboBox2.getSelectedIndex()==3){
+        jComboBox2.setSelectedIndex(1);
+            filterpan(darkpan);
+          
+            }
+    }//GEN-LAST:event_jComboBox2ActionPerformed
+
+    private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
+        // TODO add your handling code here:
+         if(jComboBox3.getSelectedIndex()==0){
+          jComboBox3.setSelectedIndex(2);
+             filterpan(allpan);
+           
+            }
+        else if(jComboBox3.getSelectedIndex()==1){
+        jComboBox3.setSelectedIndex(2);
+            filterpan(blondepan);
+         
+            }
+        else if(jComboBox3.getSelectedIndex()==2){
+         jComboBox3.setSelectedIndex(2);
+            filterpan(mediumpan);
+         
+            }
+        else if(jComboBox3.getSelectedIndex()==3){
+          jComboBox3.setSelectedIndex(2);
+            filterpan(darkpan);
+        
+            }
+    }//GEN-LAST:event_jComboBox3ActionPerformed
+
+    private void jComboBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox4ActionPerformed
+        // TODO add your handling code here:
+         if(jComboBox4.getSelectedIndex()==0){
+       jComboBox4.setSelectedIndex(3);
+             filterpan(allpan);
+        
+            }
+        else if(jComboBox4.getSelectedIndex()==1){
+         jComboBox4.setSelectedIndex(3);
+            filterpan(blondepan);
+         
+            }
+        else if(jComboBox4.getSelectedIndex()==2){
+         jComboBox4.setSelectedIndex(3);
+            filterpan(mediumpan);
+         
+            }
+        else if(jComboBox4.getSelectedIndex()==3){
+         jComboBox4.setSelectedIndex(3);
+            filterpan(darkpan);
+         
+            }
+    }//GEN-LAST:event_jComboBox4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2967,11 +3250,13 @@ public class CafeManagementGUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel MainPanel;
+    private javax.swing.JPanel allpan;
     private javax.swing.JRadioButton bademsutu;
     private javax.swing.JButton bkurabiye;
     private javax.swing.JButton bkurabiye1;
     private javax.swing.JButton bkurabiye2;
     private javax.swing.JButton bkurabiye3;
+    private javax.swing.JPanel blondepan;
     private javax.swing.JButton bpasta;
     private javax.swing.JButton bpasta1;
     private javax.swing.JButton bpasta2;
@@ -2988,11 +3273,8 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JPanel buttonpan;
     private javax.swing.JRadioButton buyuk;
-    private javax.swing.JCheckBox cb_blonde;
-    private javax.swing.JCheckBox cb_dark;
-    private javax.swing.JCheckBox cb_kafein;
-    private javax.swing.JCheckBox cb_medium;
-    private javax.swing.JCheckBox cb_normal;
+    private javax.swing.JPanel darkpan;
+    private static javax.swing.JLayeredPane girispan;
     private javax.swing.JPanel hediyelik;
     private javax.swing.JButton icecekb;
     private javax.swing.JButton jButton1;
@@ -3002,25 +3284,36 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton102;
     private javax.swing.JButton jButton103;
     private javax.swing.JButton jButton104;
+    private javax.swing.JButton jButton105;
+    private javax.swing.JButton jButton106;
+    private javax.swing.JButton jButton107;
+    private javax.swing.JButton jButton108;
+    private javax.swing.JButton jButton109;
     private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton110;
+    private javax.swing.JButton jButton111;
+    private javax.swing.JButton jButton112;
+    private javax.swing.JButton jButton113;
+    private javax.swing.JButton jButton114;
+    private javax.swing.JButton jButton115;
+    private javax.swing.JButton jButton116;
+    private javax.swing.JButton jButton117;
+    private javax.swing.JButton jButton118;
+    private javax.swing.JButton jButton119;
     private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton120;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
+    private javax.swing.JButton jButton28;
+    private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton30;
+    private javax.swing.JButton jButton31;
+    private javax.swing.JButton jButton32;
+    private javax.swing.JButton jButton33;
+    private javax.swing.JButton jButton34;
     private javax.swing.JButton jButton35;
     private javax.swing.JButton jButton36;
     private javax.swing.JButton jButton37;
@@ -3094,13 +3387,15 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox6;
     private javax.swing.JCheckBox jCheckBox7;
     private javax.swing.JCheckBox jCheckBox8;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
@@ -3115,17 +3410,19 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
-    private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel24;
     private javax.swing.JPanel jPanel25;
     private javax.swing.JPanel jPanel26;
     private javax.swing.JPanel jPanel27;
-    private javax.swing.JPanel jPanel28;
+    public static javax.swing.JPanel jPanel28;
+    private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel30;
+    private javax.swing.JPanel jPanel31;
+    private javax.swing.JPanel jPanel33;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
@@ -3140,18 +3437,18 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
-    private javax.swing.JTextArea jTextArea5;
+    public static javax.swing.JTextArea jTextArea5;
     private static javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JPanel kahve;
     private javax.swing.JButton kahvelerb;
     private javax.swing.JRadioButton kucuk;
     private javax.swing.JPanel kurabiye;
     private javax.swing.JRadioButton laktozsuz;
+    private javax.swing.JPanel mediumpan;
     private java.awt.TextArea order;
     private javax.swing.JRadioButton orta;
-    private javax.swing.JLayeredPane paketkahve;
+    private javax.swing.JLayeredPane paketkahvepan;
     private javax.swing.JPanel pancay;
     private javax.swing.JLayeredPane panedrink;
     private javax.swing.JLayeredPane panefood;
@@ -3164,7 +3461,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private javax.swing.JPanel sandavic;
     private javax.swing.JButton siparisreset;
     private javax.swing.JRadioButton soyasutu;
-    private javax.swing.JPanel userpan;
+    public static javax.swing.JPanel userpan;
     private javax.swing.JButton uyeg;
     private javax.swing.JRadioButton yagli;
     private javax.swing.JRadioButton yagsiz;

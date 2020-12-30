@@ -5,6 +5,7 @@ import static com.mycompany.g13.CafeManagementGUI.repo;
 import com.mycompany.g13.Model.Client;
 import javax.swing.JOptionPane;
 
+
 public class YeniUye extends javax.swing.JFrame {
     /**
      * Creates new form YeniUye
@@ -123,7 +124,9 @@ public class YeniUye extends javax.swing.JFrame {
             try{
                 repo.save(c);
                 JOptionPane.showMessageDialog(error,"SUCCESS!!");
-                
+                 CafeManagementGUI.packedcafchange( CafeManagementGUI.userpan);
+                 
+                 CafeManagementGUI.jTextArea5.setText(c.toString());
                
             
             }catch(Exception e){

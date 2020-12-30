@@ -539,10 +539,13 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jTextArea6.setEditable(false);
         jTextArea6.setBackground(new java.awt.Color(249, 244, 244));
         jTextArea6.setColumns(20);
-        jTextArea6.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jTextArea6.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
         jTextArea6.setForeground(new java.awt.Color(255, 102, 0));
-        jTextArea6.setRows(2);
-        jTextArea6.setTabSize(2);
+        jTextArea6.setLineWrap(true);
+        jTextArea6.setRows(1);
+        jTextArea6.setTabSize(0);
+        jTextArea6.setBorder(null);
+        jTextArea6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jScrollPane6.setViewportView(jTextArea6);
 
         jButton104.setBackground(new java.awt.Color(255, 51, 51));
@@ -581,6 +584,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(order, javax.swing.GroupLayout.PREFERRED_SIZE, 369, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel2Layout.createSequentialGroup()
@@ -594,9 +598,6 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel2Layout.createSequentialGroup()
                             .addGap(18, 18, 18)
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)

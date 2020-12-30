@@ -159,7 +159,6 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         cb_dark = new javax.swing.JCheckBox();
         cb_normal = new javax.swing.JCheckBox();
         cb_kafein = new javax.swing.JCheckBox();
-        icecek = new javax.swing.JPanel();
         panefood = new javax.swing.JLayeredPane();
         sandavic = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
@@ -297,10 +296,12 @@ public class CafeManagementGUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
+        setPreferredSize(new java.awt.Dimension(1318, 830));
         setResizable(false);
 
         MainPanel.setBackground(new java.awt.Color(249, 244, 244));
         MainPanel.setForeground(new java.awt.Color(249, 244, 244));
+        MainPanel.setPreferredSize(new java.awt.Dimension(1318, 830));
 
         jPanel1.setBackground(new java.awt.Color(249, 244, 244));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -621,6 +622,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(249, 244, 244));
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setBackground(new java.awt.Color(0, 102, 51));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -631,6 +633,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, 34));
 
         kahvelerb.setBackground(new java.awt.Color(0, 102, 51));
         kahvelerb.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -641,6 +644,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 kahvelerbActionPerformed(evt);
             }
         });
+        jPanel3.add(kahvelerb, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, -1, 34));
 
         yiyecekb.setBackground(new java.awt.Color(0, 102, 51));
         yiyecekb.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -651,6 +655,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 yiyecekbActionPerformed(evt);
             }
         });
+        jPanel3.add(yiyecekb, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 10, -1, 34));
 
         icecekb.setBackground(new java.awt.Color(0, 102, 51));
         icecekb.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -661,19 +666,19 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 icecekbActionPerformed(evt);
             }
         });
+        jPanel3.add(icecekb, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 10, 94, 34));
 
         jLayeredPane1.setBackground(new java.awt.Color(236, 231, 231));
         jLayeredPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jLayeredPane1.setPreferredSize(new java.awt.Dimension(560, 400));
+        jLayeredPane1.setPreferredSize(new java.awt.Dimension(635, 400));
         jLayeredPane1.setLayout(new java.awt.CardLayout());
 
         hediyelik.setBackground(new java.awt.Color(236, 231, 231));
-        hediyelik.setPreferredSize(new java.awt.Dimension(560, 400));
+        hediyelik.setPreferredSize(new java.awt.Dimension(650, 400));
         hediyelik.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel4.setBackground(new java.awt.Color(236, 231, 231));
-        jPanel4.setPreferredSize(new java.awt.Dimension(560, 400));
-        jPanel4.setRequestFocusEnabled(false);
+        jPanel4.setPreferredSize(new java.awt.Dimension(650, 400));
 
         jButton10.setBackground(new java.awt.Color(0, 102, 51));
         jButton10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -716,7 +721,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                         .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29)
                         .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
                         .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -743,16 +748,16 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap(212, Short.MAX_VALUE))
         );
 
-        hediyelik.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 520, 400));
+        hediyelik.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 400));
 
         jLayeredPane1.add(hediyelik, "card2");
 
         kahve.setBackground(new java.awt.Color(236, 231, 231));
-        kahve.setPreferredSize(new java.awt.Dimension(560, 400));
+        kahve.setPreferredSize(new java.awt.Dimension(650, 400));
         kahve.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel5.setBackground(new java.awt.Color(236, 231, 231));
-        jPanel5.setPreferredSize(new java.awt.Dimension(560, 400));
+        jPanel5.setPreferredSize(new java.awt.Dimension(650, 400));
 
         jButton16.setBackground(new java.awt.Color(0, 102, 51));
         jButton16.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -950,26 +955,23 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        kahve.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 400));
+        kahve.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 400));
 
         jLayeredPane1.add(kahve, "card3");
 
-        icecek.setBackground(new java.awt.Color(236, 231, 231));
-        icecek.setPreferredSize(new java.awt.Dimension(560, 400));
-        icecek.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jLayeredPane1.add(icecek, "card5");
-
-        panefood.setPreferredSize(new java.awt.Dimension(560, 400));
+        panefood.setMinimumSize(new java.awt.Dimension(610, 400));
+        panefood.setPreferredSize(new java.awt.Dimension(650, 400));
         panefood.setLayout(new java.awt.CardLayout());
 
         sandavic.setBackground(new java.awt.Color(236, 231, 231));
-        sandavic.setPreferredSize(new java.awt.Dimension(560, 400));
+        sandavic.setPreferredSize(new java.awt.Dimension(650, 400));
         sandavic.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel6.setBackground(new java.awt.Color(236, 231, 231));
-        jPanel6.setPreferredSize(new java.awt.Dimension(560, 400));
+        jPanel6.setPreferredSize(new java.awt.Dimension(650, 400));
 
-        jPanel13.setBorder(new javax.swing.border.MatteBorder(null));
+        jPanel13.setBackground(new java.awt.Color(234, 229, 229));
+        jPanel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         bpasta.setBackground(new java.awt.Color(0, 153, 51));
         bpasta.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1021,12 +1023,12 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(bsandavic, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(bkurabiye, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(bkurabiye, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(bpasta, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(bsalata, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1073,16 +1075,15 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton57, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton58, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton56, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
-                        .addComponent(jButton55)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addComponent(jButton55)))
+                .addContainerGap(104, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1102,18 +1103,20 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        sandavic.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 540, 400));
+        sandavic.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 400));
 
         panefood.add(sandavic, "card2");
 
         kurabiye.setBackground(new java.awt.Color(236, 231, 231));
-        kurabiye.setPreferredSize(new java.awt.Dimension(560, 400));
+        kurabiye.setMinimumSize(new java.awt.Dimension(610, 400));
+        kurabiye.setPreferredSize(new java.awt.Dimension(650, 400));
         kurabiye.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel10.setBackground(new java.awt.Color(236, 231, 231));
-        jPanel10.setPreferredSize(new java.awt.Dimension(560, 400));
+        jPanel10.setPreferredSize(new java.awt.Dimension(650, 400));
 
-        jPanel14.setBorder(new javax.swing.border.MatteBorder(null));
+        jPanel14.setBackground(new java.awt.Color(234, 229, 229));
+        jPanel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         bpasta1.setBackground(new java.awt.Color(0, 153, 51));
         bpasta1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1168,7 +1171,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addComponent(bpasta1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(bsalata1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1209,14 +1212,12 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton49, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton50, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton51, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                    .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jButton49, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton50, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton51, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(124, Short.MAX_VALUE))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1232,23 +1233,25 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        kurabiye.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 540, 400));
+        kurabiye.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 400));
 
         panefood.add(kurabiye, "card3");
 
         pasta.setBackground(new java.awt.Color(236, 231, 231));
         pasta.setMinimumSize(new java.awt.Dimension(560, 400));
+        pasta.setPreferredSize(new java.awt.Dimension(650, 400));
         pasta.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel11.setBackground(new java.awt.Color(236, 231, 231));
-        jPanel11.setPreferredSize(new java.awt.Dimension(560, 400));
+        jPanel11.setPreferredSize(new java.awt.Dimension(650, 400));
 
         jButton44.setBackground(new java.awt.Color(0, 102, 51));
         jButton44.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton44.setForeground(new java.awt.Color(255, 255, 255));
         jButton44.setText("Brownie Cheesecake");
 
-        jPanel15.setBorder(new javax.swing.border.MatteBorder(null));
+        jPanel15.setBackground(new java.awt.Color(234, 229, 229));
+        jPanel15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         bpasta2.setBackground(new java.awt.Color(0, 153, 51));
         bpasta2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1339,17 +1342,15 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addComponent(jButton53, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addComponent(jButton44)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton52, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+                        .addComponent(jButton52)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton54, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                        .addComponent(jButton54, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton53, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(104, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1366,19 +1367,20 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pasta.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 540, 400));
+        pasta.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 400));
 
         panefood.add(pasta, "card4");
 
         salata.setBackground(new java.awt.Color(236, 231, 231));
-        salata.setMinimumSize(new java.awt.Dimension(560, 400));
-        salata.setPreferredSize(new java.awt.Dimension(560, 400));
+        salata.setMinimumSize(new java.awt.Dimension(610, 400));
+        salata.setPreferredSize(new java.awt.Dimension(650, 400));
         salata.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel12.setBackground(new java.awt.Color(236, 231, 231));
-        jPanel12.setPreferredSize(new java.awt.Dimension(560, 400));
+        jPanel12.setPreferredSize(new java.awt.Dimension(650, 400));
 
-        jPanel16.setBorder(new javax.swing.border.MatteBorder(null));
+        jPanel16.setBackground(new java.awt.Color(234, 229, 229));
+        jPanel16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         bpasta3.setBackground(new java.awt.Color(0, 153, 51));
         bpasta3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1433,7 +1435,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addComponent(bpasta3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(bsalata3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1474,7 +1476,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             .addGroup(jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel12Layout.createSequentialGroup()
                         .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton46, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1482,9 +1484,8 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton47, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton48, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                            .addComponent(jButton48, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(104, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1502,21 +1503,22 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        salata.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 540, 400));
+        salata.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 400));
 
         panefood.add(salata, "card5");
 
         jLayeredPane1.add(panefood, "card6");
 
-        panedrink.setPreferredSize(new java.awt.Dimension(560, 400));
+        panedrink.setPreferredSize(new java.awt.Dimension(635, 400));
         panedrink.setLayout(new java.awt.CardLayout());
 
         panespresso.setBackground(new java.awt.Color(236, 231, 231));
-        panespresso.setPreferredSize(new java.awt.Dimension(540, 400));
+        panespresso.setPreferredSize(new java.awt.Dimension(635, 400));
         panespresso.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel22.setBackground(new java.awt.Color(236, 231, 231));
-        jPanel22.setPreferredSize(new java.awt.Dimension(540, 400));
+        jPanel22.setMinimumSize(new java.awt.Dimension(660, 400));
+        jPanel22.setPreferredSize(new java.awt.Dimension(635, 400));
 
         jButton35.setBackground(new java.awt.Color(14, 30, 21));
         jButton35.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1572,6 +1574,11 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jButton41.setText("Espresso");
         jButton41.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton41.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton41ActionPerformed(evt);
+            }
+        });
 
         jButton42.setBackground(new java.awt.Color(14, 30, 21));
         jButton42.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1589,6 +1596,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jButton43.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton43.setMargin(new java.awt.Insets(2, 2, 2, 14));
 
+        jPanel23.setBackground(new java.awt.Color(234, 229, 229));
         jPanel23.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jButton60.setBackground(new java.awt.Color(0, 153, 51));
@@ -1655,19 +1663,19 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton63, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton64, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE)
+                .addComponent(jButton64, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel23Layout.setVerticalGroup(
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel23Layout.createSequentialGroup()
+            .addGroup(jPanel23Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton60, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton61, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton62, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton63, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton64, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE))
+                    .addComponent(jButton61, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton64, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton63, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton62, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -1676,25 +1684,27 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jPanel22Layout.setHorizontalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel22Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel22Layout.createSequentialGroup()
-                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton37, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(10, 10, 10)
+                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jButton37, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton35, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton36, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton38, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton39, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE)
+                            .addComponent(jButton39, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton40, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton42, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton43, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton41, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap())
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton43, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton41, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel22Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 97, Short.MAX_VALUE))
         );
         jPanel22Layout.setVerticalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1704,32 +1714,33 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                     .addComponent(jButton35, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton39, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton41, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton40, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton36, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton40, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton37, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton43, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton38, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
                 .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        panespresso.add(jPanel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 400));
+        panespresso.add(jPanel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 635, 400));
 
         panedrink.add(panespresso, "card2");
 
         panfrapp.setBackground(new java.awt.Color(236, 231, 231));
-        panfrapp.setPreferredSize(new java.awt.Dimension(540, 400));
+        panfrapp.setMinimumSize(new java.awt.Dimension(630, 400));
+        panfrapp.setPreferredSize(new java.awt.Dimension(635, 400));
         panfrapp.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel17.setBackground(new java.awt.Color(236, 231, 231));
-        jPanel17.setPreferredSize(new java.awt.Dimension(540, 400));
+        jPanel17.setPreferredSize(new java.awt.Dimension(635, 400));
 
         jButton59.setBackground(new java.awt.Color(14, 30, 21));
         jButton59.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1744,6 +1755,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             }
         });
 
+        jPanel24.setBackground(new java.awt.Color(234, 229, 229));
         jPanel24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jButton65.setBackground(new java.awt.Color(0, 153, 51));
@@ -1810,8 +1822,8 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton68, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton69, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jButton69, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel24Layout.setVerticalGroup(
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1873,7 +1885,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             .addGroup(jPanel17Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel17Layout.createSequentialGroup()
                         .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton59, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1883,9 +1895,8 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                         .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton73, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton72, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton74, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                            .addComponent(jButton74, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(72, Short.MAX_VALUE))
         );
         jPanel17Layout.setVerticalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1907,17 +1918,18 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        panfrapp.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 400));
+        panfrapp.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 635, 400));
 
         panedrink.add(panfrapp, "card3");
 
         pancay.setBackground(new java.awt.Color(236, 231, 231));
-        pancay.setPreferredSize(new java.awt.Dimension(540, 400));
+        pancay.setPreferredSize(new java.awt.Dimension(635, 400));
         pancay.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel18.setBackground(new java.awt.Color(236, 231, 231));
-        jPanel18.setPreferredSize(new java.awt.Dimension(540, 400));
+        jPanel18.setPreferredSize(new java.awt.Dimension(635, 400));
 
+        jPanel25.setBackground(new java.awt.Color(234, 229, 229));
         jPanel25.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jButton75.setBackground(new java.awt.Color(0, 153, 51));
@@ -1984,8 +1996,8 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton78, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton79, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jButton79, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel25Layout.setVerticalGroup(
             jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2063,7 +2075,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             .addGroup(jPanel18Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel18Layout.createSequentialGroup()
                         .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton80, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -2074,9 +2086,8 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                         .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton84, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton85, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton86, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                            .addComponent(jButton86, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(72, Short.MAX_VALUE))
         );
         jPanel18Layout.setVerticalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2100,17 +2111,18 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pancay.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 400));
+        pancay.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 635, 400));
 
         panedrink.add(pancay, "card4");
 
         panturkkahve.setBackground(new java.awt.Color(236, 231, 231));
-        panturkkahve.setPreferredSize(new java.awt.Dimension(540, 400));
+        panturkkahve.setPreferredSize(new java.awt.Dimension(635, 400));
         panturkkahve.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel19.setBackground(new java.awt.Color(236, 231, 231));
-        jPanel19.setPreferredSize(new java.awt.Dimension(540, 400));
+        jPanel19.setPreferredSize(new java.awt.Dimension(635, 400));
 
+        jPanel26.setBackground(new java.awt.Color(234, 229, 229));
         jPanel26.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jButton87.setBackground(new java.awt.Color(0, 153, 51));
@@ -2177,8 +2189,8 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton90, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton91, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jButton91, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel26Layout.setVerticalGroup(
             jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2208,11 +2220,9 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             .addGroup(jPanel19Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel19Layout.createSequentialGroup()
-                        .addComponent(jButton92)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                    .addComponent(jButton92)
+                    .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(72, Short.MAX_VALUE))
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2224,17 +2234,18 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        panturkkahve.add(jPanel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 400));
+        panturkkahve.add(jPanel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 635, 400));
 
         panedrink.add(panturkkahve, "card5");
 
         pansise.setBackground(new java.awt.Color(236, 231, 231));
-        pansise.setPreferredSize(new java.awt.Dimension(540, 400));
+        pansise.setPreferredSize(new java.awt.Dimension(635, 400));
         pansise.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel20.setBackground(new java.awt.Color(236, 231, 231));
-        jPanel20.setPreferredSize(new java.awt.Dimension(540, 400));
+        jPanel20.setPreferredSize(new java.awt.Dimension(635, 400));
 
+        jPanel27.setBackground(new java.awt.Color(234, 229, 229));
         jPanel27.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jButton93.setBackground(new java.awt.Color(0, 153, 51));
@@ -2301,8 +2312,8 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton96, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton97, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jButton97, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel27Layout.setVerticalGroup(
             jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2363,7 +2374,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jButton103.setForeground(new java.awt.Color(255, 255, 255));
         jButton103.setIcon(new javax.swing.ImageIcon(getClass().getResource("/San-Pellegrino-Limonlu-Gazli-icecek.png"))); // NOI18N
         jButton103.setMnemonic(' ');
-        jButton103.setText(" Limonlu Gazlı İçecek");
+        jButton103.setText("Limonlu Gazlı İçecek");
         jButton103.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton103.setMargin(new java.awt.Insets(2, 2, 2, 14));
 
@@ -2374,21 +2385,19 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             .addGroup(jPanel20Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel20Layout.createSequentialGroup()
                         .addComponent(jButton98, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(18, 18, 18)
                         .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton100, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton101, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton99)
-                            .addComponent(jButton101, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jButton100, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
                         .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton103, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton102))
-                        .addGap(61, 61, 61))
-                    .addGroup(jPanel20Layout.createSequentialGroup()
-                        .addComponent(jPanel27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())))
+                            .addComponent(jButton103, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton102))))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
         jPanel20Layout.setVerticalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2400,20 +2409,22 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                     .addComponent(jButton103, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton100, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton102, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jButton102, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton100, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton101, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 156, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 151, Short.MAX_VALUE)
                 .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        pansise.add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 400));
+        pansise.add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 635, 400));
 
         panedrink.add(pansise, "card6");
 
         jLayeredPane1.add(panedrink, "card6");
+
+        jPanel3.add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 52, 635, -1));
 
         jPanel7.setBackground(new java.awt.Color(232, 230, 191));
         jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "BOY", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
@@ -2450,6 +2461,8 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addComponent(buyuk)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 470, -1, 267));
 
         jPanel8.setBackground(new java.awt.Color(232, 230, 191));
         jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SÜT", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
@@ -2507,6 +2520,8 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel3.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(166, 470, -1, -1));
+
         jPanel9.setBackground(new java.awt.Color(232, 230, 191));
         jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ŞURUP", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
 
@@ -2544,7 +2559,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                     .addComponent(jCheckBox6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jCheckBox5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jCheckBox3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jCheckBox2, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
+                    .addComponent(jCheckBox2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jCheckBox1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jCheckBox4, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
                     .addComponent(jCheckBox7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -2573,54 +2588,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(0, 16, Short.MAX_VALUE)
-                                .addComponent(jButton1)
-                                .addGap(18, 18, 18)
-                                .addComponent(kahvelerb)
-                                .addGap(18, 18, 18)
-                                .addComponent(yiyecekb)
-                                .addGap(18, 18, 18)
-                                .addComponent(icecekb, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(29, 29, 29))))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kahvelerb, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(yiyecekb, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(icecekb, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 470, -1, 267));
 
         javax.swing.GroupLayout MainPanelLayout = new javax.swing.GroupLayout(MainPanel);
         MainPanel.setLayout(MainPanelLayout);
@@ -2631,7 +2599,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 663, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         MainPanelLayout.setVerticalGroup(
             MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2644,7 +2612,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2924,6 +2892,10 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         packedcafchange(buttonpan);
     }//GEN-LAST:event_yenisiparisActionPerformed
 
+    private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton41ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -3009,7 +2981,6 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private javax.swing.JCheckBox cb_medium;
     private javax.swing.JCheckBox cb_normal;
     private javax.swing.JPanel hediyelik;
-    private javax.swing.JPanel icecek;
     private javax.swing.JButton icecekb;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;

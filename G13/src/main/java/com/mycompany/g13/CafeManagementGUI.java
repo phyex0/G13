@@ -1,6 +1,8 @@
 package com.mycompany.g13;
 
 import com.mycompany.g13.repository.ClientRepository;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
@@ -13,6 +15,25 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class CafeManagementGUI extends javax.swing.JFrame {
     
    public static JFrame error;
+   //Update Time
+   public static void updateDate(){
+        Thread Clock = new Thread(){
+            public void run(){
+                for(;;){
+                    try {
+                        sleep(1000);
+                        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss MM/dd/yyyy "); 
+                        LocalDateTime now = LocalDateTime.now();  
+                        jTextArea6.setText(dtf.format(now));
+                    
+                    }catch (Exception e){
+                        System.out.println("Error");
+                    }
+                }
+           }
+        };
+        Clock.start();
+    }
 
     /**
      * Creates new form CafeManagementGUI
@@ -296,7 +317,6 @@ public class CafeManagementGUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
-        setPreferredSize(new java.awt.Dimension(1318, 830));
         setResizable(false);
 
         MainPanel.setBackground(new java.awt.Color(249, 244, 244));
@@ -519,7 +539,8 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jTextArea6.setEditable(false);
         jTextArea6.setBackground(new java.awt.Color(249, 244, 244));
         jTextArea6.setColumns(20);
-        jTextArea6.setForeground(new java.awt.Color(249, 244, 244));
+        jTextArea6.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jTextArea6.setForeground(new java.awt.Color(255, 102, 0));
         jTextArea6.setRows(2);
         jTextArea6.setTabSize(2);
         jScrollPane6.setViewportView(jTextArea6);
@@ -2936,17 +2957,8 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new CafeManagementGUI().setVisible(true);
+                updateDate();
                 
-                //TODO: zaman dilimini güncelleme olayını çöz.
-                
-                /*
-                DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss MM/dd/yyyy "); 
-                while(true){
-                    LocalDateTime now = LocalDateTime.now();  
-                    System.out.println();
-                    jTextArea6.setText(dtf.format(now));
-                }
-                */
                 
             }
         });
@@ -3128,7 +3140,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
-    private javax.swing.JTextArea jTextArea6;
+    private static javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JPanel kahve;

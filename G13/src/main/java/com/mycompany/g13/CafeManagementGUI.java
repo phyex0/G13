@@ -24,7 +24,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                         sleep(1000);
                         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss MM/dd/yyyy "); 
                         LocalDateTime now = LocalDateTime.now();  
-                        jTextArea6.setText(dtf.format(now));
+                        jTextArea6.setText("         "+dtf.format(now));
                     
                     }catch (Exception e){
                         System.out.println("Error");

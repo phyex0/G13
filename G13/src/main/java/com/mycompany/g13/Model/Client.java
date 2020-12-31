@@ -61,7 +61,7 @@ public class Client {
 
     @Override
     public String toString() {
-        return "Name: "+name+"\nTel No: "+phoneNumber+"\nStar: "+star ;
+        return name+"\n"+phoneNumber+"\nStar: "+star+"*" ;
     }
     
   

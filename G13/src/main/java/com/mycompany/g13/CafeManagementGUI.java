@@ -756,6 +756,11 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jButton10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton10.setForeground(new java.awt.Color(255, 255, 255));
         jButton10.setText("KUPA");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
         jButton11.setBackground(new java.awt.Color(0, 102, 51));
         jButton11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -2658,6 +2663,11 @@ public class CafeManagementGUI extends javax.swing.JFrame {
 
         kucuk.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         kucuk.setText("KÜÇÜK");
+        kucuk.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kucukActionPerformed(evt);
+            }
+        });
 
         orta.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         orta.setText("ORTA");
@@ -3225,6 +3235,15 @@ public class CafeManagementGUI extends javax.swing.JFrame {
          
             }
     }//GEN-LAST:event_jComboBox4ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void kucukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kucukActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_kucukActionPerformed
 
     /**
      * @param args the command line arguments

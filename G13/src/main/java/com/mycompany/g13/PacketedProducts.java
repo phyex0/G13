@@ -7,18 +7,11 @@ public class PacketedProducts extends Products {
 
     public PacketedProducts(String kafein, String profile, String aroma, double product_price, String product_name) {
         super(product_price, product_name);
-        this.kafein = kafein;
         this.profile = profile;
-        this.aroma = aroma;
+       
     }
 
-    public String getKafein() {
-        return kafein;
-    }
-
-    public void setKafein(String kafein) {
-        this.kafein = kafein;
-    }
+   
 
     public String getProfile() {
         return profile;
@@ -28,13 +21,7 @@ public class PacketedProducts extends Products {
         this.profile = profile;
     }
 
-    public String getAroma() {
-        return aroma;
-    }
-
-    public void setAroma(String aroma) {
-        this.aroma = aroma;
-    }
+    
 
     @Override
     public void setProduct_name(String product_name) {

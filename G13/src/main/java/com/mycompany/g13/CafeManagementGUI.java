@@ -1,8 +1,11 @@
 package com.mycompany.g13;
 
 import com.mycompany.g13.repository.ClientRepository;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import javax.swing.ButtonGroup;
 import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
@@ -12,7 +15,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 
 @SpringBootApplication
-public class CafeManagementGUI extends javax.swing.JFrame {
+public class CafeManagementGUI extends javax.swing.JFrame implements ActionListener{
     
    public static JFrame error;
    String order_Text = "";
@@ -35,6 +38,9 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         };
         Clock.start();
     }
+   
+   
+   
 
     /**
      * Creates new form CafeManagementGUI
@@ -50,6 +56,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         buttonGroup2.add(laktozsuz);
         buttonGroup2.add(bademsutu);
         buttonGroup2.add(soyasutu);
+        
         
       
     }
@@ -3722,4 +3729,9 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private javax.swing.JButton yenisiparis;
     private javax.swing.JButton yiyecekb;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        
+    }
 }

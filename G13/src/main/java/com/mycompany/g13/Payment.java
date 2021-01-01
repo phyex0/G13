@@ -7,7 +7,7 @@ public class Payment {
     
     public ArrayList<Products> givenOrder = new ArrayList<Products>();
     
-    public void removeLastOrder(ArrayList ar){
+    public static void removeLastOrder(ArrayList ar){
         
         if(ar.size()>=1)
             ar.remove(ar.size()-1);
@@ -15,18 +15,18 @@ public class Payment {
             System.out.println("Empty list");
     }
     
-    public void clearAllOrders(ArrayList ar){      
+    public static void clearAllOrders(ArrayList ar){      
         ar.clear();
     }
     
-    public int calculateStar(ArrayList<Products> ar){
+    public static int calculateStar(ArrayList<Products> ar){
         int star =0;
         for(Products a: ar)
             star+= a.getProduct_price();
         return star/10;
     }
     
-    public double tax(ArrayList<Products> ar){
+    public static double tax(ArrayList<Products> ar){
         int tax = 0;
         for(Products p: ar)
             tax += p.getProduct_price();
@@ -34,7 +34,7 @@ public class Payment {
     }
     
   
-    public String toString(ArrayList ar){
+    public static String toString(ArrayList ar){
         String result = "";
         for(int i=0; i< ar.size();i++){
             result+=ar.get(i)+"\n";

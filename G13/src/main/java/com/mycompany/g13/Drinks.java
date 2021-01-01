@@ -72,8 +72,9 @@ public  class Drinks extends Products implements Sizeable {
     }
 
     @Override
-    public void setDrinkSize() {
+    public void setDrinkFeatures() {
         
-       //TODO: şişelenmiş ürün değilse boyut süt ve şurup özelliklerini alsın setMetodları ile yerleştirsin
+        
+       
     }
 }

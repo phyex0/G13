@@ -176,10 +176,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jPanel4 = new javax.swing.JPanel();
         jButton_Kupa = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton_Termos = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
         panefood = new javax.swing.JLayeredPane();
         sandavic = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
@@ -194,14 +190,14 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton_MozarellaSandvic = new javax.swing.JButton();
         kurabiye = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
-        jPanel14 = new javax.swing.JPanel();
-        bpasta1 = new javax.swing.JButton();
-        bsandavic1 = new javax.swing.JButton();
-        bkurabiye1 = new javax.swing.JButton();
-        bsalata1 = new javax.swing.JButton();
         jButton49 = new javax.swing.JButton();
         jButton_MistoCookie = new javax.swing.JButton();
         jButton_DopdoluFitCookie = new javax.swing.JButton();
+        jPanel21 = new javax.swing.JPanel();
+        bpasta1 = new javax.swing.JButton();
+        bsandavic1 = new javax.swing.JButton();
+        bkurabiye4 = new javax.swing.JButton();
+        bsalata1 = new javax.swing.JButton();
         pasta = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
         jButton_BrownieCheesecake = new javax.swing.JButton();
@@ -350,6 +346,8 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jCheckBox6 = new javax.swing.JCheckBox();
         jCheckBox7 = new javax.swing.JCheckBox();
         jCheckBox8 = new javax.swing.JCheckBox();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -721,7 +719,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, 34));
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 130, 34));
 
         kahvelerb.setBackground(new java.awt.Color(0, 102, 51));
         kahvelerb.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -732,7 +730,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                 kahvelerbActionPerformed(evt);
             }
         });
-        jPanel3.add(kahvelerb, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, -1, 34));
+        jPanel3.add(kahvelerb, new org.netbeans.lib.awtextra.AbsoluteConstraints(211, 10, 160, 34));
 
         yiyecekb.setBackground(new java.awt.Color(0, 102, 51));
         yiyecekb.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -743,7 +741,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                 yiyecekbActionPerformed(evt);
             }
         });
-        jPanel3.add(yiyecekb, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 10, -1, 34));
+        jPanel3.add(yiyecekb, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, 100, 34));
 
         icecekb.setBackground(new java.awt.Color(0, 102, 51));
         icecekb.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -754,7 +752,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                 icecekbActionPerformed(evt);
             }
         });
-        jPanel3.add(icecekb, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 10, 94, 34));
+        jPanel3.add(icecekb, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, 100, 34));
 
         jLayeredPane1.setBackground(new java.awt.Color(236, 231, 231));
         jLayeredPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -783,67 +781,25 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton11.setForeground(new java.awt.Color(255, 255, 255));
         jButton11.setText("TERMOS");
 
-        jButton12.setBackground(new java.awt.Color(0, 102, 51));
-        jButton12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton12.setForeground(new java.awt.Color(255, 255, 255));
-        jButton12.setText("TERMOS");
-
-        jButton_Termos.setBackground(new java.awt.Color(0, 102, 51));
-        jButton_Termos.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton_Termos.setForeground(new java.awt.Color(255, 255, 255));
-        jButton_Termos.setText("TERMOS");
-        jButton_Termos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_TermosActionPerformed(evt);
-            }
-        });
-
-        jButton14.setBackground(new java.awt.Color(0, 102, 51));
-        jButton14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton14.setForeground(new java.awt.Color(255, 255, 255));
-        jButton14.setText("TERMOS");
-
-        jButton15.setBackground(new java.awt.Color(0, 102, 51));
-        jButton15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton15.setForeground(new java.awt.Color(255, 255, 255));
-        jButton15.setText("TERMOS");
-
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jButton_Kupa, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(29, 29, 29)
-                        .addComponent(jButton_Termos, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
-                        .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton_Kupa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, 141, Short.MAX_VALUE))
+                .addContainerGap(499, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton_Kupa, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_Termos, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jButton_Kupa, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(212, Short.MAX_VALUE))
+                .addContainerGap(271, Short.MAX_VALUE))
         );
 
         hediyelik.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 400));
@@ -851,11 +807,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jLayeredPane1.add(hediyelik, "card2");
 
         panefood.setMinimumSize(new java.awt.Dimension(610, 400));
-        panefood.setPreferredSize(new java.awt.Dimension(650, 400));
+        panefood.setPreferredSize(new java.awt.Dimension(635, 400));
         panefood.setLayout(new java.awt.CardLayout());
 
         sandavic.setBackground(new java.awt.Color(236, 231, 231));
-        sandavic.setPreferredSize(new java.awt.Dimension(650, 400));
+        sandavic.setPreferredSize(new java.awt.Dimension(635, 400));
         sandavic.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel6.setBackground(new java.awt.Color(236, 231, 231));
@@ -912,13 +868,13 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bsandavic, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(bkurabiye, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(bpasta, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(bsalata, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(bsandavic, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bkurabiye, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bpasta, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bsalata, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel13Layout.setVerticalGroup(
@@ -986,15 +942,16 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton_EzineliSandvic, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton_MozarellaSandvic, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton_Fiesta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
-                        .addComponent(jButton_ReyhanliTost)))
-                .addContainerGap(104, Short.MAX_VALUE))
+                        .addComponent(jButton_ReyhanliTost)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1014,7 +971,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                 .addContainerGap())
         );
 
-        sandavic.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 400));
+        sandavic.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 635, 400));
 
         panefood.add(sandavic, "card2");
 
@@ -1025,76 +982,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
 
         jPanel10.setBackground(new java.awt.Color(236, 231, 231));
         jPanel10.setPreferredSize(new java.awt.Dimension(650, 400));
-
-        jPanel14.setBackground(new java.awt.Color(234, 229, 229));
-        jPanel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        bpasta1.setBackground(new java.awt.Color(0, 153, 51));
-        bpasta1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        bpasta1.setForeground(new java.awt.Color(255, 255, 255));
-        bpasta1.setText("PASTA");
-        bpasta1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bpasta1ActionPerformed(evt);
-            }
-        });
-
-        bsandavic1.setBackground(new java.awt.Color(0, 153, 51));
-        bsandavic1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        bsandavic1.setForeground(new java.awt.Color(255, 255, 255));
-        bsandavic1.setText("SANDVİÇ");
-        bsandavic1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bsandavic1ActionPerformed(evt);
-            }
-        });
-
-        bkurabiye1.setBackground(new java.awt.Color(0, 153, 51));
-        bkurabiye1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        bkurabiye1.setForeground(new java.awt.Color(255, 255, 255));
-        bkurabiye1.setText("KURABİYE");
-        bkurabiye1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bkurabiye1ActionPerformed(evt);
-            }
-        });
-
-        bsalata1.setBackground(new java.awt.Color(0, 153, 51));
-        bsalata1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        bsalata1.setForeground(new java.awt.Color(255, 255, 255));
-        bsalata1.setText("SALATA");
-        bsalata1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bsalata1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
-        jPanel14.setLayout(jPanel14Layout);
-        jPanel14Layout.setHorizontalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel14Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(bsandavic1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(bkurabiye1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(bpasta1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(bsalata1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel14Layout.setVerticalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bpasta1, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
-                    .addComponent(bkurabiye1, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
-                    .addComponent(bsandavic1, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
-                    .addComponent(bsalata1, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE))
-                .addContainerGap())
-        );
 
         jButton49.setBackground(new java.awt.Color(14, 30, 21));
         jButton49.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1131,6 +1018,78 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             }
         });
 
+        jPanel21.setBackground(new java.awt.Color(234, 229, 229));
+        jPanel21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        bpasta1.setBackground(new java.awt.Color(0, 153, 51));
+        bpasta1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        bpasta1.setForeground(new java.awt.Color(255, 255, 255));
+        bpasta1.setText("PASTA");
+        bpasta1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bpasta1ActionPerformed(evt);
+            }
+        });
+
+        bsandavic1.setBackground(new java.awt.Color(0, 153, 51));
+        bsandavic1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        bsandavic1.setForeground(new java.awt.Color(255, 255, 255));
+        bsandavic1.setText("SANDVİÇ");
+        bsandavic1.setPreferredSize(new java.awt.Dimension(110, 23));
+        bsandavic1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bsandavic1ActionPerformed(evt);
+            }
+        });
+
+        bkurabiye4.setBackground(new java.awt.Color(0, 153, 51));
+        bkurabiye4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        bkurabiye4.setForeground(new java.awt.Color(255, 255, 255));
+        bkurabiye4.setText("KURABİYE");
+        bkurabiye4.setPreferredSize(new java.awt.Dimension(110, 23));
+        bkurabiye4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bkurabiye4ActionPerformed(evt);
+            }
+        });
+
+        bsalata1.setBackground(new java.awt.Color(0, 153, 51));
+        bsalata1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        bsalata1.setForeground(new java.awt.Color(255, 255, 255));
+        bsalata1.setText("SALATA");
+        bsalata1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bsalata1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
+        jPanel21.setLayout(jPanel21Layout);
+        jPanel21Layout.setHorizontalGroup(
+            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel21Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(bsandavic1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bkurabiye4, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bpasta1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bsalata1, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel21Layout.setVerticalGroup(
+            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bpasta1, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+                    .addComponent(bkurabiye4, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+                    .addComponent(bsandavic1, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+                    .addComponent(bsalata1, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
@@ -1138,12 +1097,14 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButton49, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton_MistoCookie, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton_DopdoluFitCookie, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(124, Short.MAX_VALUE))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton49, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton_MistoCookie, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton_DopdoluFitCookie, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 386, Short.MAX_VALUE))
+                    .addComponent(jPanel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1155,11 +1116,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton_DopdoluFitCookie, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE)
-                .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        kurabiye.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 400));
+        kurabiye.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 635, 400));
 
         panefood.add(kurabiye, "card3");
 
@@ -1169,7 +1130,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         pasta.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel11.setBackground(new java.awt.Color(236, 231, 231));
-        jPanel11.setPreferredSize(new java.awt.Dimension(650, 400));
+        jPanel11.setPreferredSize(new java.awt.Dimension(635, 400));
 
         jButton_BrownieCheesecake.setBackground(new java.awt.Color(0, 102, 51));
         jButton_BrownieCheesecake.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1230,14 +1191,14 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel15Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bsandavic2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(bkurabiye2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(bpasta2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(bsalata2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(bsandavic2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bkurabiye2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bpasta2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bsalata2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1288,15 +1249,18 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addComponent(jButton_BrownieCheesecake)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton_KremalıHavucluKek)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton_ProfiterolluPasta, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton_LimonluCheesecake, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(104, Short.MAX_VALUE))
+                        .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel11Layout.createSequentialGroup()
+                                .addComponent(jButton_BrownieCheesecake)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton_KremalıHavucluKek)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton_ProfiterolluPasta, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jButton_LimonluCheesecake, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 110, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1313,7 +1277,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                 .addContainerGap())
         );
 
-        pasta.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 400));
+        pasta.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 400));
 
         panefood.add(pasta, "card4");
 
@@ -1374,14 +1338,14 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel16Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bsandavic3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(bkurabiye3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(bpasta3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(bsalata3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(bsandavic3, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bkurabiye3, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bpasta3, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bsalata3, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1442,7 +1406,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             .addGroup(jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel12Layout.createSequentialGroup()
                         .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton_IzgaraTavukluSalata, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1450,8 +1414,9 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                         .addGap(18, 18, 18)
                         .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton_MeyveliveYogurtluParfe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton_AnanaslıChiaPuding, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(104, Short.MAX_VALUE))
+                            .addComponent(jButton_AnanaslıChiaPuding, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1469,7 +1434,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                 .addContainerGap())
         );
 
-        salata.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 400));
+        salata.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 635, 400));
 
         panefood.add(salata, "card5");
 
@@ -2907,7 +2872,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                     .addComponent(jCheckBox4, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
                     .addComponent(jCheckBox7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jCheckBox8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2928,10 +2893,23 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                 .addComponent(jCheckBox7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jCheckBox8)
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 470, -1, 280));
+
+        jButton5.setBackground(new java.awt.Color(0, 153, 51));
+        jButton5.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/add.png"))); // NOI18N
+        jButton5.setText("ÖZELLİKLERİ EKLE"); // NOI18N
+        jButton5.setToolTipText("");
+        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton5.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 470, 160, 90));
+
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/github.png"))); // NOI18N
+        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 570, 160, 80));
 
         javax.swing.GroupLayout MainPanelLayout = new javax.swing.GroupLayout(MainPanel);
         MainPanel.setLayout(MainPanelLayout);
@@ -2941,14 +2919,18 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 663, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 663, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         MainPanelLayout.setVerticalGroup(
             MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(MainPanelLayout.createSequentialGroup()
+                .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 769, Short.MAX_VALUE))
+                .addGap(0, 3, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -2996,11 +2978,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void bkurabiye1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bkurabiye1ActionPerformed
-        // TODO add your handling code here:
-        menuchangefood(kurabiye);
-    }//GEN-LAST:event_bkurabiye1ActionPerformed
-
     private void bkurabiye2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bkurabiye2ActionPerformed
         // TODO add your handling code here:
          menuchangefood(kurabiye);
@@ -3010,21 +2987,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         // TODO add your handling code here:
          menuchangefood(kurabiye);
     }//GEN-LAST:event_bkurabiye3ActionPerformed
-
-    private void bsandavic1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bsandavic1ActionPerformed
-        // TODO add your handling code here:
-         menuchangefood(sandavic);
-    }//GEN-LAST:event_bsandavic1ActionPerformed
-
-    private void bpasta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bpasta1ActionPerformed
-        // TODO add your handling code here:
-        menuchangefood(pasta);
-    }//GEN-LAST:event_bpasta1ActionPerformed
-
-    private void bsalata1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bsalata1ActionPerformed
-        // TODO add your handling code here:
-         menuchangefood(salata);
-    }//GEN-LAST:event_bsalata1ActionPerformed
 
     private void bsandavic2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bsandavic2ActionPerformed
         // TODO add your handling code here:
@@ -3359,13 +3321,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         // TODO add your handling code here:
     }//GEN-LAST:event_kucukActionPerformed
 
-    private void jButton_TermosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_TermosActionPerformed
-        // TODO add your handling code here:
-        Gifts gift = new Gifts(20.0, "Termos");
-        Payment.givenOrder.add(gift);
-        order.setText(Payment.display());
-    }//GEN-LAST:event_jButton_TermosActionPerformed
-
     private void jButton_FiestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_FiestaActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Sandviç", 10.0, "Fiesta");
@@ -3488,6 +3443,28 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         order.setText(Payment.display());
     }//GEN-LAST:event_jButton35ActionPerformed
 
+    private void bpasta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bpasta1ActionPerformed
+        // TODO add your handling code here:
+         menuchangefood(pasta);
+    }//GEN-LAST:event_bpasta1ActionPerformed
+
+    private void bsandavic1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bsandavic1ActionPerformed
+        // TODO add your handling code here:
+        menuchangefood(sandavic);
+        
+        
+    }//GEN-LAST:event_bsandavic1ActionPerformed
+
+    private void bkurabiye4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bkurabiye4ActionPerformed
+        // TODO add your handling code here:
+         menuchangefood(kurabiye);
+    }//GEN-LAST:event_bkurabiye4ActionPerformed
+
+    private void bsalata1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bsalata1ActionPerformed
+        // TODO add your handling code here:
+         menuchangefood(salata);
+    }//GEN-LAST:event_bsalata1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -3540,9 +3517,9 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JPanel allpan;
     private javax.swing.JRadioButton bademsutu;
     private javax.swing.JButton bkurabiye;
-    private javax.swing.JButton bkurabiye1;
     private javax.swing.JButton bkurabiye2;
     private javax.swing.JButton bkurabiye3;
+    private javax.swing.JButton bkurabiye4;
     private javax.swing.JPanel blondepan;
     private javax.swing.JButton bpasta;
     private javax.swing.JButton bpasta1;
@@ -3586,10 +3563,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JButton jButton117;
     private javax.swing.JButton jButton118;
     private javax.swing.JButton jButton119;
-    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton120;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
@@ -3610,7 +3584,9 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JButton jButton42;
     private javax.swing.JButton jButton43;
     private javax.swing.JButton jButton49;
+    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton59;
+    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton60;
     private javax.swing.JButton jButton61;
     private javax.swing.JButton jButton62;
@@ -3666,7 +3642,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JButton jButton_MozarellaSandvic;
     private javax.swing.JButton jButton_ProfiterolluPasta;
     private javax.swing.JButton jButton_ReyhanliTost;
-    private javax.swing.JButton jButton_Termos;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;
@@ -3691,7 +3666,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
@@ -3699,6 +3673,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
+    private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel24;

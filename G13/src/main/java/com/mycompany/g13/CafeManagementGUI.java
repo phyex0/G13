@@ -19,6 +19,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     //succes or failed messages come with error JFrame
    public static JFrame error;
    String order_Text = "";
+   Drinks choosenDrink;
    
    //Update Time
    public static void updateDate(){
@@ -3212,7 +3213,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso" ,12 ,"Expresso");
-        Payment.choosenDrink.add(0, drink);
+        choosenDrink = drink;
     }//GEN-LAST:event_jButton41ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
@@ -3453,7 +3454,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso" ,12 ,"Gingerbreat Latte");
-        Payment.choosenDrink.add(0, drink);
+        choosenDrink = drink;
 
     }//GEN-LAST:event_jButton35ActionPerformed
 
@@ -3481,35 +3482,37 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        Drinks drink = new Drinks(choosenDrink.getType(), choosenDrink.getProduct_price(), choosenDrink.getProduct_name());
+        
         //----------------SIZE----------------//
         if(kucuk.isSelected())
-            Payment.choosenDrink.get(0).setSize("Küçük, ");
+            drink.setSize("Küçük, ");
 
         else if(orta.isSelected())
-            Payment.choosenDrink.get(0).setSize("Orta, ");
+            drink.setSize("Orta, ");
         
         else if(buyuk.isSelected())
-            Payment.choosenDrink.get(0).setSize("Büyük, ");
+            drink.setSize("Büyük, ");
 
 
         //----------------MILK----------------//
         if(yagli.isSelected())
-            Payment.choosenDrink.get(0).setMilk("Yağlı, ");
+            drink.setMilk("Yağlı, ");
 
         else if(yagsiz.isSelected())
-            Payment.choosenDrink.get(0).setMilk("Ysğsız, ");
+            drink.setMilk("Ysğsız, ");
 
         else if(yarimyagli.isSelected())
-            Payment.choosenDrink.get(0).setMilk("Yarım Yağlı, ");
+            drink.setMilk("Yarım Yağlı, ");
 
         else if(laktozsuz.isSelected())
-            Payment.choosenDrink.get(0).setMilk("Laktozsuz, ");
+            drink.setMilk("Laktozsuz, ");
 
         else if(bademsutu.isSelected())
-            Payment.choosenDrink.get(0).setMilk("Badem Sütlü, ");
+            drink.setMilk("Badem Sütlü, ");
 
         else if(soyasutu.isSelected())
-            Payment.choosenDrink.get(0).setMilk("Soya Sütlü, ");
+            drink.setMilk("Soya Sütlü, ");
 
         //----------------SYRUP----------------//
         String syrup = "";
@@ -3537,9 +3540,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         if(ahududu.isSelected())
             syrup += "Ahududulu, ";
 
-        Payment.choosenDrink.get(0).setSyrup(syrup);
-        Payment.givenOrder.add(Payment.choosenDrink.get(0));
+        
+        drink.setSyrup(syrup);
+        Payment.givenOrder.add(drink);
         order.setText(Payment.display());
+        choosenDrink = null;
         
 
     }//GEN-LAST:event_jButton5ActionPerformed
@@ -3547,13 +3552,13 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso", 12, "Coffee Mocha");
-        Payment.choosenDrink.add(0, drink);
+        choosenDrink = drink;
     }//GEN-LAST:event_jButton39ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso", 12, "Tuffee Nut Latte");
-        Payment.choosenDrink.add(0, drink);
+        choosenDrink = drink;
     }//GEN-LAST:event_jButton36ActionPerformed
 
     /**

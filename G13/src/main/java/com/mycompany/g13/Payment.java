@@ -5,41 +5,46 @@ import java.util.ArrayList;
 
 public class Payment {
     
-    public static ArrayList givenOrder = new ArrayList<>();
+    public static ArrayList<Products> givenOrder = new ArrayList<Products>();
     
-    public static void removeLastOrder(ArrayList ar){
+    
+    public static String display()
+    {
+        String result = "";
+        for(int i = 0; i < givenOrder.size(); i++)
+        {
+            Products product = givenOrder.get(i);
+            result += product.toString();
+        }
         
-        if(ar.size()>=1)
-            ar.remove(ar.size()-1);
-        else
+        return result;
+    }
+    
+    public static void removeLastOrder(){
+        
+        if(givenOrder.size() == 0)
+        {
             System.out.println("Empty list");
+        }
+        else
+        {
+            givenOrder.remove(givenOrder.size()-1);
+        }
     }
     
-    public static void clearAllOrders(ArrayList ar){      
-        ar.clear();
-    }
-    
-    public static int calculateStar(ArrayList<Products> ar){
+    public static int calculateStar(){
         int star =0;
-        for(Products a: ar)
+        for(Products a: givenOrder)
             star+= a.getProduct_price();
         return star/10;
     }
     
-    public static double tax(ArrayList<Products> ar){
+    public static double tax(){
         int tax = 0;
-        for(Products p: ar)
+        for(Products p: givenOrder)
             tax += p.getProduct_price();
         return tax*0.18;
     }
     
-  
-    public static String toString(ArrayList ar){
-        String result = "";
-        for(int i=0; i< ar.size();i++){
-            result+=ar.get(i)+"\n";
-        }
-        return result;
-    }
     
 }

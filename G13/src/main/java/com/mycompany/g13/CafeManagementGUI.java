@@ -3204,8 +3204,9 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
 
     private void jButton104ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton104ActionPerformed
         // TODO add your handling code here:
-        removeLastOrder(givenOrder);
-        order.setText(givenOrder.toString());
+        Payment.removeLastOrder();
+        order.setText(Payment.display());
+
     }//GEN-LAST:event_jButton104ActionPerformed
 
     private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
@@ -3339,8 +3340,8 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private void jButton_KupaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_KupaActionPerformed
         // TODO add your handling code here:
         Gifts gift = new Gifts(10.0, "Kupa");
-        givenOrder.add(gift);
-        order.setText(givenOrder.toString());
+        Payment.givenOrder.add(gift);
+        order.setText(Payment.display());
         
         
         
@@ -3353,113 +3354,113 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private void jButton_TermosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_TermosActionPerformed
         // TODO add your handling code here:
         Gifts gift = new Gifts(20.0, "Termos");
-        givenOrder.add(gift);
-        order.setText(givenOrder.toString());
+        Payment.givenOrder.add(gift);
+        order.setText(Payment.display());
     }//GEN-LAST:event_jButton_TermosActionPerformed
 
     private void jButton_FiestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_FiestaActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Sandviç", 10.0, "Fiesta");
-        order_Text += food.toString();
-        order.setText(order_Text);
+        Payment.givenOrder.add(food);
+        order.setText(Payment.display());
     }//GEN-LAST:event_jButton_FiestaActionPerformed
 
     private void jButton_ReyhanliTostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ReyhanliTostActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Sandviç", 10.0, "Reyhanlı Peynirli Tost");
-        order_Text += food.toString();
-        order.setText(order_Text);
+        Payment.givenOrder.add(food);
+        order.setText(Payment.display());
     }//GEN-LAST:event_jButton_ReyhanliTostActionPerformed
 
     private void jButton_EzineliSandvicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_EzineliSandvicActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Sandviç", 10.0, "Ezine Peynirli Sandviç");
-        order_Text += food.toString();
-        order.setText(order_Text);
+        Payment.givenOrder.add(food);
+        order.setText(Payment.display());
     }//GEN-LAST:event_jButton_EzineliSandvicActionPerformed
 
     private void jButton_MozarellaSandvicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_MozarellaSandvicActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Sandviç", 10.0, "Mozzarella Sandviç");
-        order_Text += food.toString();
-        order.setText(order_Text);
+        Payment.givenOrder.add(food);
+        order.setText(Payment.display());
     }//GEN-LAST:event_jButton_MozarellaSandvicActionPerformed
 
     private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Kurabiye", 10.0, "Triple Chocolate Cookie");
-        order_Text += food.toString();
-        order.setText(order_Text);
+        Payment.givenOrder.add(food);
+        order.setText(Payment.display());
     }//GEN-LAST:event_jButton49ActionPerformed
 
     private void jButton_MistoCookieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_MistoCookieActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Kurabiye", 10.0, "Miato Cookie");
-        order_Text += food.toString();
-        order.setText(order_Text);
+        Payment.givenOrder.add(food);
+        order.setText(Payment.display());
     }//GEN-LAST:event_jButton_MistoCookieActionPerformed
 
     private void jButton_DopdoluFitCookieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_DopdoluFitCookieActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Kurabiye", 10.0, "Dopdolu Fit Cookie");
-        order_Text += food.toString();
-        order.setText(order_Text);
+        Payment.givenOrder.add(food);
+        order.setText(Payment.display());
     }//GEN-LAST:event_jButton_DopdoluFitCookieActionPerformed
 
     private void jButton_BrownieCheesecakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_BrownieCheesecakeActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Pasta", 10.0, "Brownie Cheesecake");
-        order_Text += food.toString();
-        order.setText(order_Text);
+        Payment.givenOrder.add(food);
+        order.setText(Payment.display());
     }//GEN-LAST:event_jButton_BrownieCheesecakeActionPerformed
 
     private void jButton_KremalıHavucluKekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_KremalıHavucluKekActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Pasta", 10.0, "Kremalı Havuçlu Kek");
-        order_Text += food.toString();
-        order.setText(order_Text);
+        Payment.givenOrder.add(food);
+        order.setText(Payment.display());
     }//GEN-LAST:event_jButton_KremalıHavucluKekActionPerformed
 
     private void jButton_ProfiterolluPastaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ProfiterolluPastaActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Pasta", 10.0, "Profiterollü Pasta");
-        order_Text += food.toString();
-        order.setText(order_Text);
+        Payment.givenOrder.add(food);
+        order.setText(Payment.display());
     }//GEN-LAST:event_jButton_ProfiterolluPastaActionPerformed
 
     private void jButton_LimonluCheesecakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_LimonluCheesecakeActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Pasta", 10.0, "Limonlu Cheesecake");
-        order_Text += food.toString();
-        order.setText(order_Text);
+        Payment.givenOrder.add(food);
+        order.setText(Payment.display());
     }//GEN-LAST:event_jButton_LimonluCheesecakeActionPerformed
 
     private void jButton_KinoalıSalataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_KinoalıSalataActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Salata", 10.0, "Kinoalı Salata");
-        order_Text += food.toString();
-        order.setText(order_Text);
+        Payment.givenOrder.add(food);
+        order.setText(Payment.display());
     }//GEN-LAST:event_jButton_KinoalıSalataActionPerformed
 
     private void jButton_MeyveliveYogurtluParfeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_MeyveliveYogurtluParfeActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Salata", 10.0, "Meyveli ve Yoğurtlu Parfe");
-        order_Text += food.toString();
-        order.setText(order_Text);
+        Payment.givenOrder.add(food);
+        order.setText(Payment.display());
     }//GEN-LAST:event_jButton_MeyveliveYogurtluParfeActionPerformed
 
     private void jButton_IzgaraTavukluSalataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_IzgaraTavukluSalataActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Salata", 10.0, "Izgara Tavuklu Salata");
-        order_Text += food.toString();
-        order.setText(order_Text);
+        Payment.givenOrder.add(food);
+        order.setText(Payment.display());
     }//GEN-LAST:event_jButton_IzgaraTavukluSalataActionPerformed
 
     private void jButton_AnanaslıChiaPudingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_AnanaslıChiaPudingActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Salata", 10.0, "Ananaslı Chia Salata");
-        order_Text += food.toString();
-        order.setText(order_Text);
+        Payment.givenOrder.add(food);
+        order.setText(Payment.display());
     }//GEN-LAST:event_jButton_AnanaslıChiaPudingActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
@@ -3468,8 +3469,8 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
 
     private void siparisresetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siparisresetActionPerformed
         // TODO add your handling code here:
-        clearAllOrders(givenOrder);
-        order.setText(givenOrder.toString());
+        Payment.givenOrder.clear();
+        order.setText(Payment.display());
     }//GEN-LAST:event_siparisresetActionPerformed
 
     /**

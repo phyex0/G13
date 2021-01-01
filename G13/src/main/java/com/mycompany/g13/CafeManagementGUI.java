@@ -15,6 +15,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class CafeManagementGUI extends javax.swing.JFrame {
     
    public static JFrame error;
+   String order_Text = "";
    //Update Time
    public static void updateDate(){
         Thread Clock = new Thread(){
@@ -163,10 +164,10 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jLayeredPane1 = new javax.swing.JLayeredPane();
         hediyelik = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        jButton10 = new javax.swing.JButton();
+        jButton_Kupa = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
+        jButton_Termos = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
         jButton15 = new javax.swing.JButton();
         panefood = new javax.swing.JLayeredPane();
@@ -177,10 +178,10 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         bsandavic = new javax.swing.JButton();
         bkurabiye = new javax.swing.JButton();
         bsalata = new javax.swing.JButton();
-        jButton55 = new javax.swing.JButton();
-        jButton56 = new javax.swing.JButton();
-        jButton57 = new javax.swing.JButton();
-        jButton58 = new javax.swing.JButton();
+        jButton_ReyhanliTost = new javax.swing.JButton();
+        jButton_Fiesta = new javax.swing.JButton();
+        jButton_EzineliSandvic = new javax.swing.JButton();
+        jButton_MozarellaSandvic = new javax.swing.JButton();
         kurabiye = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
@@ -189,19 +190,19 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         bkurabiye1 = new javax.swing.JButton();
         bsalata1 = new javax.swing.JButton();
         jButton49 = new javax.swing.JButton();
-        jButton50 = new javax.swing.JButton();
-        jButton51 = new javax.swing.JButton();
+        jButton_MistoCookie = new javax.swing.JButton();
+        jButton_DopdoluFitCookie = new javax.swing.JButton();
         pasta = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
-        jButton44 = new javax.swing.JButton();
+        jButton_BrownieCheesecake = new javax.swing.JButton();
         jPanel15 = new javax.swing.JPanel();
         bpasta2 = new javax.swing.JButton();
         bsandavic2 = new javax.swing.JButton();
         bkurabiye2 = new javax.swing.JButton();
         bsalata2 = new javax.swing.JButton();
-        jButton52 = new javax.swing.JButton();
-        jButton53 = new javax.swing.JButton();
-        jButton54 = new javax.swing.JButton();
+        jButton_KremalıHavucluKek = new javax.swing.JButton();
+        jButton_LimonluCheesecake = new javax.swing.JButton();
+        jButton_ProfiterolluPasta = new javax.swing.JButton();
         salata = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
         jPanel16 = new javax.swing.JPanel();
@@ -209,10 +210,10 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         bsandavic3 = new javax.swing.JButton();
         bkurabiye3 = new javax.swing.JButton();
         bsalata3 = new javax.swing.JButton();
-        jButton45 = new javax.swing.JButton();
-        jButton46 = new javax.swing.JButton();
-        jButton47 = new javax.swing.JButton();
-        jButton48 = new javax.swing.JButton();
+        jButton_KinoalıSalata = new javax.swing.JButton();
+        jButton_IzgaraTavukluSalata = new javax.swing.JButton();
+        jButton_MeyveliveYogurtluParfe = new javax.swing.JButton();
+        jButton_AnanaslıChiaPuding = new javax.swing.JButton();
         panedrink = new javax.swing.JLayeredPane();
         panespresso = new javax.swing.JPanel();
         jPanel22 = new javax.swing.JPanel();
@@ -752,13 +753,13 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(236, 231, 231));
         jPanel4.setPreferredSize(new java.awt.Dimension(650, 400));
 
-        jButton10.setBackground(new java.awt.Color(0, 102, 51));
-        jButton10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setText("KUPA");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Kupa.setBackground(new java.awt.Color(0, 102, 51));
+        jButton_Kupa.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton_Kupa.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_Kupa.setText("KUPA");
+        jButton_Kupa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                jButton_KupaActionPerformed(evt);
             }
         });
 
@@ -772,10 +773,15 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jButton12.setForeground(new java.awt.Color(255, 255, 255));
         jButton12.setText("TERMOS");
 
-        jButton13.setBackground(new java.awt.Color(0, 102, 51));
-        jButton13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton13.setForeground(new java.awt.Color(255, 255, 255));
-        jButton13.setText("TERMOS");
+        jButton_Termos.setBackground(new java.awt.Color(0, 102, 51));
+        jButton_Termos.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton_Termos.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_Termos.setText("TERMOS");
+        jButton_Termos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_TermosActionPerformed(evt);
+            }
+        });
 
         jButton14.setBackground(new java.awt.Color(0, 102, 51));
         jButton14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -795,9 +801,9 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton_Kupa, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29)
-                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton_Termos, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
                         .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -814,8 +820,8 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_Kupa, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_Termos, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -912,31 +918,51 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jButton55.setBackground(new java.awt.Color(14, 30, 21));
-        jButton55.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton55.setForeground(new java.awt.Color(255, 255, 255));
-        jButton55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Reyhanli-Peynirli-Tost_tcm95-38143_w1024_n.png"))); // NOI18N
-        jButton55.setText("Reyhanlı Peynirli Tost");
+        jButton_ReyhanliTost.setBackground(new java.awt.Color(14, 30, 21));
+        jButton_ReyhanliTost.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_ReyhanliTost.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_ReyhanliTost.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Reyhanli-Peynirli-Tost_tcm95-38143_w1024_n.png"))); // NOI18N
+        jButton_ReyhanliTost.setText("Reyhanlı Peynirli Tost");
+        jButton_ReyhanliTost.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_ReyhanliTostActionPerformed(evt);
+            }
+        });
 
-        jButton56.setBackground(new java.awt.Color(14, 30, 21));
-        jButton56.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton56.setForeground(new java.awt.Color(255, 255, 255));
-        jButton56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fiesta_tcm95-19156_w1024_n.png"))); // NOI18N
-        jButton56.setText("Fiesta");
-        jButton56.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton_Fiesta.setBackground(new java.awt.Color(14, 30, 21));
+        jButton_Fiesta.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_Fiesta.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_Fiesta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fiesta_tcm95-19156_w1024_n.png"))); // NOI18N
+        jButton_Fiesta.setText("Fiesta");
+        jButton_Fiesta.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton_Fiesta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_FiestaActionPerformed(evt);
+            }
+        });
 
-        jButton57.setBackground(new java.awt.Color(14, 30, 21));
-        jButton57.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton57.setForeground(new java.awt.Color(255, 255, 255));
-        jButton57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ezine-Peynirli-Sandvic_tcm95-65689_w1024_n.png"))); // NOI18N
-        jButton57.setText("Ezine Peynirli Sandviç");
+        jButton_EzineliSandvic.setBackground(new java.awt.Color(14, 30, 21));
+        jButton_EzineliSandvic.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_EzineliSandvic.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_EzineliSandvic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ezine-Peynirli-Sandvic_tcm95-65689_w1024_n.png"))); // NOI18N
+        jButton_EzineliSandvic.setText("Ezine Peynirli Sandviç");
+        jButton_EzineliSandvic.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_EzineliSandvicActionPerformed(evt);
+            }
+        });
 
-        jButton58.setBackground(new java.awt.Color(14, 30, 21));
-        jButton58.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton58.setForeground(new java.awt.Color(255, 255, 255));
-        jButton58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mozzarella-Sandvic_tcm95-19154_w1024_n.png"))); // NOI18N
-        jButton58.setText("Mozzarella Sandviç");
-        jButton58.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton_MozarellaSandvic.setBackground(new java.awt.Color(14, 30, 21));
+        jButton_MozarellaSandvic.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_MozarellaSandvic.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_MozarellaSandvic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Mozzarella-Sandvic_tcm95-19154_w1024_n.png"))); // NOI18N
+        jButton_MozarellaSandvic.setText("Mozzarella Sandviç");
+        jButton_MozarellaSandvic.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton_MozarellaSandvic.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_MozarellaSandvicActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -948,11 +974,11 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                     .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton57, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton58, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton56, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jButton_EzineliSandvic, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton_MozarellaSandvic, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton_Fiesta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
-                        .addComponent(jButton55)))
+                        .addComponent(jButton_ReyhanliTost)))
                 .addContainerGap(104, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -960,14 +986,14 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton55, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_ReyhanliTost, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(jButton56, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jButton_Fiesta, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton57, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton_EzineliSandvic, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton58, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton_MozarellaSandvic, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
                 .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -1060,20 +1086,35 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jButton49.setForeground(new java.awt.Color(255, 255, 255));
         jButton49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Triple-Chocolate-Cookie_tcm95-19171_w1024_n.png"))); // NOI18N
         jButton49.setText("Triple Chocolate Cookie");
+        jButton49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton49ActionPerformed(evt);
+            }
+        });
 
-        jButton50.setBackground(new java.awt.Color(14, 30, 21));
-        jButton50.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton50.setForeground(new java.awt.Color(255, 255, 255));
-        jButton50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Misto-Cookie_tcm95-19172_w1024_n.png"))); // NOI18N
-        jButton50.setText("Misto Cookie");
-        jButton50.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton_MistoCookie.setBackground(new java.awt.Color(14, 30, 21));
+        jButton_MistoCookie.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_MistoCookie.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_MistoCookie.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Misto-Cookie_tcm95-19172_w1024_n.png"))); // NOI18N
+        jButton_MistoCookie.setText("Misto Cookie");
+        jButton_MistoCookie.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton_MistoCookie.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_MistoCookieActionPerformed(evt);
+            }
+        });
 
-        jButton51.setBackground(new java.awt.Color(14, 30, 21));
-        jButton51.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton51.setForeground(new java.awt.Color(255, 255, 255));
-        jButton51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Dopdolu-Fit-Cookie_tcm95-49850_w1024_n.png"))); // NOI18N
-        jButton51.setText("Dopdolu Fit Cookie");
-        jButton51.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton_DopdoluFitCookie.setBackground(new java.awt.Color(14, 30, 21));
+        jButton_DopdoluFitCookie.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_DopdoluFitCookie.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_DopdoluFitCookie.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Dopdolu-Fit-Cookie_tcm95-49850_w1024_n.png"))); // NOI18N
+        jButton_DopdoluFitCookie.setText("Dopdolu Fit Cookie");
+        jButton_DopdoluFitCookie.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton_DopdoluFitCookie.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_DopdoluFitCookieActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -1084,8 +1125,8 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jButton49, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton50, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton51, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jButton_MistoCookie, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton_DopdoluFitCookie, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(124, Short.MAX_VALUE))
         );
@@ -1095,9 +1136,9 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jButton49, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton50, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton_MistoCookie, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton51, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton_DopdoluFitCookie, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE)
                 .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -1115,10 +1156,15 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jPanel11.setBackground(new java.awt.Color(236, 231, 231));
         jPanel11.setPreferredSize(new java.awt.Dimension(650, 400));
 
-        jButton44.setBackground(new java.awt.Color(0, 102, 51));
-        jButton44.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton44.setForeground(new java.awt.Color(255, 255, 255));
-        jButton44.setText("Brownie Cheesecake");
+        jButton_BrownieCheesecake.setBackground(new java.awt.Color(0, 102, 51));
+        jButton_BrownieCheesecake.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_BrownieCheesecake.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_BrownieCheesecake.setText("Brownie Cheesecake");
+        jButton_BrownieCheesecake.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_BrownieCheesecakeActionPerformed(evt);
+            }
+        });
 
         jPanel15.setBackground(new java.awt.Color(234, 229, 229));
         jPanel15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1190,20 +1236,35 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jButton52.setBackground(new java.awt.Color(0, 102, 51));
-        jButton52.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton52.setForeground(new java.awt.Color(255, 255, 255));
-        jButton52.setText("Kremalı Havuçlu Kek");
+        jButton_KremalıHavucluKek.setBackground(new java.awt.Color(0, 102, 51));
+        jButton_KremalıHavucluKek.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_KremalıHavucluKek.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_KremalıHavucluKek.setText("Kremalı Havuçlu Kek");
+        jButton_KremalıHavucluKek.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_KremalıHavucluKekActionPerformed(evt);
+            }
+        });
 
-        jButton53.setBackground(new java.awt.Color(0, 102, 51));
-        jButton53.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton53.setForeground(new java.awt.Color(255, 255, 255));
-        jButton53.setText("Limonlu Cheesecake");
+        jButton_LimonluCheesecake.setBackground(new java.awt.Color(0, 102, 51));
+        jButton_LimonluCheesecake.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_LimonluCheesecake.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_LimonluCheesecake.setText("Limonlu Cheesecake");
+        jButton_LimonluCheesecake.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_LimonluCheesecakeActionPerformed(evt);
+            }
+        });
 
-        jButton54.setBackground(new java.awt.Color(0, 102, 51));
-        jButton54.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton54.setForeground(new java.awt.Color(255, 255, 255));
-        jButton54.setText("Profiterollü Pasta");
+        jButton_ProfiterolluPasta.setBackground(new java.awt.Color(0, 102, 51));
+        jButton_ProfiterolluPasta.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_ProfiterolluPasta.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_ProfiterolluPasta.setText("Profiterollü Pasta");
+        jButton_ProfiterolluPasta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_ProfiterolluPastaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -1213,12 +1274,12 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addComponent(jButton44)
+                        .addComponent(jButton_BrownieCheesecake)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton52)
+                        .addComponent(jButton_KremalıHavucluKek)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton54, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton53, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton_ProfiterolluPasta, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton_LimonluCheesecake, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(104, Short.MAX_VALUE))
         );
@@ -1227,11 +1288,11 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton44, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton52, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton54, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton_BrownieCheesecake, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_KremalıHavucluKek, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_ProfiterolluPasta, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton53, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton_LimonluCheesecake, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 173, Short.MAX_VALUE)
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -1319,25 +1380,45 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jButton45.setBackground(new java.awt.Color(0, 102, 51));
-        jButton45.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton45.setForeground(new java.awt.Color(255, 255, 255));
-        jButton45.setText("Kinoalı Salata");
+        jButton_KinoalıSalata.setBackground(new java.awt.Color(0, 102, 51));
+        jButton_KinoalıSalata.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_KinoalıSalata.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_KinoalıSalata.setText("Kinoalı Salata");
+        jButton_KinoalıSalata.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_KinoalıSalataActionPerformed(evt);
+            }
+        });
 
-        jButton46.setBackground(new java.awt.Color(0, 102, 51));
-        jButton46.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton46.setForeground(new java.awt.Color(255, 255, 255));
-        jButton46.setText("Izgara Tavuklu Salata");
+        jButton_IzgaraTavukluSalata.setBackground(new java.awt.Color(0, 102, 51));
+        jButton_IzgaraTavukluSalata.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_IzgaraTavukluSalata.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_IzgaraTavukluSalata.setText("Izgara Tavuklu Salata");
+        jButton_IzgaraTavukluSalata.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_IzgaraTavukluSalataActionPerformed(evt);
+            }
+        });
 
-        jButton47.setBackground(new java.awt.Color(0, 102, 51));
-        jButton47.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton47.setForeground(new java.awt.Color(255, 255, 255));
-        jButton47.setText("Meyveli ve Yoğurtlu Parfe");
+        jButton_MeyveliveYogurtluParfe.setBackground(new java.awt.Color(0, 102, 51));
+        jButton_MeyveliveYogurtluParfe.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_MeyveliveYogurtluParfe.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_MeyveliveYogurtluParfe.setText("Meyveli ve Yoğurtlu Parfe");
+        jButton_MeyveliveYogurtluParfe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_MeyveliveYogurtluParfeActionPerformed(evt);
+            }
+        });
 
-        jButton48.setBackground(new java.awt.Color(0, 102, 51));
-        jButton48.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton48.setForeground(new java.awt.Color(255, 255, 255));
-        jButton48.setText("Ananaslı Chia Puding");
+        jButton_AnanaslıChiaPuding.setBackground(new java.awt.Color(0, 102, 51));
+        jButton_AnanaslıChiaPuding.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton_AnanaslıChiaPuding.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_AnanaslıChiaPuding.setText("Ananaslı Chia Puding");
+        jButton_AnanaslıChiaPuding.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_AnanaslıChiaPudingActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
@@ -1349,12 +1430,12 @@ public class CafeManagementGUI extends javax.swing.JFrame {
                     .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel12Layout.createSequentialGroup()
                         .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton46, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton45, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jButton_IzgaraTavukluSalata, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton_KinoalıSalata, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton47, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton48, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(jButton_MeyveliveYogurtluParfe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton_AnanaslıChiaPuding, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(104, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
@@ -1362,12 +1443,12 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             .addGroup(jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton45, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton47, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton_KinoalıSalata, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_MeyveliveYogurtluParfe, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton46, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton48, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton_IzgaraTavukluSalata, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_AnanaslıChiaPuding, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
                 .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -2312,6 +2393,11 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         jButton28.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton28.setForeground(new java.awt.Color(255, 255, 255));
         jButton28.setText("Blonde Espresso");
+        jButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton28ActionPerformed(evt);
+            }
+        });
 
         jButton29.setBackground(new java.awt.Color(0, 102, 51));
         jButton29.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -2853,7 +2939,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 772, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 772, Short.MAX_VALUE)
         );
 
         pack();
@@ -3236,14 +3322,134 @@ public class CafeManagementGUI extends javax.swing.JFrame {
             }
     }//GEN-LAST:event_jComboBox4ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void jButton_KupaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_KupaActionPerformed
         // TODO add your handling code here:
+        Gifts gift = new Gifts(10.0, "Kupa");
+        order_Text += gift.toString();
+        order.setText(order_Text);
         
-    }//GEN-LAST:event_jButton10ActionPerformed
+        
+    }//GEN-LAST:event_jButton_KupaActionPerformed
 
     private void kucukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kucukActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_kucukActionPerformed
+
+    private void jButton_TermosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_TermosActionPerformed
+        // TODO add your handling code here:
+        Gifts gift = new Gifts(20.0, "Termos");
+        order_Text += gift.toString();
+        order.setText(order_Text);
+    }//GEN-LAST:event_jButton_TermosActionPerformed
+
+    private void jButton_FiestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_FiestaActionPerformed
+        // TODO add your handling code here:
+        Food food = new Food("Sandviç", 10.0, "Fiesta");
+        order_Text += food.toString();
+        order.setText(order_Text);
+    }//GEN-LAST:event_jButton_FiestaActionPerformed
+
+    private void jButton_ReyhanliTostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ReyhanliTostActionPerformed
+        // TODO add your handling code here:
+        Food food = new Food("Sandviç", 10.0, "Reyhanlı Peynirli Tost");
+        order_Text += food.toString();
+        order.setText(order_Text);
+    }//GEN-LAST:event_jButton_ReyhanliTostActionPerformed
+
+    private void jButton_EzineliSandvicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_EzineliSandvicActionPerformed
+        // TODO add your handling code here:
+        Food food = new Food("Sandviç", 10.0, "Ezine Peynirli Sandviç");
+        order_Text += food.toString();
+        order.setText(order_Text);
+    }//GEN-LAST:event_jButton_EzineliSandvicActionPerformed
+
+    private void jButton_MozarellaSandvicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_MozarellaSandvicActionPerformed
+        // TODO add your handling code here:
+        Food food = new Food("Sandviç", 10.0, "Mozzarella Sandviç");
+        order_Text += food.toString();
+        order.setText(order_Text);
+    }//GEN-LAST:event_jButton_MozarellaSandvicActionPerformed
+
+    private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
+        // TODO add your handling code here:
+        Food food = new Food("Kurabiye", 10.0, "Triple Chocolate Cookie");
+        order_Text += food.toString();
+        order.setText(order_Text);
+    }//GEN-LAST:event_jButton49ActionPerformed
+
+    private void jButton_MistoCookieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_MistoCookieActionPerformed
+        // TODO add your handling code here:
+        Food food = new Food("Kurabiye", 10.0, "Miato Cookie");
+        order_Text += food.toString();
+        order.setText(order_Text);
+    }//GEN-LAST:event_jButton_MistoCookieActionPerformed
+
+    private void jButton_DopdoluFitCookieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_DopdoluFitCookieActionPerformed
+        // TODO add your handling code here:
+        Food food = new Food("Kurabiye", 10.0, "Dopdolu Fit Cookie");
+        order_Text += food.toString();
+        order.setText(order_Text);
+    }//GEN-LAST:event_jButton_DopdoluFitCookieActionPerformed
+
+    private void jButton_BrownieCheesecakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_BrownieCheesecakeActionPerformed
+        // TODO add your handling code here:
+        Food food = new Food("Pasta", 10.0, "Brownie Cheesecake");
+        order_Text += food.toString();
+        order.setText(order_Text);
+    }//GEN-LAST:event_jButton_BrownieCheesecakeActionPerformed
+
+    private void jButton_KremalıHavucluKekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_KremalıHavucluKekActionPerformed
+        // TODO add your handling code here:
+        Food food = new Food("Pasta", 10.0, "Kremalı Havuçlu Kek");
+        order_Text += food.toString();
+        order.setText(order_Text);
+    }//GEN-LAST:event_jButton_KremalıHavucluKekActionPerformed
+
+    private void jButton_ProfiterolluPastaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ProfiterolluPastaActionPerformed
+        // TODO add your handling code here:
+        Food food = new Food("Pasta", 10.0, "Profiterollü Pasta");
+        order_Text += food.toString();
+        order.setText(order_Text);
+    }//GEN-LAST:event_jButton_ProfiterolluPastaActionPerformed
+
+    private void jButton_LimonluCheesecakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_LimonluCheesecakeActionPerformed
+        // TODO add your handling code here:
+        Food food = new Food("Pasta", 10.0, "Limonlu Cheesecake");
+        order_Text += food.toString();
+        order.setText(order_Text);
+    }//GEN-LAST:event_jButton_LimonluCheesecakeActionPerformed
+
+    private void jButton_KinoalıSalataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_KinoalıSalataActionPerformed
+        // TODO add your handling code here:
+        Food food = new Food("Salata", 10.0, "Kinoalı Salata");
+        order_Text += food.toString();
+        order.setText(order_Text);
+    }//GEN-LAST:event_jButton_KinoalıSalataActionPerformed
+
+    private void jButton_MeyveliveYogurtluParfeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_MeyveliveYogurtluParfeActionPerformed
+        // TODO add your handling code here:
+        Food food = new Food("Salata", 10.0, "Meyveli ve Yoğurtlu Parfe");
+        order_Text += food.toString();
+        order.setText(order_Text);
+    }//GEN-LAST:event_jButton_MeyveliveYogurtluParfeActionPerformed
+
+    private void jButton_IzgaraTavukluSalataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_IzgaraTavukluSalataActionPerformed
+        // TODO add your handling code here:
+        Food food = new Food("Salata", 10.0, "Izgara Tavuklu Salata");
+        order_Text += food.toString();
+        order.setText(order_Text);
+    }//GEN-LAST:event_jButton_IzgaraTavukluSalataActionPerformed
+
+    private void jButton_AnanaslıChiaPudingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_AnanaslıChiaPudingActionPerformed
+        // TODO add your handling code here:
+        Food food = new Food("Salata", 10.0, "Ananaslı Chia Salata");
+        order_Text += food.toString();
+        order.setText(order_Text);
+    }//GEN-LAST:event_jButton_AnanaslıChiaPudingActionPerformed
+
+    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton28ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -3322,7 +3528,6 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private javax.swing.JPanel hediyelik;
     private javax.swing.JButton icecekb;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton100;
     private javax.swing.JButton jButton101;
     private javax.swing.JButton jButton102;
@@ -3346,7 +3551,6 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton119;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton120;
-    private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton2;
@@ -3368,21 +3572,7 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton41;
     private javax.swing.JButton jButton42;
     private javax.swing.JButton jButton43;
-    private javax.swing.JButton jButton44;
-    private javax.swing.JButton jButton45;
-    private javax.swing.JButton jButton46;
-    private javax.swing.JButton jButton47;
-    private javax.swing.JButton jButton48;
     private javax.swing.JButton jButton49;
-    private javax.swing.JButton jButton50;
-    private javax.swing.JButton jButton51;
-    private javax.swing.JButton jButton52;
-    private javax.swing.JButton jButton53;
-    private javax.swing.JButton jButton54;
-    private javax.swing.JButton jButton55;
-    private javax.swing.JButton jButton56;
-    private javax.swing.JButton jButton57;
-    private javax.swing.JButton jButton58;
     private javax.swing.JButton jButton59;
     private javax.swing.JButton jButton60;
     private javax.swing.JButton jButton61;
@@ -3424,6 +3614,22 @@ public class CafeManagementGUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton97;
     private javax.swing.JButton jButton98;
     private javax.swing.JButton jButton99;
+    private javax.swing.JButton jButton_AnanaslıChiaPuding;
+    private javax.swing.JButton jButton_BrownieCheesecake;
+    private javax.swing.JButton jButton_DopdoluFitCookie;
+    private javax.swing.JButton jButton_EzineliSandvic;
+    private javax.swing.JButton jButton_Fiesta;
+    private javax.swing.JButton jButton_IzgaraTavukluSalata;
+    private javax.swing.JButton jButton_KinoalıSalata;
+    private javax.swing.JButton jButton_KremalıHavucluKek;
+    private javax.swing.JButton jButton_Kupa;
+    private javax.swing.JButton jButton_LimonluCheesecake;
+    private javax.swing.JButton jButton_MeyveliveYogurtluParfe;
+    private javax.swing.JButton jButton_MistoCookie;
+    private javax.swing.JButton jButton_MozarellaSandvic;
+    private javax.swing.JButton jButton_ProfiterolluPasta;
+    private javax.swing.JButton jButton_ReyhanliTost;
+    private javax.swing.JButton jButton_Termos;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;

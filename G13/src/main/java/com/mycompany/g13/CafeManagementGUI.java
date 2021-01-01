@@ -40,10 +40,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         Clock.start();
     }
    
-   public Drinks drink;
-   
-   
-   
+
 
     /**
      * Creates new form CafeManagementGUI
@@ -338,14 +335,14 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         bademsutu = new javax.swing.JRadioButton();
         soyasutu = new javax.swing.JRadioButton();
         jPanel9 = new javax.swing.JPanel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jCheckBox3 = new javax.swing.JCheckBox();
-        jCheckBox4 = new javax.swing.JCheckBox();
-        jCheckBox5 = new javax.swing.JCheckBox();
-        jCheckBox6 = new javax.swing.JCheckBox();
-        jCheckBox7 = new javax.swing.JCheckBox();
-        jCheckBox8 = new javax.swing.JCheckBox();
+        karamel = new javax.swing.JCheckBox();
+        cikolata = new javax.swing.JCheckBox();
+        beyazcikolata = new javax.swing.JCheckBox();
+        hindistancevizi = new javax.swing.JCheckBox();
+        vanilya = new javax.swing.JCheckBox();
+        findik = new javax.swing.JCheckBox();
+        cilek = new javax.swing.JCheckBox();
+        ahududu = new javax.swing.JCheckBox();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
 
@@ -1470,6 +1467,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton36.setText("Toffee Nut Latte");
         jButton36.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton36.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton36ActionPerformed(evt);
+            }
+        });
 
         jButton37.setBackground(new java.awt.Color(14, 30, 21));
         jButton37.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1495,6 +1497,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton39.setText("Caffè Mocha");
         jButton39.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton39.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton39ActionPerformed(evt);
+            }
+        });
 
         jButton40.setBackground(new java.awt.Color(14, 30, 21));
         jButton40.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -2833,29 +2840,29 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jPanel9.setBackground(new java.awt.Color(232, 230, 191));
         jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ŞURUP", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
 
-        jCheckBox1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jCheckBox1.setText("Karamel");
+        karamel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        karamel.setText("Karamel");
 
-        jCheckBox2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jCheckBox2.setText("Çikolata");
+        cikolata.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        cikolata.setText("Çikolata");
 
-        jCheckBox3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jCheckBox3.setText("Beyaz Çikolata");
+        beyazcikolata.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        beyazcikolata.setText("Beyaz Çikolata");
 
-        jCheckBox4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jCheckBox4.setText("Hindistan Cevizi");
+        hindistancevizi.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        hindistancevizi.setText("Hindistan Cevizi");
 
-        jCheckBox5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jCheckBox5.setText("Vanilya");
+        vanilya.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        vanilya.setText("Vanilya");
 
-        jCheckBox6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jCheckBox6.setText("Fındık");
+        findik.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        findik.setText("Fındık");
 
-        jCheckBox7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jCheckBox7.setText("Çilek");
+        cilek.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        cilek.setText("Çilek");
 
-        jCheckBox8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jCheckBox8.setText("Ahududu");
+        ahududu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        ahududu.setText("Ahududu");
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -2864,35 +2871,35 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jCheckBox6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jCheckBox5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jCheckBox3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jCheckBox2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jCheckBox1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jCheckBox4, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
-                    .addComponent(jCheckBox7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jCheckBox8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(findik, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(vanilya, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(beyazcikolata, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(cikolata, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(karamel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(hindistancevizi, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
+                    .addComponent(cilek, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ahududu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jCheckBox1)
+                .addComponent(karamel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cikolata, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox3)
+                .addComponent(beyazcikolata)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox4)
+                .addComponent(hindistancevizi)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox5)
+                .addComponent(vanilya)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox6)
+                .addComponent(findik)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox7)
+                .addComponent(cilek)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox8)
+                .addComponent(ahududu)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -2906,6 +2913,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton5.setToolTipText("");
         jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton5.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 470, 160, 90));
 
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/github.png"))); // NOI18N
@@ -2928,7 +2940,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             .addGroup(MainPanelLayout.createSequentialGroup()
                 .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 769, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 769, Short.MAX_VALUE))
                 .addGap(0, 3, Short.MAX_VALUE))
         );
@@ -3199,6 +3211,8 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
 
     private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
         // TODO add your handling code here:
+        Drinks drink= new Drinks("Espresso" ,12 ,"Expresso");
+        Payment.choosenDrink.add(0, drink);
     }//GEN-LAST:event_jButton41ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
@@ -3438,9 +3452,9 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
         // TODO add your handling code here:
-        drink= new Drinks("Espresso",12,"Gingerbreat Latte");
-        givenOrder.add(drink);
-        order.setText(Payment.display());
+        Drinks drink= new Drinks("Espresso" ,12 ,"Gingerbreat Latte");
+        Payment.choosenDrink.add(0, drink);
+
     }//GEN-LAST:event_jButton35ActionPerformed
 
     private void bpasta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bpasta1ActionPerformed
@@ -3464,6 +3478,83 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         // TODO add your handling code here:
          menuchangefood(salata);
     }//GEN-LAST:event_bsalata1ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        //----------------SIZE----------------//
+        if(kucuk.isSelected())
+            Payment.choosenDrink.get(0).setSize("Küçük, ");
+
+        else if(orta.isSelected())
+            Payment.choosenDrink.get(0).setSize("Orta, ");
+        
+        else if(buyuk.isSelected())
+            Payment.choosenDrink.get(0).setSize("Büyük, ");
+
+
+        //----------------MILK----------------//
+        if(yagli.isSelected())
+            Payment.choosenDrink.get(0).setMilk("Yağlı, ");
+
+        else if(yagsiz.isSelected())
+            Payment.choosenDrink.get(0).setMilk("Ysğsız, ");
+
+        else if(yarimyagli.isSelected())
+            Payment.choosenDrink.get(0).setMilk("Yarım Yağlı, ");
+
+        else if(laktozsuz.isSelected())
+            Payment.choosenDrink.get(0).setMilk("Laktozsuz, ");
+
+        else if(bademsutu.isSelected())
+            Payment.choosenDrink.get(0).setMilk("Badem Sütlü, ");
+
+        else if(soyasutu.isSelected())
+            Payment.choosenDrink.get(0).setMilk("Soya Sütlü, ");
+
+        //----------------SYRUP----------------//
+        String syrup = "";
+        if(karamel.isSelected())
+            syrup += "Karamelli, ";
+        
+        if(cikolata.isSelected())
+            syrup += "Çikolatalı, ";
+        
+        if(beyazcikolata.isSelected())
+            syrup += "Beyaz Çikolatalı, ";
+
+        if(hindistancevizi.isSelected())
+            syrup += "Hindistan cevizli, ";
+
+        if(vanilya.isSelected())
+            syrup += "Çikolatalı, ";
+
+        if(findik.isSelected())
+            syrup += "Fındıklı, ";
+            
+        if(cilek.isSelected())
+            syrup += "Çilekli, ";
+        
+        if(ahududu.isSelected())
+            syrup += "Ahududulu, ";
+
+        Payment.choosenDrink.get(0).setSyrup(syrup);
+        Payment.givenOrder.add(Payment.choosenDrink.get(0));
+        order.setText(Payment.display());
+        
+
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Espresso", 12, "Coffee Mocha");
+        Payment.choosenDrink.add(0, drink);
+    }//GEN-LAST:event_jButton39ActionPerformed
+
+    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Espresso", 12, "Tuffee Nut Latte");
+        Payment.choosenDrink.add(0, drink);
+    }//GEN-LAST:event_jButton36ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -3514,8 +3605,10 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel MainPanel;
+    private javax.swing.JCheckBox ahududu;
     private javax.swing.JPanel allpan;
     private javax.swing.JRadioButton bademsutu;
+    private javax.swing.JCheckBox beyazcikolata;
     private javax.swing.JButton bkurabiye;
     private javax.swing.JButton bkurabiye2;
     private javax.swing.JButton bkurabiye3;
@@ -3537,9 +3630,13 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     public javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JPanel buttonpan;
     private javax.swing.JRadioButton buyuk;
+    private javax.swing.JCheckBox cikolata;
+    private javax.swing.JCheckBox cilek;
     private javax.swing.JPanel darkpan;
+    private javax.swing.JCheckBox findik;
     private static javax.swing.JLayeredPane girispan;
     private javax.swing.JPanel hediyelik;
+    private javax.swing.JCheckBox hindistancevizi;
     private javax.swing.JButton icecekb;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton100;
@@ -3642,14 +3739,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JButton jButton_MozarellaSandvic;
     private javax.swing.JButton jButton_ProfiterolluPasta;
     private javax.swing.JButton jButton_ReyhanliTost;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
-    private javax.swing.JCheckBox jCheckBox5;
-    private javax.swing.JCheckBox jCheckBox6;
-    private javax.swing.JCheckBox jCheckBox7;
-    private javax.swing.JCheckBox jCheckBox8;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
@@ -3706,6 +3795,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JButton kahvelerb;
+    private javax.swing.JCheckBox karamel;
     private javax.swing.JRadioButton kucuk;
     private javax.swing.JPanel kurabiye;
     private javax.swing.JRadioButton laktozsuz;
@@ -3727,6 +3817,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JRadioButton soyasutu;
     public static javax.swing.JPanel userpan;
     private javax.swing.JButton uyeg;
+    private javax.swing.JCheckBox vanilya;
     private javax.swing.JRadioButton yagli;
     private javax.swing.JRadioButton yagsiz;
     private javax.swing.JRadioButton yarimyagli;

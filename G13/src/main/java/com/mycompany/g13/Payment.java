@@ -6,6 +6,7 @@ import java.util.ArrayList;
 public class Payment {
     
     public static ArrayList<Products> givenOrder = new ArrayList<Products>();
+    public static ArrayList<Drinks> choosenDrink = new ArrayList<Drinks>();
     
     
     public static String display()

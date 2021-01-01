@@ -76,6 +76,11 @@ public  class Drinks extends Products implements Sizeable {
 
     @Override
     public void setDrinkFeatures(String size, String milk, String extras) {
-        if(getType().equalsIgnoreCase("Şişelenmiş"))
+        if(getType().equalsIgnoreCase("Şişelenmiş")){
+            setSize(size);
+            setMilk(milk);
+            setSyrup(extras);
+        
+        }
     }
 }

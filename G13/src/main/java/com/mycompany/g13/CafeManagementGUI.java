@@ -1,11 +1,11 @@
 package com.mycompany.g13;
 
+import static com.mycompany.g13.Payment.*;
 import com.mycompany.g13.repository.ClientRepository;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import javax.swing.ButtonGroup;
 import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
@@ -558,6 +558,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         siparisreset.setForeground(new java.awt.Color(255, 255, 255));
         siparisreset.setText("TEMİZLE");
         siparisreset.setActionCommand("SİPARİŞİ TEMİZLE");
+        siparisreset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siparisresetActionPerformed(evt);
+            }
+        });
 
         yenisiparis.setBackground(new java.awt.Color(0, 153, 51));
         yenisiparis.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -2946,7 +2951,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 772, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 772, Short.MAX_VALUE)
         );
 
         pack();
@@ -3199,6 +3204,8 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
 
     private void jButton104ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton104ActionPerformed
         // TODO add your handling code here:
+        removeLastOrder(givenOrder);
+        order.setText(givenOrder.toString());
     }//GEN-LAST:event_jButton104ActionPerformed
 
     private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
@@ -3332,8 +3339,9 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private void jButton_KupaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_KupaActionPerformed
         // TODO add your handling code here:
         Gifts gift = new Gifts(10.0, "Kupa");
-        order_Text += gift.toString();
-        order.setText(order_Text);
+        givenOrder.add(gift);
+        order.setText(givenOrder.toString());
+        
         
         
     }//GEN-LAST:event_jButton_KupaActionPerformed
@@ -3345,8 +3353,8 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private void jButton_TermosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_TermosActionPerformed
         // TODO add your handling code here:
         Gifts gift = new Gifts(20.0, "Termos");
-        order_Text += gift.toString();
-        order.setText(order_Text);
+        givenOrder.add(gift);
+        order.setText(givenOrder.toString());
     }//GEN-LAST:event_jButton_TermosActionPerformed
 
     private void jButton_FiestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_FiestaActionPerformed
@@ -3457,6 +3465,12 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void siparisresetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siparisresetActionPerformed
+        // TODO add your handling code here:
+        clearAllOrders(givenOrder);
+        order.setText(givenOrder.toString());
+    }//GEN-LAST:event_siparisresetActionPerformed
 
     /**
      * @param args the command line arguments
@@ -3705,7 +3719,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JPanel kurabiye;
     private javax.swing.JRadioButton laktozsuz;
     private javax.swing.JPanel mediumpan;
-    private java.awt.TextArea order;
+    public java.awt.TextArea order;
     private javax.swing.JRadioButton orta;
     private javax.swing.JLayeredPane paketkahvepan;
     private javax.swing.JPanel pancay;

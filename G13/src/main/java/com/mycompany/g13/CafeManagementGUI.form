@@ -563,6 +563,9 @@
               <AccessibilityProperties>
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
               </AccessibilityProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel1">
               <Properties>
@@ -612,6 +615,9 @@
                 <Property name="text" type="java.lang.String" value="TEM&#x130;ZLE"/>
                 <Property name="actionCommand" type="java.lang.String" value="S&#x130;PAR&#x130;&#x15e;&#x130; TEM&#x130;ZLE"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="siparisresetActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="yenisiparis">
               <Properties>

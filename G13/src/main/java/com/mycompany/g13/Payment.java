@@ -5,9 +5,7 @@ import java.util.ArrayList;
 
 public class Payment {
     
-    public static ArrayList<Products> givenOrder = new ArrayList<Products>();
-    
-   
+    public static ArrayList givenOrder = new ArrayList<>();
     
     public static void removeLastOrder(ArrayList ar){
         

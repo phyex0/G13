@@ -73,7 +73,7 @@ public  class Drinks extends Products implements Sizeable {
 
     @Override
     public void setDrinkFeatures() {
-        
+        if(type.equalsIgnoreCase(""))
         
        
     }

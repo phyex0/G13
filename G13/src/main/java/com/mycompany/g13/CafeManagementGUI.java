@@ -48,6 +48,17 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
      */
     public CafeManagementGUI() {
         initComponents();
+        //action performend 
+        kucuk.setActionCommand("Küçük");
+        orta.setActionCommand("Orta");
+        buyuk.setActionCommand("Büyük");
+        yagli.setActionCommand("Yağlı");
+        yagsiz.setActionCommand("Yağsız");
+        yarimyagli.setActionCommand("Yarım Yağlı");
+        laktozsuz.setActionCommand("Laktozsuz");
+        bademsutu.setActionCommand("Badem Sütü");
+        soyasutu.setActionCommand("Soya Sütü");
+        
         buttonGroup1.add(kucuk);
         buttonGroup1.add(orta);
         buttonGroup1.add(buyuk);
@@ -3483,36 +3494,12 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         Drinks drink = new Drinks(choosenDrink.getType(), choosenDrink.getProduct_price(), choosenDrink.getProduct_name());
+        actionPerformed(evt);
+        if(!drink.getType().equalsIgnoreCase("Şişelenmiş"))
+            drink.setDrinkFeatures(buttonGroup1.getSelection().getActionCommand(), buttonGroup2.getSelection().getActionCommand(), "boş");
         
-        //----------------SIZE----------------//
-        if(kucuk.isSelected())
-            drink.setSize("Küçük, ");
-
-        else if(orta.isSelected())
-            drink.setSize("Orta, ");
-        
-        else if(buyuk.isSelected())
-            drink.setSize("Büyük, ");
-
-
-        //----------------MILK----------------//
-        if(yagli.isSelected())
-            drink.setMilk("Yağlı, ");
-
-        else if(yagsiz.isSelected())
-            drink.setMilk("Ysğsız, ");
-
-        else if(yarimyagli.isSelected())
-            drink.setMilk("Yarım Yağlı, ");
-
-        else if(laktozsuz.isSelected())
-            drink.setMilk("Laktozsuz, ");
-
-        else if(bademsutu.isSelected())
-            drink.setMilk("Badem Sütlü, ");
-
-        else if(soyasutu.isSelected())
-            drink.setMilk("Soya Sütlü, ");
+           
+        /*
 
         //----------------SYRUP----------------//
         String syrup = "";
@@ -3540,8 +3527,8 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         if(ahududu.isSelected())
             syrup += "Ahududulu, ";
 
-        
-        drink.setSyrup(syrup);
+        */
+        //drink.setSyrup(syrup);
         Payment.givenOrder.add(drink);
         order.setText(Payment.display());
         choosenDrink = null;
@@ -3831,8 +3818,13 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JButton yiyecekb;
     // End of variables declaration//GEN-END:variables
 
-    @Override
+  
+   @Override
     public void actionPerformed(ActionEvent e) {
         
+        
     }
+            
+        
+    
 }

@@ -1,8 +1,10 @@
 package com.mycompany.g13;
 
+import javax.swing.ButtonGroup;
+
 public  class Drinks extends Products implements Sizeable {
     
-    private String type,size,milk,syrup;
+    private String type,size="Küçük",milk="Yağsız",syrup="";
 
     public Drinks() {}
     
@@ -71,10 +73,9 @@ public  class Drinks extends Products implements Sizeable {
         return super.toString(); //To change body of generated methods, choose Tools | Templates.
     }
 
+
     @Override
-    public void setDrinkFeatures() {
-        if(!type.equalsIgnoreCase("Şişelenmiş")){
-            
-        }
+    public void setDrinkFeatures(String size, String milk, String extras) {
+        if(getType().equalsIgnoreCase("Şişelenmiş"))
     }
 }

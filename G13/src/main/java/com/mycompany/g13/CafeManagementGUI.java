@@ -16,9 +16,10 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class CafeManagementGUI extends javax.swing.JFrame implements ActionListener{
-    
+    //succes or failed messages come with error JFrame
    public static JFrame error;
    String order_Text = "";
+   
    //Update Time
    public static void updateDate(){
         Thread Clock = new Thread(){
@@ -38,6 +39,8 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         };
         Clock.start();
     }
+   
+   public Drinks drink;
    
    
    
@@ -1489,6 +1492,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gingerbread-latte_tcm95-66840_w1024_n.png"))); // NOI18N
         jButton35.setText("Gingerbread Latte");
         jButton35.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton35ActionPerformed(evt);
+            }
+        });
 
         jButton36.setBackground(new java.awt.Color(14, 30, 21));
         jButton36.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -2951,7 +2959,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 772, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 772, Short.MAX_VALUE)
         );
 
         pack();
@@ -3473,6 +3481,13 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         order.setText(Payment.display());
     }//GEN-LAST:event_siparisresetActionPerformed
 
+    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+        // TODO add your handling code here:
+        drink= new Drinks("Espresso",12,"Gingerbreat Latte");
+        givenOrder.add(drink);
+        order.setText(Payment.display());
+    }//GEN-LAST:event_jButton35ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -3541,8 +3556,8 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JButton bsandavic1;
     private javax.swing.JButton bsandavic2;
     private javax.swing.JButton bsandavic3;
-    private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.ButtonGroup buttonGroup2;
+    public javax.swing.ButtonGroup buttonGroup1;
+    public javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JPanel buttonpan;
     private javax.swing.JRadioButton buyuk;
     private javax.swing.JPanel darkpan;

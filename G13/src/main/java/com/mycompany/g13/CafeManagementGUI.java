@@ -3529,37 +3529,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         if(!drink.getType().equalsIgnoreCase("Şişelenmiş"))
             drink.setDrinkFeatures(buttonGroup1.getSelection().getActionCommand(), buttonGroup2.getSelection().getActionCommand(), syrup);
         
-           
-        /*
-
-        //----------------SYRUP----------------//
-        String syrup = "";
-        if(karamel.isSelected())
-            syrup += "Karamelli, ";
-        
-        if(cikolata.isSelected())
-            syrup += "Çikolatalı, ";
-        
-        if(beyazcikolata.isSelected())
-            syrup += "Beyaz Çikolatalı, ";
-
-        if(hindistancevizi.isSelected())
-            syrup += "Hindistan cevizli, ";
-
-        if(vanilya.isSelected())
-            syrup += "Çikolatalı, ";
-
-        if(findik.isSelected())
-            syrup += "Fındıklı, ";
-            
-        if(cilek.isSelected())
-            syrup += "Çilekli, ";
-        
-        if(ahududu.isSelected())
-            syrup += "Ahududulu, ";
-
-        */
-        //drink.setSyrup(syrup);
         Payment.givenOrder.add(drink);
         order.setText(Payment.display());
         choosenDrink = null;

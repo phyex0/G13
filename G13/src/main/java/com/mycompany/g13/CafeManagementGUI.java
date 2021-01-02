@@ -6,12 +6,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import java.util.ArrayList;
 
 
 @SpringBootApplication
@@ -20,6 +22,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
    public static JFrame error;
    String order_Text = "";
    Drinks choosenDrink;
+   ArrayList<JCheckBox> checkboxes = new ArrayList<JCheckBox>();
    
    //Update Time
    public static void updateDate(){
@@ -49,15 +52,15 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     public CafeManagementGUI() {
         initComponents();
         //action performend 
-        kucuk.setActionCommand("Küçük");
-        orta.setActionCommand("Orta");
-        buyuk.setActionCommand("Büyük");
-        yagli.setActionCommand("Yağlı");
-        yagsiz.setActionCommand("Yağsız");
-        yarimyagli.setActionCommand("Yarım Yağlı");
-        laktozsuz.setActionCommand("Laktozsuz");
-        bademsutu.setActionCommand("Badem Sütü");
-        soyasutu.setActionCommand("Soya Sütü");
+        kucuk.setActionCommand("Küçük, ");
+        orta.setActionCommand("Orta, ");
+        buyuk.setActionCommand("Büyük, ");
+        yagli.setActionCommand("Yağlı, ");
+        yagsiz.setActionCommand("Yağsız, ");
+        yarimyagli.setActionCommand("Yarım Yağlı, ");
+        laktozsuz.setActionCommand("Laktozsuz, ");
+        bademsutu.setActionCommand("Badem Sütlü, ");
+        soyasutu.setActionCommand("Soya Sütlü, ");
         
         buttonGroup1.add(kucuk);
         buttonGroup1.add(orta);
@@ -68,6 +71,24 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         buttonGroup2.add(laktozsuz);
         buttonGroup2.add(bademsutu);
         buttonGroup2.add(soyasutu);
+        
+        karamel.setActionCommand("Karamelli");
+        cikolata.setActionCommand("Çikolatalı");
+        beyazcikolata.setActionCommand("Beyaz Çikolatalı");
+        hindistancevizi.setActionCommand("Hindistan Cevizli");
+        vanilya.setActionCommand("Vanilyalı");
+        findik.setActionCommand("Findikli");
+        cilek.setActionCommand("Çilekli");
+        ahududu.setActionCommand("Ahududulu");
+        
+        checkboxes.add(karamel);
+        checkboxes.add(cikolata);
+        checkboxes.add(beyazcikolata);
+        checkboxes.add(hindistancevizi);
+        checkboxes.add(vanilya);
+        checkboxes.add(findik);
+        checkboxes.add(cilek);
+        checkboxes.add(ahududu);
         
         
       
@@ -2952,7 +2973,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             .addGroup(MainPanelLayout.createSequentialGroup()
                 .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 769, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 769, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 769, Short.MAX_VALUE))
                 .addGap(0, 3, Short.MAX_VALUE))
         );
@@ -3495,8 +3516,18 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         // TODO add your handling code here:
         Drinks drink = new Drinks(choosenDrink.getType(), choosenDrink.getProduct_price(), choosenDrink.getProduct_name());
         actionPerformed(evt);
+        String syrup = "";
+        for ( JCheckBox checkbox : checkboxes ) 
+        {
+            if( checkbox.isSelected() )
+            {
+                syrup += checkbox.getActionCommand() + ", ";
+            }
+        }
+        
+        
         if(!drink.getType().equalsIgnoreCase("Şişelenmiş"))
-            drink.setDrinkFeatures(buttonGroup1.getSelection().getActionCommand(), buttonGroup2.getSelection().getActionCommand(), "boş");
+            drink.setDrinkFeatures(buttonGroup1.getSelection().getActionCommand(), buttonGroup2.getSelection().getActionCommand(), syrup);
         
            
         /*

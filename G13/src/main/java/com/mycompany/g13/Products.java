@@ -22,9 +22,6 @@ public abstract class Products {
         Products.total_price = total_price;
     }
     
-    
-    
-
     public double getProduct_price() {
         return product_price;
     }
@@ -41,11 +38,9 @@ public abstract class Products {
         this.product_name = product_name;
     }
     
-    
     @Override
     public String toString(){
         return this.product_name + " is " + this.product_price+"$\n";
     }
     
-       
 }

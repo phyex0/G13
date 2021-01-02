@@ -6,8 +6,7 @@ import java.util.ArrayList;
 public class Payment {
     
     public static ArrayList<Products> givenOrder = new ArrayList<Products>();
-    
-    
+     
     public static String display()
     {
         String result = "";

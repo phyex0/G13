@@ -1,17 +1,15 @@
 package com.mycompany.g13;
 
 public class PacketedProducts extends Products {
-    private String kafein,profile,aroma;
+    
+    private String profile;
 
     public PacketedProducts() {}
 
     public PacketedProducts(String kafein, String profile, String aroma, double product_price, String product_name) {
         super(product_price, product_name);
-        this.profile = profile;
-       
+        this.profile = profile; 
     }
-
-   
 
     public String getProfile() {
         return profile;
@@ -20,8 +18,6 @@ public class PacketedProducts extends Products {
     public void setProfile(String profile) {
         this.profile = profile;
     }
-
-    
 
     @Override
     public void setProduct_name(String product_name) {

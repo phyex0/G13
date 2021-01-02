@@ -1,7 +1,5 @@
 package com.mycompany.g13;
 
-import javax.swing.ButtonGroup;
-
 public  class Drinks extends Products implements Sizeable {
     
     private String type,size="Küçük",milk="Yağsız",syrup="";

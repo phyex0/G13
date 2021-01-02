@@ -6,7 +6,8 @@ import java.util.ArrayList;
 public class Payment {
     
     public static ArrayList<Products> givenOrder = new ArrayList<Products>();
-     
+   
+    
     public static String display()
     {
         String result = "";
@@ -27,15 +28,17 @@ public class Payment {
         }
         else
         {
-            Products.setTotal_price(Products.getTotal_price() - givenOrder.get(givenOrder.size()-1).getProduct_price());
+            Products.setSub_price(Products.getSub_price() - givenOrder.get(givenOrder.size()-1).getProduct_price());
+            Products.setTotal_price();
             givenOrder.remove(givenOrder.size()-1);
+            
         }
     }
     
     public static String displayCalculation()
     {
-        String result = "";
-        result += Products.getTotal_price();
+        String result;
+        result = Products.getSub_price() + "\n\n" + Products.getTax() + "$" + "\n\n" +  Products.getTotal_price();
         return result;
     }
     
@@ -44,13 +47,6 @@ public class Payment {
         for(Products a: givenOrder)
             star+= a.getProduct_price();
         return star/10;
-    }
-    
-    public static double tax(){
-        int tax = 0;
-        for(Products p: givenOrder)
-            tax += p.getProduct_price();
-        return tax*0.18;
     }
     
     

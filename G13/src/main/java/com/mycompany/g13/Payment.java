@@ -30,6 +30,7 @@ public class Payment {
         {
             Products.setSub_price(Products.getSub_price() - givenOrder.get(givenOrder.size()-1).getProduct_price());
             Products.setTotal_price();
+            Products.setTaxed_price();
             givenOrder.remove(givenOrder.size()-1);
             
         }
@@ -38,8 +39,16 @@ public class Payment {
     public static String displayCalculation()
     {
         String result;
-        result = Products.getSub_price() + "\n\n" + Products.getTax() + "$" + "\n\n" +  Products.getTotal_price();
+        result = Products.getSub_price() + "$\n\n" + Products.getTaxed_price() + "$\n\n" +  Products.getTotal_price() + "$";
         return result;
+    }
+    
+    public static void clear()
+    {
+        givenOrder.clear();
+        Products.setSub_price(0);
+        Products.setTotal_price();
+        Products.setTaxed_price();
     }
     
     public static int calculateStar(){

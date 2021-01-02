@@ -5,6 +5,7 @@ public abstract class Products {
     private double product_price;
     private String product_name;
     private static double sub_price;
+    private static double taxed_price;
     private static double tax = 18;
     private static double total_price;
 
@@ -52,13 +53,22 @@ public abstract class Products {
         total_price = sub_price + sub_price * tax / 100;
         Products.total_price = total_price;
     }
+
+    public static double getTaxed_price() {
+        return taxed_price;
+    }
     
+    
+    public static void setTaxed_price() {
+        Products.taxed_price = (sub_price * 18) / 100;
+    }
+
     public double getProduct_price() {
         return product_price;
     }
     
     @Override
-    public String toString(){
+public String toString(){
         return this.product_name + " is " + this.product_price+"$\n";
     }
 }

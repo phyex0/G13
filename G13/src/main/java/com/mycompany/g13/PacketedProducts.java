@@ -6,7 +6,7 @@ public class PacketedProducts extends Products {
 
     public PacketedProducts() {}
 
-    public PacketedProducts(String kafein, String profile, String aroma, double product_price, String product_name) {
+    public PacketedProducts(String product_name, String profile, double product_price) {
         super(product_price, product_name);
         this.profile = profile; 
     }

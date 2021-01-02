@@ -2,8 +2,12 @@ package com.mycompany.g13;
 
 import static com.mycompany.g13.Payment.*;
 import com.mycompany.g13.repository.ClientRepository;
+import java.awt.Desktop;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import javax.swing.JCheckBox;
@@ -14,6 +18,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 @SpringBootApplication
@@ -2954,6 +2960,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 470, 160, 90));
 
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/github.png"))); // NOI18N
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
         jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 570, 160, 80));
 
         javax.swing.GroupLayout MainPanelLayout = new javax.swing.GroupLayout(MainPanel);
@@ -3579,6 +3590,25 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         choosenDrink = drink;
     }//GEN-LAST:event_jButton36ActionPerformed
 
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        
+         try {
+            // TODO add your handling code here:
+            final URI uri = new URI("https://github.com/phyex0");
+            final URI uri1 = new URI("https://github.com/melisalpkaya");
+            final URI uri2 = new URI("https://github.com/Xerewulf");
+            final URI uri3 = new URI("https://github.com/Mansur74");
+            open(uri);
+            open(uri1);
+            open(uri2);
+            open(uri3);
+            
+        } catch (URISyntaxException ex) {
+            Logger.getLogger(CafeManagementGUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton6ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -3625,6 +3655,15 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             }
         });
     }
+    
+    //it opens our github profiles.
+   private static void open(URI uri) {
+    if (Desktop.isDesktopSupported()) {
+      try {
+        Desktop.getDesktop().browse(uri);
+      } catch (IOException e) { /* TODO: error handling */ }
+    } else { /* TODO: error handling */ }
+  }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel MainPanel;

@@ -197,7 +197,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jScrollPane6 = new javax.swing.JScrollPane();
         jTextArea6 = new javax.swing.JTextArea();
         jButton104 = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
+        calculation = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
@@ -638,7 +638,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             }
         });
 
-        jTextField2.setEditable(false);
+        calculation.setEditable(false);
 
         jButton2.setBackground(new java.awt.Color(0, 102, 51));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/star-menub.png"))); // NOI18N
@@ -681,7 +681,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                                         .addComponent(jLabel1)
                                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(calculation, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGroup(jPanel2Layout.createSequentialGroup()
                             .addGap(18, 18, 18)
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -724,7 +724,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(4, 4, 4)
-                        .addComponent(jTextField2)))
+                        .addComponent(calculation)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton104)
                 .addGap(18, 18, 18)
@@ -3232,6 +3232,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         // TODO add your handling code here:
         Payment.removeLastOrder();
         order.setText(Payment.display());
+        calculation.setText(Payment.displayCalculation());
 
     }//GEN-LAST:event_jButton104ActionPerformed
 
@@ -3370,7 +3371,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         Gifts gift = new Gifts(10.0, "Kupa");
         Payment.givenOrder.add(gift);
         order.setText(Payment.display());
-        
+        calculation.setText(Payment.displayCalculation());
         
         
     }//GEN-LAST:event_jButton_KupaActionPerformed
@@ -3491,7 +3492,9 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private void siparisresetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siparisresetActionPerformed
         // TODO add your handling code here:
         Payment.givenOrder.clear();
+        Products.setTotal_price(0);
         order.setText(Payment.display());
+        calculation.setText(Payment.displayCalculation());
     }//GEN-LAST:event_siparisresetActionPerformed
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
@@ -3661,6 +3664,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     public javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JPanel buttonpan;
     private javax.swing.JRadioButton buyuk;
+    private javax.swing.JTextField calculation;
     private javax.swing.JCheckBox cikolata;
     private javax.swing.JCheckBox cilek;
     private javax.swing.JPanel darkpan;
@@ -3824,7 +3828,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     public static javax.swing.JTextArea jTextArea5;
     private static javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JButton kahvelerb;
     private javax.swing.JCheckBox karamel;
     private javax.swing.JRadioButton kucuk;

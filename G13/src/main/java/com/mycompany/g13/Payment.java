@@ -28,8 +28,16 @@ public class Payment {
         }
         else
         {
+            Products.setTotal_price(Products.getTotal_price() - givenOrder.get(givenOrder.size()-1).getProduct_price());
             givenOrder.remove(givenOrder.size()-1);
         }
+    }
+    
+    public static String displayCalculation()
+    {
+        String result = "";
+        result += Products.getTotal_price();
+        return result;
     }
     
     public static int calculateStar(){

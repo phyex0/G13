@@ -108,6 +108,7 @@ public class Uyegiris extends javax.swing.JFrame {
                 uyebilgileri.setText(loginClient.toString());
                 CafeManagementGUI.packedcafchange( CafeManagementGUI.userpan);
                 CafeManagementGUI.jTextArea5.setText(loginClient.toString());
+                this.dispose();
         
             }catch(Exception e){
                 System.out.println("not found");

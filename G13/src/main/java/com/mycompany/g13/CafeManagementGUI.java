@@ -672,6 +672,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton4.setBackground(new java.awt.Color(0, 102, 51));
         jButton4.setForeground(new java.awt.Color(249, 244, 244));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lock.png"))); // NOI18N
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         calculation.setColumns(20);
         calculation.setLineWrap(true);
@@ -3016,7 +3021,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             .addGroup(MainPanelLayout.createSequentialGroup()
                 .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 769, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 769, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 769, Short.MAX_VALUE))
                 .addGap(0, 3, Short.MAX_VALUE))
         );
@@ -3620,6 +3625,10 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         PacketedProducts packetedProducts = new PacketedProducts("Caffe Verona", "Dark", 12);
         actionPerformed(packetedProducts);
     }//GEN-LAST:event_jButton106ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+       new kasayikapat().setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments

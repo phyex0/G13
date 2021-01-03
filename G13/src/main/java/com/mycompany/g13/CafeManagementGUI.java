@@ -282,31 +282,31 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jPanel23 = new javax.swing.JPanel();
         jButton60 = new javax.swing.JButton();
         jButton61 = new javax.swing.JButton();
-        jButton62 = new javax.swing.JButton();
         jButton63 = new javax.swing.JButton();
         jButton64 = new javax.swing.JButton();
+        jButton62 = new javax.swing.JButton();
         panfrapp = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
         jButton59 = new javax.swing.JButton();
-        jPanel24 = new javax.swing.JPanel();
-        jButton65 = new javax.swing.JButton();
-        jButton66 = new javax.swing.JButton();
-        jButton67 = new javax.swing.JButton();
-        jButton68 = new javax.swing.JButton();
-        jButton69 = new javax.swing.JButton();
         jButton70 = new javax.swing.JButton();
         jButton71 = new javax.swing.JButton();
         jButton72 = new javax.swing.JButton();
         jButton73 = new javax.swing.JButton();
         jButton74 = new javax.swing.JButton();
+        jPanel32 = new javax.swing.JPanel();
+        jButton121 = new javax.swing.JButton();
+        jButton122 = new javax.swing.JButton();
+        jButton123 = new javax.swing.JButton();
+        jButton124 = new javax.swing.JButton();
+        jButton125 = new javax.swing.JButton();
         pancay = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
         jPanel25 = new javax.swing.JPanel();
-        jButton75 = new javax.swing.JButton();
         jButton76 = new javax.swing.JButton();
         jButton77 = new javax.swing.JButton();
         jButton78 = new javax.swing.JButton();
         jButton79 = new javax.swing.JButton();
+        jButton75 = new javax.swing.JButton();
         jButton80 = new javax.swing.JButton();
         jButton81 = new javax.swing.JButton();
         jButton82 = new javax.swing.JButton();
@@ -316,27 +316,27 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton86 = new javax.swing.JButton();
         panturkkahve = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
-        jPanel26 = new javax.swing.JPanel();
-        jButton87 = new javax.swing.JButton();
-        jButton88 = new javax.swing.JButton();
-        jButton89 = new javax.swing.JButton();
-        jButton90 = new javax.swing.JButton();
-        jButton91 = new javax.swing.JButton();
         jButton92 = new javax.swing.JButton();
+        jPanel34 = new javax.swing.JPanel();
+        jButton126 = new javax.swing.JButton();
+        jButton127 = new javax.swing.JButton();
+        jButton128 = new javax.swing.JButton();
+        jButton129 = new javax.swing.JButton();
+        jButton130 = new javax.swing.JButton();
         pansise = new javax.swing.JPanel();
         jPanel20 = new javax.swing.JPanel();
-        jPanel27 = new javax.swing.JPanel();
-        jButton93 = new javax.swing.JButton();
-        jButton94 = new javax.swing.JButton();
-        jButton95 = new javax.swing.JButton();
-        jButton96 = new javax.swing.JButton();
-        jButton97 = new javax.swing.JButton();
         jButton98 = new javax.swing.JButton();
         jButton99 = new javax.swing.JButton();
         jButton100 = new javax.swing.JButton();
         jButton101 = new javax.swing.JButton();
         jButton102 = new javax.swing.JButton();
         jButton103 = new javax.swing.JButton();
+        jPanel35 = new javax.swing.JPanel();
+        jButton94 = new javax.swing.JButton();
+        jButton95 = new javax.swing.JButton();
+        jButton96 = new javax.swing.JButton();
+        jButton97 = new javax.swing.JButton();
+        jButton93 = new javax.swing.JButton();
         paketkahvepan = new javax.swing.JLayeredPane();
         allpan = new javax.swing.JPanel();
         jPanel33 = new javax.swing.JPanel();
@@ -1623,16 +1623,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             }
         });
 
-        jButton62.setBackground(new java.awt.Color(0, 153, 51));
-        jButton62.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton62.setForeground(new java.awt.Color(255, 255, 255));
-        jButton62.setText("ÇAY");
-        jButton62.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton62ActionPerformed(evt);
-            }
-        });
-
         jButton63.setBackground(new java.awt.Color(0, 153, 51));
         jButton63.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton63.setForeground(new java.awt.Color(255, 255, 255));
@@ -1653,21 +1643,31 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             }
         });
 
+        jButton62.setBackground(new java.awt.Color(0, 153, 51));
+        jButton62.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton62.setForeground(new java.awt.Color(255, 255, 255));
+        jButton62.setText("ÇAY");
+        jButton62.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton62ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
         jPanel23.setLayout(jPanel23Layout);
         jPanel23Layout.setHorizontalGroup(
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel23Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
-                .addComponent(jButton60, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton60, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton61, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton61, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton62)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton63, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton63, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton64, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
+                .addComponent(jButton64, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel23Layout.setVerticalGroup(
@@ -1675,8 +1675,10 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             .addGroup(jPanel23Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton60, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
                     .addComponent(jButton61, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel23Layout.createSequentialGroup()
+                        .addComponent(jButton60, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(jButton64, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton63, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton62, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -1707,8 +1709,8 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                             .addComponent(jButton41, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel22Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 97, Short.MAX_VALUE))
+                        .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, 622, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 28, Short.MAX_VALUE))
         );
         jPanel22Layout.setVerticalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1759,89 +1761,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             }
         });
 
-        jPanel24.setBackground(new java.awt.Color(234, 229, 229));
-        jPanel24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jButton65.setBackground(new java.awt.Color(0, 153, 51));
-        jButton65.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton65.setForeground(new java.awt.Color(255, 255, 255));
-        jButton65.setText("ESPRESSO");
-        jButton65.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton65ActionPerformed(evt);
-            }
-        });
-
-        jButton66.setBackground(new java.awt.Color(0, 153, 51));
-        jButton66.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton66.setForeground(new java.awt.Color(255, 255, 255));
-        jButton66.setText("FRAPPUCİNO");
-        jButton66.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton66ActionPerformed(evt);
-            }
-        });
-
-        jButton67.setBackground(new java.awt.Color(0, 153, 51));
-        jButton67.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton67.setForeground(new java.awt.Color(255, 255, 255));
-        jButton67.setText("ÇAY");
-        jButton67.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton67ActionPerformed(evt);
-            }
-        });
-
-        jButton68.setBackground(new java.awt.Color(0, 153, 51));
-        jButton68.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton68.setForeground(new java.awt.Color(255, 255, 255));
-        jButton68.setText("TÜRK KAHVESİ");
-        jButton68.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton68ActionPerformed(evt);
-            }
-        });
-
-        jButton69.setBackground(new java.awt.Color(0, 153, 51));
-        jButton69.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton69.setForeground(new java.awt.Color(255, 255, 255));
-        jButton69.setText("ŞİŞELENMİŞ");
-        jButton69.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton69ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
-        jPanel24.setLayout(jPanel24Layout);
-        jPanel24Layout.setHorizontalGroup(
-            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel24Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addComponent(jButton65, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton66, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton67)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton68, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton69, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel24Layout.setVerticalGroup(
-            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel24Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton65, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton66, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton67, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton68, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton69, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-
         jButton70.setBackground(new java.awt.Color(14, 30, 21));
         jButton70.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton70.setForeground(new java.awt.Color(255, 255, 255));
@@ -1882,6 +1801,89 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton74.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton74.setMargin(new java.awt.Insets(2, 2, 2, 14));
 
+        jPanel32.setBackground(new java.awt.Color(234, 229, 229));
+        jPanel32.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jButton121.setBackground(new java.awt.Color(0, 153, 51));
+        jButton121.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton121.setForeground(new java.awt.Color(255, 255, 255));
+        jButton121.setText("FRAPPUCİNO");
+        jButton121.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton121ActionPerformed(evt);
+            }
+        });
+
+        jButton122.setBackground(new java.awt.Color(0, 153, 51));
+        jButton122.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton122.setForeground(new java.awt.Color(255, 255, 255));
+        jButton122.setText("ÇAY");
+        jButton122.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton122ActionPerformed(evt);
+            }
+        });
+
+        jButton123.setBackground(new java.awt.Color(0, 153, 51));
+        jButton123.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton123.setForeground(new java.awt.Color(255, 255, 255));
+        jButton123.setText("TÜRK KAHVESİ");
+        jButton123.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton123ActionPerformed(evt);
+            }
+        });
+
+        jButton124.setBackground(new java.awt.Color(0, 153, 51));
+        jButton124.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton124.setForeground(new java.awt.Color(255, 255, 255));
+        jButton124.setText("ŞİŞELENMİŞ");
+        jButton124.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton124ActionPerformed(evt);
+            }
+        });
+
+        jButton125.setBackground(new java.awt.Color(0, 153, 51));
+        jButton125.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton125.setForeground(new java.awt.Color(255, 255, 255));
+        jButton125.setText("ESPRESSO");
+        jButton125.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton125ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel32Layout = new javax.swing.GroupLayout(jPanel32);
+        jPanel32.setLayout(jPanel32Layout);
+        jPanel32Layout.setHorizontalGroup(
+            jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel32Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton125, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton121, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton122)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton123, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton124, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel32Layout.setVerticalGroup(
+            jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel32Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton121, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                    .addComponent(jButton122, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                    .addComponent(jButton123, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                    .addComponent(jButton124, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                    .addComponent(jButton125, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
         jPanel17Layout.setHorizontalGroup(
@@ -1889,7 +1891,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             .addGroup(jPanel17Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel17Layout.createSequentialGroup()
                         .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton59, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1899,8 +1900,10 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                         .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton73, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton72, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton74, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(72, Short.MAX_VALUE))
+                            .addComponent(jButton74, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 87, Short.MAX_VALUE))
+                    .addComponent(jPanel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel17Layout.setVerticalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1918,7 +1921,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                     .addComponent(jButton71, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton74, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 129, Short.MAX_VALUE)
-                .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -1935,16 +1938,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
 
         jPanel25.setBackground(new java.awt.Color(234, 229, 229));
         jPanel25.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jButton75.setBackground(new java.awt.Color(0, 153, 51));
-        jButton75.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton75.setForeground(new java.awt.Color(255, 255, 255));
-        jButton75.setText("ESPRESSO");
-        jButton75.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton75ActionPerformed(evt);
-            }
-        });
 
         jButton76.setBackground(new java.awt.Color(0, 153, 51));
         jButton76.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1986,33 +1979,43 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             }
         });
 
+        jButton75.setBackground(new java.awt.Color(0, 153, 51));
+        jButton75.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton75.setForeground(new java.awt.Color(255, 255, 255));
+        jButton75.setText("ESPRESSO");
+        jButton75.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton75ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
         jPanel25.setLayout(jPanel25Layout);
         jPanel25Layout.setHorizontalGroup(
             jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel25Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addComponent(jButton75, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(jButton75, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton76, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton76, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton77)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton78, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton78, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton79, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jButton79, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel25Layout.setVerticalGroup(
             jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel25Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton75, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
                     .addComponent(jButton76, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
                     .addComponent(jButton77, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
                     .addComponent(jButton78, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton79, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE))
+                    .addComponent(jButton79, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                    .addComponent(jButton75, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -2079,7 +2082,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             .addGroup(jPanel18Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel18Layout.createSequentialGroup()
                         .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton80, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -2090,8 +2093,9 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                         .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton84, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton85, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton86, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(72, Short.MAX_VALUE))
+                            .addComponent(jButton86, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 163, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel18Layout.setVerticalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2126,89 +2130,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jPanel19.setBackground(new java.awt.Color(236, 231, 231));
         jPanel19.setPreferredSize(new java.awt.Dimension(635, 400));
 
-        jPanel26.setBackground(new java.awt.Color(234, 229, 229));
-        jPanel26.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jButton87.setBackground(new java.awt.Color(0, 153, 51));
-        jButton87.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton87.setForeground(new java.awt.Color(255, 255, 255));
-        jButton87.setText("ESPRESSO");
-        jButton87.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton87ActionPerformed(evt);
-            }
-        });
-
-        jButton88.setBackground(new java.awt.Color(0, 153, 51));
-        jButton88.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton88.setForeground(new java.awt.Color(255, 255, 255));
-        jButton88.setText("FRAPPUCİNO");
-        jButton88.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton88ActionPerformed(evt);
-            }
-        });
-
-        jButton89.setBackground(new java.awt.Color(0, 153, 51));
-        jButton89.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton89.setForeground(new java.awt.Color(255, 255, 255));
-        jButton89.setText("ÇAY");
-        jButton89.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton89ActionPerformed(evt);
-            }
-        });
-
-        jButton90.setBackground(new java.awt.Color(0, 153, 51));
-        jButton90.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton90.setForeground(new java.awt.Color(255, 255, 255));
-        jButton90.setText("TÜRK KAHVESİ");
-        jButton90.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton90ActionPerformed(evt);
-            }
-        });
-
-        jButton91.setBackground(new java.awt.Color(0, 153, 51));
-        jButton91.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton91.setForeground(new java.awt.Color(255, 255, 255));
-        jButton91.setText("ŞİŞELENMİŞ");
-        jButton91.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton91ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
-        jPanel26.setLayout(jPanel26Layout);
-        jPanel26Layout.setHorizontalGroup(
-            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel26Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addComponent(jButton87, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton88, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton89)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton90, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton91, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel26Layout.setVerticalGroup(
-            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel26Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton87, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton88, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton89, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton90, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton91, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-
         jButton92.setBackground(new java.awt.Color(14, 30, 21));
         jButton92.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton92.setForeground(new java.awt.Color(255, 255, 255));
@@ -2217,6 +2138,89 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton92.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton92.setMargin(new java.awt.Insets(2, 2, 2, 14));
 
+        jPanel34.setBackground(new java.awt.Color(234, 229, 229));
+        jPanel34.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jButton126.setBackground(new java.awt.Color(0, 153, 51));
+        jButton126.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton126.setForeground(new java.awt.Color(255, 255, 255));
+        jButton126.setText("FRAPPUCİNO");
+        jButton126.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton126ActionPerformed(evt);
+            }
+        });
+
+        jButton127.setBackground(new java.awt.Color(0, 153, 51));
+        jButton127.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton127.setForeground(new java.awt.Color(255, 255, 255));
+        jButton127.setText("ÇAY");
+        jButton127.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton127ActionPerformed(evt);
+            }
+        });
+
+        jButton128.setBackground(new java.awt.Color(0, 153, 51));
+        jButton128.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton128.setForeground(new java.awt.Color(255, 255, 255));
+        jButton128.setText("TÜRK KAHVESİ");
+        jButton128.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton128ActionPerformed(evt);
+            }
+        });
+
+        jButton129.setBackground(new java.awt.Color(0, 153, 51));
+        jButton129.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton129.setForeground(new java.awt.Color(255, 255, 255));
+        jButton129.setText("ŞİŞELENMİŞ");
+        jButton129.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton129ActionPerformed(evt);
+            }
+        });
+
+        jButton130.setBackground(new java.awt.Color(0, 153, 51));
+        jButton130.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton130.setForeground(new java.awt.Color(255, 255, 255));
+        jButton130.setText("ESPRESSO");
+        jButton130.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton130ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel34Layout = new javax.swing.GroupLayout(jPanel34);
+        jPanel34.setLayout(jPanel34Layout);
+        jPanel34Layout.setHorizontalGroup(
+            jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel34Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton130, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton126, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton127)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton128, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton129, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel34Layout.setVerticalGroup(
+            jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel34Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton126, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                    .addComponent(jButton127, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                    .addComponent(jButton128, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                    .addComponent(jButton129, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                    .addComponent(jButton130, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
         jPanel19Layout.setHorizontalGroup(
@@ -2224,9 +2228,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             .addGroup(jPanel19Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton92)
-                    .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(72, Short.MAX_VALUE))
+                    .addGroup(jPanel19Layout.createSequentialGroup()
+                        .addComponent(jButton92)
+                        .addGap(0, 452, Short.MAX_VALUE))
+                    .addComponent(jPanel34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2234,7 +2240,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                 .addContainerGap()
                 .addComponent(jButton92, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 267, Short.MAX_VALUE)
-                .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -2248,89 +2254,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
 
         jPanel20.setBackground(new java.awt.Color(236, 231, 231));
         jPanel20.setPreferredSize(new java.awt.Dimension(635, 400));
-
-        jPanel27.setBackground(new java.awt.Color(234, 229, 229));
-        jPanel27.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jButton93.setBackground(new java.awt.Color(0, 153, 51));
-        jButton93.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton93.setForeground(new java.awt.Color(255, 255, 255));
-        jButton93.setText("ESPRESSO");
-        jButton93.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton93ActionPerformed(evt);
-            }
-        });
-
-        jButton94.setBackground(new java.awt.Color(0, 153, 51));
-        jButton94.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton94.setForeground(new java.awt.Color(255, 255, 255));
-        jButton94.setText("FRAPPUCİNO");
-        jButton94.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton94ActionPerformed(evt);
-            }
-        });
-
-        jButton95.setBackground(new java.awt.Color(0, 153, 51));
-        jButton95.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton95.setForeground(new java.awt.Color(255, 255, 255));
-        jButton95.setText("ÇAY");
-        jButton95.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton95ActionPerformed(evt);
-            }
-        });
-
-        jButton96.setBackground(new java.awt.Color(0, 153, 51));
-        jButton96.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton96.setForeground(new java.awt.Color(255, 255, 255));
-        jButton96.setText("TÜRK KAHVESİ");
-        jButton96.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton96ActionPerformed(evt);
-            }
-        });
-
-        jButton97.setBackground(new java.awt.Color(0, 153, 51));
-        jButton97.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton97.setForeground(new java.awt.Color(255, 255, 255));
-        jButton97.setText("ŞİŞELENMİŞ");
-        jButton97.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton97ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel27Layout = new javax.swing.GroupLayout(jPanel27);
-        jPanel27.setLayout(jPanel27Layout);
-        jPanel27Layout.setHorizontalGroup(
-            jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel27Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addComponent(jButton93, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton94, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton95)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton96, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton97, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel27Layout.setVerticalGroup(
-            jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel27Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton93, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton94, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton95, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton96, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jButton97, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE))
-                .addContainerGap())
-        );
 
         jButton98.setBackground(new java.awt.Color(14, 30, 21));
         jButton98.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -2382,6 +2305,89 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton103.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton103.setMargin(new java.awt.Insets(2, 2, 2, 14));
 
+        jPanel35.setBackground(new java.awt.Color(234, 229, 229));
+        jPanel35.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jButton94.setBackground(new java.awt.Color(0, 153, 51));
+        jButton94.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton94.setForeground(new java.awt.Color(255, 255, 255));
+        jButton94.setText("FRAPPUCİNO");
+        jButton94.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton94ActionPerformed(evt);
+            }
+        });
+
+        jButton95.setBackground(new java.awt.Color(0, 153, 51));
+        jButton95.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton95.setForeground(new java.awt.Color(255, 255, 255));
+        jButton95.setText("ÇAY");
+        jButton95.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton95ActionPerformed(evt);
+            }
+        });
+
+        jButton96.setBackground(new java.awt.Color(0, 153, 51));
+        jButton96.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton96.setForeground(new java.awt.Color(255, 255, 255));
+        jButton96.setText("TÜRK KAHVESİ");
+        jButton96.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton96ActionPerformed(evt);
+            }
+        });
+
+        jButton97.setBackground(new java.awt.Color(0, 153, 51));
+        jButton97.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton97.setForeground(new java.awt.Color(255, 255, 255));
+        jButton97.setText("ŞİŞELENMİŞ");
+        jButton97.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton97ActionPerformed(evt);
+            }
+        });
+
+        jButton93.setBackground(new java.awt.Color(0, 153, 51));
+        jButton93.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton93.setForeground(new java.awt.Color(255, 255, 255));
+        jButton93.setText("ESPRESSO");
+        jButton93.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton93ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel35Layout = new javax.swing.GroupLayout(jPanel35);
+        jPanel35.setLayout(jPanel35Layout);
+        jPanel35Layout.setHorizontalGroup(
+            jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel35Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton93, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton94, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton95)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton96, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton97, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel35Layout.setVerticalGroup(
+            jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel35Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton94, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                    .addComponent(jButton95, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                    .addComponent(jButton96, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                    .addComponent(jButton97, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                    .addComponent(jButton93, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
         jPanel20.setLayout(jPanel20Layout);
         jPanel20Layout.setHorizontalGroup(
@@ -2389,19 +2395,20 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             .addGroup(jPanel20Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel20Layout.createSequentialGroup()
                         .addComponent(jButton98, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addGap(8, 8, 8)
                         .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton101, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton100, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton99)
-                            .addComponent(jButton100, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
+                            .addComponent(jButton101, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton103, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton102))))
-                .addContainerGap(38, Short.MAX_VALUE))
+                            .addComponent(jButton103, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton102, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 50, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel20Layout.setVerticalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2415,10 +2422,10 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton102, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton100, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton101, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 151, Short.MAX_VALUE)
-                .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 156, Short.MAX_VALUE)
+                .addComponent(jPanel35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -2933,6 +2940,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
 
         findik.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         findik.setText("Fındık");
+        findik.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                findikActionPerformed(evt);
+            }
+        });
 
         cilek.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         cilek.setText("Çilek");
@@ -3021,7 +3033,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             .addGroup(MainPanelLayout.createSequentialGroup()
                 .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 769, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 769, Short.MAX_VALUE))
                 .addGap(0, 3, Short.MAX_VALUE))
         );
@@ -3156,26 +3168,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         menuchangedrink(pansise);
     }//GEN-LAST:event_jButton64ActionPerformed
 
-    private void jButton66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton66ActionPerformed
-        // TODO add your handling code here:
-        menuchangedrink(panfrapp);
-    }//GEN-LAST:event_jButton66ActionPerformed
-
-    private void jButton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton67ActionPerformed
-        // TODO add your handling code here:
-                menuchangedrink(pancay);
-    }//GEN-LAST:event_jButton67ActionPerformed
-
-    private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton68ActionPerformed
-        // TODO add your handling code here:
-         menuchangedrink(panturkkahve);
-    }//GEN-LAST:event_jButton68ActionPerformed
-
-    private void jButton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton69ActionPerformed
-        // TODO add your handling code here:
-         menuchangedrink(pansise);
-    }//GEN-LAST:event_jButton69ActionPerformed
-
     private void jButton76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton76ActionPerformed
         // TODO add your handling code here:
         menuchangedrink(panfrapp);
@@ -3196,45 +3188,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
          menuchangedrink(pansise);
     }//GEN-LAST:event_jButton79ActionPerformed
 
-    private void jButton88ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton88ActionPerformed
-        // TODO add your handling code here:
-         menuchangedrink(panfrapp);
-    }//GEN-LAST:event_jButton88ActionPerformed
-
-    private void jButton89ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton89ActionPerformed
-        // TODO add your handling code here:
-        menuchangedrink(pancay);
-    }//GEN-LAST:event_jButton89ActionPerformed
-
-    private void jButton90ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton90ActionPerformed
-        // TODO add your handling code here:
-         menuchangedrink(panturkkahve);
-    }//GEN-LAST:event_jButton90ActionPerformed
-
-    private void jButton91ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton91ActionPerformed
-        // TODO add your handling code here:
-         menuchangedrink(pansise);
-    }//GEN-LAST:event_jButton91ActionPerformed
-
-    private void jButton94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton94ActionPerformed
-        // TODO add your handling code here:
-                 menuchangedrink(panfrapp);
-    }//GEN-LAST:event_jButton94ActionPerformed
-
-    private void jButton95ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton95ActionPerformed
-                  menuchangedrink(pancay);        
-    }//GEN-LAST:event_jButton95ActionPerformed
-
-    private void jButton96ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton96ActionPerformed
-        // TODO add your handling code here:
-        menuchangedrink(panturkkahve);
-    }//GEN-LAST:event_jButton96ActionPerformed
-
-    private void jButton97ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton97ActionPerformed
-        // TODO add your handling code here:
-         menuchangedrink(pansise);
-    }//GEN-LAST:event_jButton97ActionPerformed
-
     private void icecekbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_icecekbActionPerformed
         // TODO add your handling code here:
         LayeredPanelChange(panedrink);
@@ -3245,25 +3198,10 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         menuchangedrink(panespresso);
     }//GEN-LAST:event_jButton60ActionPerformed
 
-    private void jButton65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton65ActionPerformed
-        // TODO add your handling code here:
-        menuchangedrink(panespresso);
-    }//GEN-LAST:event_jButton65ActionPerformed
-
     private void jButton75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton75ActionPerformed
         // TODO add your handling code here:
          menuchangedrink(panespresso);
     }//GEN-LAST:event_jButton75ActionPerformed
-
-    private void jButton87ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton87ActionPerformed
-        // TODO add your handling code here:
-         menuchangedrink(panespresso);
-    }//GEN-LAST:event_jButton87ActionPerformed
-
-    private void jButton93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton93ActionPerformed
-        // TODO add your handling code here:
-         menuchangedrink(panespresso);
-    }//GEN-LAST:event_jButton93ActionPerformed
 
     private void jButton104ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton104ActionPerformed
         // TODO add your handling code here:
@@ -3567,8 +3505,16 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         actionPerformed(drink);
         choosenDrink = null;
   
-        
-
+            buttonGroup1.clearSelection();
+            buttonGroup2.clearSelection();
+            karamel.setSelected(false);
+             cikolata.setSelected(false);
+             beyazcikolata.setSelected(false);
+             hindistancevizi.setSelected(false);
+             vanilya.setSelected(false);
+             findik.setSelected(false);
+              cilek.setSelected(false);
+              ahududu.setSelected(false);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
@@ -3629,6 +3575,85 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
        new kasayikapat().setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton121ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton121ActionPerformed
+        // TODO add your handling code here:
+          menuchangedrink(panfrapp);
+    }//GEN-LAST:event_jButton121ActionPerformed
+
+    private void jButton122ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton122ActionPerformed
+        // TODO add your handling code here:
+          menuchangedrink(pancay);
+    }//GEN-LAST:event_jButton122ActionPerformed
+
+    private void jButton123ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton123ActionPerformed
+        // TODO add your handling code here:
+          menuchangedrink(panturkkahve);
+    }//GEN-LAST:event_jButton123ActionPerformed
+
+    private void jButton124ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton124ActionPerformed
+        // TODO add your handling code here:
+          menuchangedrink(pansise);
+    }//GEN-LAST:event_jButton124ActionPerformed
+
+    private void jButton125ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton125ActionPerformed
+        // TODO add your handling code here:
+        menuchangedrink(panespresso);
+    }//GEN-LAST:event_jButton125ActionPerformed
+
+    private void jButton126ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton126ActionPerformed
+        // TODO add your handling code here:
+          menuchangedrink(panfrapp);
+    }//GEN-LAST:event_jButton126ActionPerformed
+
+    private void jButton127ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton127ActionPerformed
+        // TODO add your handling code here:
+          menuchangedrink(pancay);
+    }//GEN-LAST:event_jButton127ActionPerformed
+
+    private void jButton128ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton128ActionPerformed
+        // TODO add your handling code here:
+          menuchangedrink(panturkkahve);
+    }//GEN-LAST:event_jButton128ActionPerformed
+
+    private void jButton129ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton129ActionPerformed
+        // TODO add your handling code here:
+          menuchangedrink(pansise);
+    }//GEN-LAST:event_jButton129ActionPerformed
+
+    private void jButton130ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton130ActionPerformed
+        // TODO add your handling code here:
+          menuchangedrink(panespresso);
+    }//GEN-LAST:event_jButton130ActionPerformed
+
+    private void jButton94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton94ActionPerformed
+        // TODO add your handling code here:
+          menuchangedrink(panfrapp);
+    }//GEN-LAST:event_jButton94ActionPerformed
+
+    private void jButton95ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton95ActionPerformed
+        // TODO add your handling code here:
+          menuchangedrink(pancay);
+    }//GEN-LAST:event_jButton95ActionPerformed
+
+    private void jButton96ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton96ActionPerformed
+        // TODO add your handling code here:
+          menuchangedrink(panturkkahve);
+    }//GEN-LAST:event_jButton96ActionPerformed
+
+    private void jButton97ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton97ActionPerformed
+        // TODO add your handling code here:
+          menuchangedrink(pansise);
+    }//GEN-LAST:event_jButton97ActionPerformed
+
+    private void jButton93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton93ActionPerformed
+        // TODO add your handling code here:
+          menuchangedrink(panespresso);
+    }//GEN-LAST:event_jButton93ActionPerformed
+
+    private void findikActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_findikActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_findikActionPerformed
 
     /**
      * @param args the command line arguments
@@ -3745,6 +3770,16 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JButton jButton118;
     private javax.swing.JButton jButton119;
     private javax.swing.JButton jButton120;
+    private javax.swing.JButton jButton121;
+    private javax.swing.JButton jButton122;
+    private javax.swing.JButton jButton123;
+    private javax.swing.JButton jButton124;
+    private javax.swing.JButton jButton125;
+    private javax.swing.JButton jButton126;
+    private javax.swing.JButton jButton127;
+    private javax.swing.JButton jButton128;
+    private javax.swing.JButton jButton129;
+    private javax.swing.JButton jButton130;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
@@ -3773,11 +3808,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JButton jButton62;
     private javax.swing.JButton jButton63;
     private javax.swing.JButton jButton64;
-    private javax.swing.JButton jButton65;
-    private javax.swing.JButton jButton66;
-    private javax.swing.JButton jButton67;
-    private javax.swing.JButton jButton68;
-    private javax.swing.JButton jButton69;
     private javax.swing.JButton jButton70;
     private javax.swing.JButton jButton71;
     private javax.swing.JButton jButton72;
@@ -3795,11 +3825,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JButton jButton84;
     private javax.swing.JButton jButton85;
     private javax.swing.JButton jButton86;
-    private javax.swing.JButton jButton87;
-    private javax.swing.JButton jButton88;
-    private javax.swing.JButton jButton89;
-    private javax.swing.JButton jButton90;
-    private javax.swing.JButton jButton91;
     private javax.swing.JButton jButton92;
     private javax.swing.JButton jButton93;
     private javax.swing.JButton jButton94;
@@ -3849,16 +3874,16 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel23;
-    private javax.swing.JPanel jPanel24;
     private javax.swing.JPanel jPanel25;
-    private javax.swing.JPanel jPanel26;
-    private javax.swing.JPanel jPanel27;
     public static javax.swing.JPanel jPanel28;
     private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel30;
     private javax.swing.JPanel jPanel31;
+    private javax.swing.JPanel jPanel32;
     private javax.swing.JPanel jPanel33;
+    private javax.swing.JPanel jPanel34;
+    private javax.swing.JPanel jPanel35;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;

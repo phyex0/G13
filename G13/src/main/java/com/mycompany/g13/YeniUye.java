@@ -127,6 +127,7 @@ public class YeniUye extends javax.swing.JFrame {
                  CafeManagementGUI.packedcafchange( CafeManagementGUI.userpan);
                  
                  CafeManagementGUI.jTextArea5.setText(c.toString());
+                 this.dispose();
           
             }catch(Exception e){
                 //TODO: print a message this user already exists..

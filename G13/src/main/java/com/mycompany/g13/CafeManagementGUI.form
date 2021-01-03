@@ -2289,6 +2289,9 @@
                                   <Insets value="[2, 2, 2, 14]"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton37ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton38">
                               <Properties>
@@ -2310,6 +2313,9 @@
                                   <Insets value="[2, 2, 2, 14]"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton38ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton39">
                               <Properties>
@@ -2354,6 +2360,9 @@
                                   <Insets value="[2, 2, 2, 7]"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton40ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton41">
                               <Properties>
@@ -2399,6 +2408,9 @@
                                   <Insets value="[2, 2, 2, 14]"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton42ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton43">
                               <Properties>
@@ -2420,6 +2432,9 @@
                                   <Insets value="[2, 2, 2, 14]"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton43ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Container class="javax.swing.JPanel" name="jPanel23">
                               <Properties>
@@ -3501,6 +3516,9 @@
                                   <Insets value="[2, 2, 2, 14]"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton92ActionPerformed"/>
+                              </Events>
                             </Component>
                           </SubComponents>
                         </Container>
@@ -3744,6 +3762,9 @@
                                   <Insets value="[2, 2, 2, 14]"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton98ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton99">
                               <Properties>
@@ -3765,6 +3786,9 @@
                                   <Insets value="[2, 2, 2, 14]"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton99ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton100">
                               <Properties>
@@ -3786,6 +3810,9 @@
                                   <Insets value="[2, 2, 2, 14]"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton100ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton101">
                               <Properties>
@@ -3807,6 +3834,9 @@
                                   <Insets value="[2, 2, 2, 14]"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton101ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton102">
                               <Properties>
@@ -3829,6 +3859,9 @@
                                   <Insets value="[2, 2, 2, 14]"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton102ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton103">
                               <Properties>
@@ -3851,6 +3884,9 @@
                                   <Insets value="[2, 2, 2, 14]"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton103ActionPerformed"/>
+                              </Events>
                             </Component>
                           </SubComponents>
                         </Container>
@@ -4054,6 +4090,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="COLOMB&#x130;A NAR&#x130;NO"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton30ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton31">
                               <Properties>
@@ -4068,6 +4107,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="ETH&#x130;OP&#x130;A"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton31ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton32">
                               <Properties>
@@ -4082,6 +4124,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="PIKE PLACE ROAST"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton32ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton33">
                               <Properties>
@@ -4096,6 +4141,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="KENYA"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton33ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton34">
                               <Properties>
@@ -4161,6 +4209,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="DECAF ESPRESSO ROAST"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton107ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton108">
                               <Properties>
@@ -4175,6 +4226,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="ESPRESSO ROAST"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton108ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton109">
                               <Properties>
@@ -4189,6 +4243,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="SUMATRA"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton109ActionPerformed"/>
+                              </Events>
                             </Component>
                           </SubComponents>
                         </Container>
@@ -4283,6 +4340,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="Blonde Espresso"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton115ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton116">
                               <Properties>
@@ -4297,6 +4357,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="VERANDA BLEND"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton116ActionPerformed"/>
+                              </Events>
                             </Component>
                           </SubComponents>
                         </Container>
@@ -4390,6 +4453,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="KENYA"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton110ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton111">
                               <Properties>
@@ -4404,6 +4470,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="COLOMB&#x130;A NAR&#x130;NO"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton111ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton112">
                               <Properties>
@@ -4435,6 +4504,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="GUATEMALA ANTIGUA"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton113ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton114">
                               <Properties>
@@ -4449,6 +4521,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="PIKE PLACE ROAST"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton114ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JComboBox" name="jComboBox3">
                               <Properties>
@@ -4558,6 +4633,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="CAFFE VERONA"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton117ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton118">
                               <Properties>
@@ -4572,6 +4650,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="DECAF ESPRESSO ROAST"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton118ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton119">
                               <Properties>
@@ -4586,6 +4667,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="ESPRESSO ROAST"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton119ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="jButton120">
                               <Properties>
@@ -4600,6 +4684,9 @@
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="SUMATRA"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton120ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JComboBox" name="jComboBox4">
                               <Properties>

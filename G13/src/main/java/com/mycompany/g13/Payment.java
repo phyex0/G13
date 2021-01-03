@@ -8,7 +8,7 @@ public class Payment {
     public static ArrayList<Products> givenOrder = new ArrayList<Products>();
    
     
-    public static String display()
+    public static String displayOrder()
     {
         String result = "";
         for(int i = 0; i < givenOrder.size(); i++)

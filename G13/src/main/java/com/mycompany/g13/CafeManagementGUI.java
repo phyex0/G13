@@ -23,7 +23,7 @@ import java.util.logging.Logger;
 
 
 @SpringBootApplication
-public class CafeManagementGUI extends javax.swing.JFrame implements ActionListener{
+public class CafeManagementGUI extends javax.swing.JFrame{
     //succes or failed messages come with error JFrame
    public static JFrame error;
    String order_Text = "";
@@ -107,7 +107,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         Products.setTotal_price();
         Products.setTaxed_price();
         Payment.givenOrder.add(product);
-        order.setText(Payment.display());
+        order.setText(Payment.displayOrder());
         calculation.setText(Payment.displayCalculation());  
     }
      
@@ -1542,6 +1542,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton37.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton37.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jButton37.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton37ActionPerformed(evt);
+            }
+        });
 
         jButton38.setBackground(new java.awt.Color(14, 30, 21));
         jButton38.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1550,6 +1555,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton38.setText("Flat White");
         jButton38.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton38.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton38ActionPerformed(evt);
+            }
+        });
 
         jButton39.setBackground(new java.awt.Color(14, 30, 21));
         jButton39.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1570,6 +1580,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iced-caffe-mocha_tcm95-64108_w1024_n.png"))); // NOI18N
         jButton40.setText("Buzlu Caffè Mocha");
         jButton40.setMargin(new java.awt.Insets(2, 2, 2, 7));
+        jButton40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton40ActionPerformed(evt);
+            }
+        });
 
         jButton41.setBackground(new java.awt.Color(14, 30, 21));
         jButton41.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1591,6 +1606,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton42.setText("Espresso Con Panna");
         jButton42.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton42.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton42ActionPerformed(evt);
+            }
+        });
 
         jButton43.setBackground(new java.awt.Color(14, 30, 21));
         jButton43.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1599,6 +1619,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton43.setText("Espresso Macchiato");
         jButton43.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton43.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton43ActionPerformed(evt);
+            }
+        });
 
         jPanel23.setBackground(new java.awt.Color(234, 229, 229));
         jPanel23.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -2216,6 +2241,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton92.setText("Türk Kahvesi");
         jButton92.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton92.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton92.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton92ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
@@ -2339,6 +2369,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton98.setText(" Su");
         jButton98.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton98.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton98.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton98ActionPerformed(evt);
+            }
+        });
 
         jButton99.setBackground(new java.awt.Color(14, 30, 21));
         jButton99.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -2347,6 +2382,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton99.setText("Karışık Meyve Suyu");
         jButton99.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton99.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton99.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton99ActionPerformed(evt);
+            }
+        });
 
         jButton100.setBackground(new java.awt.Color(14, 30, 21));
         jButton100.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -2355,6 +2395,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton100.setText("Portakal Suyu");
         jButton100.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton100.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton100.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton100ActionPerformed(evt);
+            }
+        });
 
         jButton101.setBackground(new java.awt.Color(14, 30, 21));
         jButton101.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -2363,6 +2408,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton101.setText("Limonata");
         jButton101.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton101.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton101.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton101ActionPerformed(evt);
+            }
+        });
 
         jButton102.setBackground(new java.awt.Color(14, 30, 21));
         jButton102.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -2372,6 +2422,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton102.setText("Portakallı Gazlı İçecek");
         jButton102.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton102.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton102.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton102ActionPerformed(evt);
+            }
+        });
 
         jButton103.setBackground(new java.awt.Color(14, 30, 21));
         jButton103.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -2381,6 +2436,11 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton103.setText("Limonlu Gazlı İçecek");
         jButton103.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton103.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton103.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton103ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
         jPanel20.setLayout(jPanel20Layout);
@@ -2466,21 +2526,41 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton30.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton30.setForeground(new java.awt.Color(255, 255, 255));
         jButton30.setText("COLOMBİA NARİNO");
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton30ActionPerformed(evt);
+            }
+        });
 
         jButton31.setBackground(new java.awt.Color(0, 102, 51));
         jButton31.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton31.setForeground(new java.awt.Color(255, 255, 255));
         jButton31.setText("ETHİOPİA");
+        jButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton31ActionPerformed(evt);
+            }
+        });
 
         jButton32.setBackground(new java.awt.Color(0, 102, 51));
         jButton32.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton32.setForeground(new java.awt.Color(255, 255, 255));
         jButton32.setText("PIKE PLACE ROAST");
+        jButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton32ActionPerformed(evt);
+            }
+        });
 
         jButton33.setBackground(new java.awt.Color(0, 102, 51));
         jButton33.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton33.setForeground(new java.awt.Color(255, 255, 255));
         jButton33.setText("KENYA");
+        jButton33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton33ActionPerformed(evt);
+            }
+        });
 
         jButton34.setBackground(new java.awt.Color(0, 102, 51));
         jButton34.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -2516,16 +2596,31 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton107.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton107.setForeground(new java.awt.Color(255, 255, 255));
         jButton107.setText("DECAF ESPRESSO ROAST");
+        jButton107.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton107ActionPerformed(evt);
+            }
+        });
 
         jButton108.setBackground(new java.awt.Color(0, 102, 51));
         jButton108.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton108.setForeground(new java.awt.Color(255, 255, 255));
         jButton108.setText("ESPRESSO ROAST");
+        jButton108.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton108ActionPerformed(evt);
+            }
+        });
 
         jButton109.setBackground(new java.awt.Color(0, 102, 51));
         jButton109.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton109.setForeground(new java.awt.Color(255, 255, 255));
         jButton109.setText("SUMATRA");
+        jButton109.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton109ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel33Layout = new javax.swing.GroupLayout(jPanel33);
         jPanel33.setLayout(jPanel33Layout);
@@ -2619,11 +2714,21 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton115.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton115.setForeground(new java.awt.Color(255, 255, 255));
         jButton115.setText("Blonde Espresso");
+        jButton115.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton115ActionPerformed(evt);
+            }
+        });
 
         jButton116.setBackground(new java.awt.Color(0, 102, 51));
         jButton116.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton116.setForeground(new java.awt.Color(255, 255, 255));
         jButton116.setText("VERANDA BLEND");
+        jButton116.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton116ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel29Layout = new javax.swing.GroupLayout(jPanel29);
         jPanel29.setLayout(jPanel29Layout);
@@ -2662,11 +2767,21 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton110.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton110.setForeground(new java.awt.Color(255, 255, 255));
         jButton110.setText("KENYA");
+        jButton110.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton110ActionPerformed(evt);
+            }
+        });
 
         jButton111.setBackground(new java.awt.Color(0, 102, 51));
         jButton111.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton111.setForeground(new java.awt.Color(255, 255, 255));
         jButton111.setText("COLOMBİA NARİNO");
+        jButton111.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton111ActionPerformed(evt);
+            }
+        });
 
         jButton112.setBackground(new java.awt.Color(0, 102, 51));
         jButton112.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -2682,11 +2797,21 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton113.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton113.setForeground(new java.awt.Color(255, 255, 255));
         jButton113.setText("GUATEMALA ANTIGUA");
+        jButton113.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton113ActionPerformed(evt);
+            }
+        });
 
         jButton114.setBackground(new java.awt.Color(0, 102, 51));
         jButton114.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton114.setForeground(new java.awt.Color(255, 255, 255));
         jButton114.setText("PIKE PLACE ROAST");
+        jButton114.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton114ActionPerformed(evt);
+            }
+        });
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "TAMAMI", "BLONDE", "MEDIUM", "DARK" }));
         jComboBox3.setSelectedIndex(2);
@@ -2746,21 +2871,41 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
         jButton117.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton117.setForeground(new java.awt.Color(255, 255, 255));
         jButton117.setText("CAFFE VERONA");
+        jButton117.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton117ActionPerformed(evt);
+            }
+        });
 
         jButton118.setBackground(new java.awt.Color(0, 102, 51));
         jButton118.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton118.setForeground(new java.awt.Color(255, 255, 255));
         jButton118.setText("DECAF ESPRESSO ROAST");
+        jButton118.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton118ActionPerformed(evt);
+            }
+        });
 
         jButton119.setBackground(new java.awt.Color(0, 102, 51));
         jButton119.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton119.setForeground(new java.awt.Color(255, 255, 255));
         jButton119.setText("ESPRESSO ROAST");
+        jButton119.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton119ActionPerformed(evt);
+            }
+        });
 
         jButton120.setBackground(new java.awt.Color(0, 102, 51));
         jButton120.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton120.setForeground(new java.awt.Color(255, 255, 255));
         jButton120.setText("SUMATRA");
+        jButton120.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton120ActionPerformed(evt);
+            }
+        });
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "TAMAMI", "BLONDE", "MEDIUM", "DARK" }));
         jComboBox4.setSelectedIndex(3);
@@ -3021,7 +3166,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
             .addGroup(MainPanelLayout.createSequentialGroup()
                 .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 769, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 769, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 769, Short.MAX_VALUE))
                 .addGap(0, 3, Short.MAX_VALUE))
         );
@@ -3268,7 +3413,7 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private void jButton104ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton104ActionPerformed
         // TODO add your handling code here:
         Payment.removeLastOrder();
-        order.setText(Payment.display());
+        order.setText(Payment.displayOrder());
         calculation.setText(Payment.displayCalculation());
 
     }//GEN-LAST:event_jButton104ActionPerformed
@@ -3293,16 +3438,20 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
 
     private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
         // TODO add your handling code here:
-        Drinks drink= new Drinks("Espresso" ,12 ,"Expresso");
+        Drinks drink= new Drinks("Espresso" ,12 ,"Espresso");
         choosenDrink = drink;
     }//GEN-LAST:event_jButton41ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
         // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("House Blend", "Blonde", 15);
+        actionPerformed(packetedProducts);
     }//GEN-LAST:event_jButton34ActionPerformed
 
     private void jButton112ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton112ActionPerformed
         // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("House Blend", "Blonde", 15);
+        actionPerformed(packetedProducts);
     }//GEN-LAST:event_jButton112ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
@@ -3507,15 +3656,15 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
         // TODO add your handling code here:
-        Drinks drink = new Drinks("Expresso", 10.0, "Blonde Expresso");
-        actionPerformed(drink);
+        PacketedProducts packetedProducts = new PacketedProducts("Blonde Espresso", "Blonde", 15);
+        actionPerformed(packetedProducts);
         
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void siparisresetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siparisresetActionPerformed
         // TODO add your handling code here:
         Payment.clear();
-        order.setText(Payment.display());
+        order.setText(Payment.displayOrder());
         calculation.setText(Payment.displayCalculation());
     }//GEN-LAST:event_siparisresetActionPerformed
 
@@ -3629,6 +3778,180 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
        new kasayikapat().setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton107ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton107ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Decaff Espresso", "Dark", 15);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton107ActionPerformed
+
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Colombia Narino", "Medium", 15);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton30ActionPerformed
+
+    private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Kenya", "Medium", 15);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton33ActionPerformed
+
+    private void jButton108ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton108ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Espresso Roast", "Blonde", 15);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton108ActionPerformed
+
+    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Ethiopia", "Medium", 15);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton31ActionPerformed
+
+    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Pike Place Roast", "Medium", 15);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton32ActionPerformed
+
+    private void jButton109ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton109ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Sumatra", "Blonde", 15);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton109ActionPerformed
+
+    private void jButton115ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton115ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Blonde Espresso", "Blonde", 15);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton115ActionPerformed
+
+    private void jButton116ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton116ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Veranda Blend", "Blonde", 15);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton116ActionPerformed
+
+    private void jButton113ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton113ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Guatemala Antigua", "Medium", 12);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton113ActionPerformed
+
+    private void jButton114ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton114ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Pike Place Roast", "Medium", 15);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton114ActionPerformed
+
+    private void jButton111ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton111ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Colombia Narino", "Medium", 15);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton111ActionPerformed
+
+    private void jButton110ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton110ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Kenya", "Medium", 15);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton110ActionPerformed
+
+    private void jButton118ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton118ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Decaff Espresso", "Dark", 15);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton118ActionPerformed
+
+    private void jButton119ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton119ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Espresso Roast", "Blonde", 15);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton119ActionPerformed
+
+    private void jButton117ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton117ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Caffe Verona", "Dark", 12);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton117ActionPerformed
+
+    private void jButton120ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton120ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts packetedProducts = new PacketedProducts("Sumatra", "Blonde", 15);
+        actionPerformed(packetedProducts);
+    }//GEN-LAST:event_jButton120ActionPerformed
+
+    private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Espresso", 12, "Buzlu Caffè Mocha");
+        choosenDrink = drink;
+    }//GEN-LAST:event_jButton40ActionPerformed
+
+    private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Espresso", 12, "Espresso Con Panna");
+        choosenDrink = drink;
+    }//GEN-LAST:event_jButton42ActionPerformed
+
+    private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Espresso", 12, "Caffe Latte");
+        choosenDrink = drink;
+    }//GEN-LAST:event_jButton37ActionPerformed
+
+    private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Espresso", 12, "Espresso Macchiato");
+        choosenDrink = drink;
+    }//GEN-LAST:event_jButton43ActionPerformed
+
+    private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Espresso", 12, "Flat White");
+        choosenDrink = drink;
+    }//GEN-LAST:event_jButton38ActionPerformed
+
+    private void jButton98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton98ActionPerformed
+        // TODO add your handling code here:
+        Bottled bottled = new Bottled("Su", 5);
+        actionPerformed(bottled);
+    }//GEN-LAST:event_jButton98ActionPerformed
+
+    private void jButton99ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton99ActionPerformed
+        // TODO add your handling code here:
+        Bottled bottled = new Bottled("Karışık Meyve Suyu", 5);
+        actionPerformed(bottled);
+    }//GEN-LAST:event_jButton99ActionPerformed
+
+    private void jButton103ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton103ActionPerformed
+        // TODO add your handling code here:
+        Bottled bottled = new Bottled("Limonlu Gazlı İçecek", 5);
+        actionPerformed(bottled);
+    }//GEN-LAST:event_jButton103ActionPerformed
+
+    private void jButton100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton100ActionPerformed
+        // TODO add your handling code here:
+        Bottled bottled = new Bottled("Portakal Suyu", 5);
+        actionPerformed(bottled);
+    }//GEN-LAST:event_jButton100ActionPerformed
+
+    private void jButton102ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton102ActionPerformed
+        // TODO add your handling code here:
+        Bottled bottled = new Bottled("Portakallı Gazlı İçecek", 5);
+        actionPerformed(bottled);
+    }//GEN-LAST:event_jButton102ActionPerformed
+
+    private void jButton101ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton101ActionPerformed
+        // TODO add your handling code here:
+        Bottled bottled = new Bottled("Limonata", 5);
+        actionPerformed(bottled);
+    }//GEN-LAST:event_jButton101ActionPerformed
+
+    private void jButton92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton92ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Turk Kahvesi", 12, "Türk Kahvesi");
+        choosenDrink = drink;
+    }//GEN-LAST:event_jButton92ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -3909,14 +4232,6 @@ public class CafeManagementGUI extends javax.swing.JFrame implements ActionListe
     private javax.swing.JButton yenisiparis;
     private javax.swing.JButton yiyecekb;
     // End of variables declaration//GEN-END:variables
-
   
-   @Override
-    public void actionPerformed(ActionEvent e) {
-        
-        
-    }
-            
-        
     
 }

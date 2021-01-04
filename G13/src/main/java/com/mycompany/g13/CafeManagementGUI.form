@@ -79,7 +79,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
               <Component id="jPanel3" alignment="0" pref="772" max="32767" attributes="0"/>
-              <Component id="jPanel2" alignment="0" pref="0" max="32767" attributes="0"/>
+              <Component id="jPanel2" alignment="0" pref="772" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
@@ -1610,17 +1610,16 @@
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jPanel15" max="32767" attributes="0"/>
                                           <Group type="102" attributes="0">
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Component id="jButton_BrownieCheesecake" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                      <Component id="jButton_KremalıHavucluKek" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                      <Component id="jButton_ProfiterolluPasta" min="-2" pref="157" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <Component id="jButton_LimonluCheesecake" min="-2" pref="157" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="jButton_BrownieCheesecake" max="32767" attributes="0"/>
+                                                  <Component id="jButton_LimonluCheesecake" max="32767" attributes="0"/>
                                               </Group>
-                                              <EmptySpace min="0" pref="110" max="32767" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="jButton_KremalıHavucluKek" max="32767" attributes="0"/>
+                                                  <Component id="jButton_ProfiterolluPasta" max="32767" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="0" pref="177" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -1634,10 +1633,12 @@
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jButton_BrownieCheesecake" alignment="3" min="-2" pref="62" max="-2" attributes="0"/>
                                           <Component id="jButton_KremalıHavucluKek" alignment="3" min="-2" pref="62" max="-2" attributes="0"/>
-                                          <Component id="jButton_ProfiterolluPasta" alignment="3" min="-2" pref="62" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jButton_LimonluCheesecake" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jButton_LimonluCheesecake" alignment="3" min="-2" pref="62" max="-2" attributes="0"/>
+                                          <Component id="jButton_ProfiterolluPasta" alignment="3" min="-2" pref="62" max="-2" attributes="0"/>
+                                      </Group>
                                       <EmptySpace pref="173" max="32767" attributes="0"/>
                                       <Component id="jPanel15" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -1649,13 +1650,16 @@
                             <Component class="javax.swing.JButton" name="jButton_BrownieCheesecake">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
                                 </Property>
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                                </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Brownie-Cheesecake_tcm95-19177_w1024_n.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="Brownie Cheesecake"/>
                               </Properties>
@@ -1780,13 +1784,16 @@
                             <Component class="javax.swing.JButton" name="jButton_Kremal&#x131;HavucluKek">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
                                 </Property>
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                                </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Kremali-Havuclu-Kek_tcm95-56052_w1024_n.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="Kremal&#x131; Havu&#xe7;lu Kek"/>
                               </Properties>
@@ -1797,13 +1804,16 @@
                             <Component class="javax.swing.JButton" name="jButton_LimonluCheesecake">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
                                 </Property>
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                                </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Limonlu-Cheesecake_tcm95-19178_w1024_n.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="Limonlu Cheesecake"/>
                               </Properties>
@@ -1814,13 +1824,16 @@
                             <Component class="javax.swing.JButton" name="jButton_ProfiterolluPasta">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
                                 </Property>
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                                </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Profiterollu-Pasta_tcm95-59589_w1024_n.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="Profiteroll&#xfc; Pasta"/>
                               </Properties>
@@ -2031,7 +2044,7 @@
                             <Component class="javax.swing.JButton" name="jButton_Kinoal&#x131;Salata">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -2039,7 +2052,11 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Kinoali-Salata_tcm95-59737_w1024_n.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Kinoal&#x131; Salata"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
                               </Properties>
                               <Events>
                                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Kinoal&#x131;SalataActionPerformed"/>
@@ -2048,13 +2065,16 @@
                             <Component class="javax.swing.JButton" name="jButton_IzgaraTavukluSalata">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
                                 </Property>
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                                </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Izgara-Tavuklu-Salata_tcm95-49795_w1024_n.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="Izgara Tavuklu Salata"/>
                               </Properties>
@@ -2065,13 +2085,16 @@
                             <Component class="javax.swing.JButton" name="jButton_MeyveliveYogurtluParfe">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
                                 </Property>
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                                </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Meyveli-ve-Yogurtlu-Parfe_tcm95-65729_w1024_n.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="Meyveli ve Yo&#x11f;urtlu Parfe"/>
                               </Properties>
@@ -2082,7 +2105,7 @@
                             <Component class="javax.swing.JButton" name="jButton_Ananasl&#x131;ChiaPuding">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="33" green="66" red="0" type="rgb"/>
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="12" style="1"/>
@@ -2090,7 +2113,11 @@
                                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Ananasli-Chia-Puding_tcm95-66286_w1024_n.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="Ananasl&#x131; Chia Puding"/>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
                               </Properties>
                               <Events>
                                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Ananasl&#x131;ChiaPudingActionPerformed"/>

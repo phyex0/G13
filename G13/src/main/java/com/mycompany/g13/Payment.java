@@ -39,7 +39,7 @@ public class Payment {
     public static String displayCalculation()
     {
         String result;
-        result = Products.getSub_price() + "$\n\n" + Products.getTaxed_price() + "$\n\n" +  Products.getTotal_price() + "$";
+        result = Products.getSub_price() + "TL\n\n" + Products.getTaxed_price() + "TL\n\n" +  Products.getTotal_price() + "TL";
         return result;
     }
     

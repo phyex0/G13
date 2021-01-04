@@ -47,7 +47,7 @@ public  class Drinks extends Products implements Sizeable {
     
      @Override
     public String toString() {
-        return this.size + this.milk + this.syrup + super.toString(); //To change body of generated methods, choose Tools | Templates.
+        return super.toString(); //To change body of generated methods, choose Tools | Templates.
     }
 
 

@@ -68,7 +68,7 @@ public abstract class Products {
     }
     
     @Override
-public String toString(){
-        return this.product_name + " is " + this.product_price+"$\n";
+    public String toString(){
+        return "=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n" + this.product_name + " => " + this.product_price+"$\n";
     }
 }

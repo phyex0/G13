@@ -59,16 +59,17 @@ public class CafeManagementGUI extends javax.swing.JFrame{
      */
     public CafeManagementGUI() {
         initComponents();
-        //action performend 
-        kucuk.setActionCommand("Küçük, ");
-        orta.setActionCommand("Orta, ");
-        buyuk.setActionCommand("Büyük, ");
-        yagli.setActionCommand("Yağlı, ");
-        yagsiz.setActionCommand("Yağsız, ");
-        yarimyagli.setActionCommand("Yarım Yağlı, ");
-        laktozsuz.setActionCommand("Laktozsuz, ");
-        bademsutu.setActionCommand("Badem Sütlü, ");
-        soyasutu.setActionCommand("Soya Sütlü, ");
+        setAllDisble();
+
+        kucuk.setActionCommand("Küçük,2");
+        orta.setActionCommand("Orta,4");
+        buyuk.setActionCommand("Büyük,6");
+        yagli.setActionCommand("Yağlı,1");
+        yagsiz.setActionCommand("Yağsız,1");
+        yarimyagli.setActionCommand("Yarım Yağlı,1");
+        laktozsuz.setActionCommand("Laktozsuz,1");
+        bademsutu.setActionCommand("Badem Sütlü,1");
+        soyasutu.setActionCommand("Soya Sütlü,1");
         
         buttonGroup1.add(kucuk);
         buttonGroup1.add(orta);
@@ -80,14 +81,16 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         buttonGroup2.add(bademsutu);
         buttonGroup2.add(soyasutu);
         
-        karamel.setActionCommand("Karamelli");
-        cikolata.setActionCommand("Çikolatalı");
-        beyazcikolata.setActionCommand("Beyaz Çikolatalı");
-        hindistancevizi.setActionCommand("Hindistan Cevizli");
-        vanilya.setActionCommand("Vanilyalı");
-        findik.setActionCommand("Findikli");
-        cilek.setActionCommand("Çilekli");
-        ahududu.setActionCommand("Ahududulu");
+
+
+        karamel.setActionCommand("Karamelli,2");
+        cikolata.setActionCommand("Çikolatalı,2");
+        beyazcikolata.setActionCommand("Beyaz Çikolatalı,2");
+        hindistancevizi.setActionCommand("Hindistan Cevizli,2");
+        vanilya.setActionCommand("Vanilyalı,2");
+        findik.setActionCommand("Findikli,2");
+        cilek.setActionCommand("Çilekli,2");
+        ahududu.setActionCommand("Ahududulu,2");
         
         checkboxes.add(karamel);
         checkboxes.add(cikolata);
@@ -102,13 +105,45 @@ public class CafeManagementGUI extends javax.swing.JFrame{
       
     }
     
+    public void setAllDisble()
+    {
+        size.setEnabled(false);
+        milk.setEnabled(false);
+        syrup.setEnabled(false);
+        
+        buttonGroup1.clearSelection();
+        buttonGroup2.clearSelection();
+        karamel.setSelected(false);
+        cikolata.setSelected(false);
+        beyazcikolata.setSelected(false);
+        hindistancevizi.setSelected(false);
+        vanilya.setSelected(false);
+        findik.setSelected(false);
+        cilek.setSelected(false);
+        ahududu.setSelected(false);
+    }
+    
     public void actionPerformed(Products product) {
-        Products.addSub_price(product.getProduct_price());
-        Products.setTotal_price();
-        Products.setTaxed_price();
-        Payment.givenOrder.add(product);
-        order.setText(Payment.displayOrder());
-        calculation.setText(Payment.displayCalculation());  
+        if(givenOrder.size() == 0 || (!(givenOrder.get(givenOrder.size() - 1) instanceof Drinks) && !(givenOrder.get(givenOrder.size() - 1) instanceof Size)))
+        {
+            Products.addSub_price(product.getProduct_price());
+            Products.setTotal_price();
+            Products.setTaxed_price();
+            Payment.givenOrder.add(product);
+            order.setText(Payment.displayOrder());
+            calculation.setText(Payment.displayCalculation());
+            
+            setAllDisble();
+        }
+    }
+    
+    public void actionPerformedDrinks(Products product)
+    {
+        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks) && !(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Size)))
+        {
+            actionPerformed(product);
+            size.setEnabled(true);
+        }
     }
      
     
@@ -377,6 +412,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         kucuk = new javax.swing.JRadioButton();
         orta = new javax.swing.JRadioButton();
         buyuk = new javax.swing.JRadioButton();
+        size = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
         yagli = new javax.swing.JRadioButton();
         yagsiz = new javax.swing.JRadioButton();
@@ -384,6 +420,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         laktozsuz = new javax.swing.JRadioButton();
         bademsutu = new javax.swing.JRadioButton();
         soyasutu = new javax.swing.JRadioButton();
+        milk = new javax.swing.JButton();
         jPanel9 = new javax.swing.JPanel();
         karamel = new javax.swing.JCheckBox();
         cikolata = new javax.swing.JCheckBox();
@@ -393,8 +430,8 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         findik = new javax.swing.JCheckBox();
         cilek = new javax.swing.JCheckBox();
         ahududu = new javax.swing.JCheckBox();
-        jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
+        syrup = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -2992,16 +3029,28 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         buyuk.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         buyuk.setText("BÜYÜK");
 
+        size.setText("OK");
+        size.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sizeActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(buyuk, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(orta, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kucuk, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(buyuk, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(orta, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(kucuk, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(size, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
@@ -3013,7 +3062,8 @@ public class CafeManagementGUI extends javax.swing.JFrame{
                 .addComponent(orta)
                 .addGap(37, 37, 37)
                 .addComponent(buyuk)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addComponent(size, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 470, -1, 280));
@@ -3039,6 +3089,13 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         soyasutu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         soyasutu.setText("SOYA SÜTÜ");
 
+        milk.setText("OK");
+        milk.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                milkActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
@@ -3055,23 +3112,28 @@ public class CafeManagementGUI extends javax.swing.JFrame{
                         .addComponent(soyasutu, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(bademsutu, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(milk, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(yagli)
-                .addGap(18, 18, 18)
+                .addGap(15, 15, 15)
                 .addComponent(yagsiz)
-                .addGap(18, 18, 18)
+                .addGap(15, 15, 15)
                 .addComponent(yarimyagli)
-                .addGap(18, 18, 18)
+                .addGap(15, 15, 15)
                 .addComponent(laktozsuz)
-                .addGap(18, 18, 18)
+                .addGap(15, 15, 15)
                 .addComponent(bademsutu)
-                .addGap(18, 18, 18)
+                .addGap(15, 15, 15)
                 .addComponent(soyasutu)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 5, Short.MAX_VALUE)
+                .addComponent(milk, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jPanel3.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(166, 470, -1, 280));
@@ -3139,25 +3201,10 @@ public class CafeManagementGUI extends javax.swing.JFrame{
                 .addComponent(cilek)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(ahududu)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 470, -1, 280));
-
-        jButton5.setBackground(new java.awt.Color(0, 153, 51));
-        jButton5.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/add.png"))); // NOI18N
-        jButton5.setText("ÖZELLİKLERİ EKLE"); // NOI18N
-        jButton5.setToolTipText("");
-        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton5.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 470, 160, 90));
 
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/github.png"))); // NOI18N
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -3165,7 +3212,15 @@ public class CafeManagementGUI extends javax.swing.JFrame{
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 570, 160, 80));
+        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 470, 160, 80));
+
+        syrup.setText("OK");
+        syrup.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                syrupActionPerformed(evt);
+            }
+        });
+        jPanel3.add(syrup, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 700, 60, 30));
 
         javax.swing.GroupLayout MainPanelLayout = new javax.swing.GroupLayout(MainPanel);
         MainPanel.setLayout(MainPanelLayout);
@@ -3182,8 +3237,8 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         MainPanelLayout.setVerticalGroup(
             MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 772, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 772, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 830, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -3194,7 +3249,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 772, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 772, Short.MAX_VALUE)
         );
 
         pack();
@@ -3427,9 +3482,33 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton104ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton104ActionPerformed
         // TODO add your handling code here:
-        Payment.removeLastOrder();
-        order.setText(Payment.displayOrder());
-        calculation.setText(Payment.displayCalculation());
+        if(givenOrder.size() != 0)
+        {
+            if(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Size)
+            {
+                size.setEnabled(true);
+            }
+        
+            else if(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Milk)
+            {
+                milk.setEnabled(true);
+            }
+        
+            else if(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Syrup)
+            {
+                syrup.setEnabled(true);
+            }
+            
+            else if(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)
+            {
+                setAllDisble();
+                
+            }
+        
+            Payment.removeLastOrder();
+            order.setText(Payment.displayOrder());
+            calculation.setText(Payment.displayCalculation());
+        }
 
     }//GEN-LAST:event_jButton104ActionPerformed
 
@@ -3454,7 +3533,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso" ,12 ,"Espresso");
-        choosenDrink = drink;
+        actionPerformedDrinks(drink);
     }//GEN-LAST:event_jButton41ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
@@ -3681,12 +3760,13 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         Payment.clear();
         order.setText(Payment.displayOrder());
         calculation.setText(Payment.displayCalculation());
+        setAllDisble();
     }//GEN-LAST:event_siparisresetActionPerformed
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso" ,12 ,"Gingerbreat Latte");
-        choosenDrink = drink;
+        actionPerformedDrinks(drink);
 
     }//GEN-LAST:event_jButton35ActionPerformed
 
@@ -3712,48 +3792,16 @@ public class CafeManagementGUI extends javax.swing.JFrame{
          menuchangefood(salata);
     }//GEN-LAST:event_bsalata1ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-        Drinks drink = new Drinks(choosenDrink.getType(), choosenDrink.getProduct_price(), choosenDrink.getProduct_name());
-        
-        String syrup = "";
-        for ( JCheckBox checkbox : checkboxes ) 
-        {
-            if( checkbox.isSelected() )
-            {
-                syrup += checkbox.getActionCommand() + ", ";
-            }
-        }
-
-        if(!drink.getType().equalsIgnoreCase("Şişelenmiş"))
-            drink.setDrinkFeatures(buttonGroup1.getSelection().getActionCommand(), buttonGroup2.getSelection().getActionCommand(), syrup);
-        
-        actionPerformed(drink);
-        choosenDrink = null;
-  
-            
-        buttonGroup1.clearSelection();
-        buttonGroup2.clearSelection();
-        karamel.setSelected(false);
-        cikolata.setSelected(false);
-        beyazcikolata.setSelected(false);
-        hindistancevizi.setSelected(false);
-        vanilya.setSelected(false);
-        findik.setSelected(false);
-        cilek.setSelected(false);
-        ahududu.setSelected(false);
-    }//GEN-LAST:event_jButton5ActionPerformed
-
     private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso", 12, "Coffee Mocha");
-        choosenDrink = drink;
+        actionPerformedDrinks(drink);
     }//GEN-LAST:event_jButton39ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso", 12, "Tuffee Nut Latte");
-        choosenDrink = drink;
+        actionPerformedDrinks(drink);
     }//GEN-LAST:event_jButton36ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -3908,31 +3956,31 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso", 12, "Buzlu Caffè Mocha");
-        choosenDrink = drink;
+        actionPerformedDrinks(drink);
     }//GEN-LAST:event_jButton40ActionPerformed
 
     private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso", 12, "Espresso Con Panna");
-        choosenDrink = drink;
+        actionPerformedDrinks(drink);
     }//GEN-LAST:event_jButton42ActionPerformed
 
     private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso", 12, "Caffe Latte");
-        choosenDrink = drink;
+        actionPerformedDrinks(drink);
     }//GEN-LAST:event_jButton37ActionPerformed
 
     private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso", 12, "Espresso Macchiato");
-        choosenDrink = drink;
+        actionPerformedDrinks(drink);
     }//GEN-LAST:event_jButton43ActionPerformed
 
     private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso", 12, "Flat White");
-        choosenDrink = drink;
+        actionPerformedDrinks(drink);
     }//GEN-LAST:event_jButton38ActionPerformed
 
     private void jButton98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton98ActionPerformed
@@ -3976,6 +4024,69 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         Drinks drink= new Drinks("Turk Kahvesi", 12, "Türk Kahvesi");
         choosenDrink = drink;
     }//GEN-LAST:event_jButton92ActionPerformed
+
+    private void sizeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sizeActionPerformed
+        // TODO add your handling code here:
+        String size[] = new String[2];
+        size = buttonGroup1.getSelection().getActionCommand().split(",", 2);
+        Size choosenSize = new Size(size[0], Integer.parseInt(size[1]));
+        
+        Products.addSub_price(Integer.parseInt(size[1]));
+        Products.setTotal_price();
+        Products.setTaxed_price();
+        
+        givenOrder.add(choosenSize);
+        order.setText(Payment.displayOrder());
+        calculation.setText(Payment.displayCalculation());
+        
+        this.size.setEnabled(false);
+        milk.setEnabled(true);
+    }//GEN-LAST:event_sizeActionPerformed
+
+    private void milkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_milkActionPerformed
+        // TODO add your handling code here:
+        String milk[] = new String[2];
+        milk = buttonGroup2.getSelection().getActionCommand().split(",", 2);
+        Milk choosenMilk = new Milk(milk[0], Integer.parseInt(milk[1]));
+        
+        Products.addSub_price(Integer.parseInt(milk[1]));
+        Products.setTotal_price();
+        Products.setTaxed_price();
+        
+        givenOrder.add(choosenMilk);
+        order.setText(Payment.displayOrder());
+        calculation.setText(Payment.displayCalculation());
+        
+        this.milk.setEnabled(false);
+        this.syrup.setEnabled(true);
+    }//GEN-LAST:event_milkActionPerformed
+
+    private void syrupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_syrupActionPerformed
+        // TODO add your handling code here:
+        String syrup[] = new String[2];
+        
+        for ( JCheckBox checkbox : checkboxes ) 
+        {
+            if( checkbox.isSelected() )
+            {
+                syrup = checkbox.getActionCommand().split(",", 2);
+                Syrup choosenSyrup = new Syrup(syrup[0], Integer.parseInt(syrup[1]));
+                Products.addSub_price(Integer.parseInt(syrup[1]));
+                Products.setTotal_price();
+                Products.setTaxed_price();
+                
+                givenOrder.add(choosenSyrup);
+                
+            }
+        }
+        
+        order.setText(Payment.displayOrder());
+        calculation.setText(Payment.displayCalculation());
+        
+        this.syrup.setEnabled(false);
+
+
+    }//GEN-LAST:event_syrupActionPerformed
 
     /**
      * @param args the command line arguments
@@ -4112,7 +4223,6 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     private javax.swing.JButton jButton42;
     private javax.swing.JButton jButton43;
     private javax.swing.JButton jButton49;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton59;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton60;
@@ -4231,6 +4341,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     private javax.swing.JPanel kurabiye;
     private javax.swing.JRadioButton laktozsuz;
     private javax.swing.JPanel mediumpan;
+    private javax.swing.JButton milk;
     public java.awt.TextArea order;
     private javax.swing.JRadioButton orta;
     private javax.swing.JLayeredPane paketkahvepan;
@@ -4245,7 +4356,9 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     private javax.swing.JPanel salata;
     private javax.swing.JPanel sandavic;
     private javax.swing.JButton siparisreset;
+    private javax.swing.JButton size;
     private javax.swing.JRadioButton soyasutu;
+    private javax.swing.JButton syrup;
     public static javax.swing.JPanel userpan;
     private javax.swing.JButton uyeg;
     private javax.swing.JCheckBox vanilya;

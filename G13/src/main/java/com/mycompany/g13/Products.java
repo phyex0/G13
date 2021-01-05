@@ -1,6 +1,8 @@
 package com.mycompany.g13;
 
-public  class Products implements P_Interface{
+import static com.mycompany.g13.SystemClass.givenOrder;
+
+public abstract class Products implements P_Interface{
     
     public double product_price;
     public String product_name;
@@ -8,12 +10,12 @@ public  class Products implements P_Interface{
     private static double sub_price;
     private static double taxed_price;
     private static double total_price;
+    final static double tax = 18;
 
     public Products()
     {
     }
     
-
     public Products(double product_price, String product_name) {
         this.product_price = product_price;
         this.product_name = product_name;

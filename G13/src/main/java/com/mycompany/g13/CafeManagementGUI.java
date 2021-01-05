@@ -1,6 +1,6 @@
 package com.mycompany.g13;
 
-import static com.mycompany.g13.Payment.*;
+import static com.mycompany.g13.SystemClass.*;
 import com.mycompany.g13.repository.ClientRepository;
 import java.awt.Desktop;
 import java.awt.event.ActionEvent;
@@ -27,7 +27,6 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     //succes or failed messages come with error JFrame
    public static JFrame error;
    String order_Text = "";
-   Drinks choosenDrink;
    ArrayList<JCheckBox> checkboxes = new ArrayList<JCheckBox>();
    
    
@@ -122,7 +121,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         cilek.setSelected(false);
         ahududu.setSelected(false);
     }
-    
+    /*
     public void actionPerformed(Products product) {
         if(givenOrder.size() == 0 || (!(givenOrder.get(givenOrder.size() - 1) instanceof Drinks) && !(givenOrder.get(givenOrder.size() - 1).getType().equals("Size"))))
         {
@@ -132,7 +131,6 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             Payment.givenOrder.add(product);
             order.setText(Payment.displayOrder());
             calculation.setText(Payment.displayCalculation());
-            
             setAllDisble();
         }
     }
@@ -141,11 +139,31 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     {
         if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks) && !(Payment.givenOrder.get(givenOrder.size() - 1).getType().equals("Size"))))
         {
-            actionPerformed(product);
+            //actionPerformed(product);
+            Products.addSub_price(product.getProduct_price());
+            Products.setTotal_price();
+            Products.setTaxed_price();
+            Payment.givenOrder.add(product);
+            order.setText(Payment.displayOrder());
+            calculation.setText(Payment.displayCalculation());
+            setAllDisble();
             size.setEnabled(true);
         }
     }
-     
+    */
+    
+    public void actionPerformed(Products product)
+    {
+        
+        if(givenOrder.size() == 0 || (!(SystemClass.givenOrder.get(givenOrder.size() - 1) instanceof Drinks) && !(SystemClass.givenOrder.get(givenOrder.size() - 1).getType().equals("Size"))))
+        {
+            product.calculate_and_add();
+            order.setText(SystemClass.displayOrder());
+            calculation.setText(SystemClass.displayCalculation());
+            setAllDisble();
+        }
+        
+    }
     
     public void menuchange(JPanel panel)
     {  
@@ -3544,44 +3562,45 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         // TODO add your handling code here:
         if(givenOrder.size() != 0)
         {
-            if(Payment.givenOrder.get(givenOrder.size() - 1).getType().equals("Size"))
+            if(SystemClass.givenOrder.get(givenOrder.size() - 1).getType().equals("Size"))
             {
                 size.setEnabled(true);
                 milk.setEnabled(false);
                 syrup.setEnabled(false);
             }
         
-            else if(Payment.givenOrder.get(givenOrder.size() - 1).getType().equals("Milk"))
+            else if(SystemClass.givenOrder.get(givenOrder.size() - 1).getType().equals("Milk"))
             {
                 size.setEnabled(false);
                 milk.setEnabled(true);
                 syrup.setEnabled(false);
             }
         
-            else if(Payment.givenOrder.get(givenOrder.size() - 1).getType().equals("Syrup"))
+            else if(SystemClass.givenOrder.get(givenOrder.size() - 1).getType().equals("Syrup"))
             {
                 size.setEnabled(false);
                 milk.setEnabled(false);
                 syrup.setEnabled(true);
             }
             
-            else if(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)
+            else if(SystemClass.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)
             {
                 setAllDisble();
                 
             }
         
-            Payment.removeLastOrder();
-            order.setText(Payment.displayOrder());
-            calculation.setText(Payment.displayCalculation());
+            SystemClass.removeLastOrder();
+            order.setText(SystemClass.displayOrder());
+            calculation.setText(SystemClass.displayCalculation());
         }
 
     }//GEN-LAST:event_jButton104ActionPerformed
 
     private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
         // TODO add your handling code here:
-        Drinks drink= new Drinks("Gingerbread Frappuccino" ,12 ,"Espresso");
-        actionPerformedDrinks(drink);
+        Drinks drink= new Drinks("Frappucino", 12, "Gingerbread Frappuccino");
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton59ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -3601,18 +3620,19 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso" ,12 ,"Espresso");
-        actionPerformedDrinks(drink);
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton41ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
         // TODO add your handling code here:
-        PacketedProducts packetedProducts = new PacketedProducts("House Blend", "Blonde", 15);
+        PacketedProducts packetedProducts = new PacketedProducts("House Blend", "Medium", 15);
         actionPerformed(packetedProducts);
     }//GEN-LAST:event_jButton34ActionPerformed
 
     private void jButton112ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton112ActionPerformed
         // TODO add your handling code here:
-        PacketedProducts packetedProducts = new PacketedProducts("House Blend", "Blonde", 15);
+        PacketedProducts packetedProducts = new PacketedProducts("House Blend", "Medium", 15);
         actionPerformed(packetedProducts);
     }//GEN-LAST:event_jButton112ActionPerformed
 
@@ -3718,8 +3738,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         // TODO add your handling code here:
         Gifts gift = new Gifts(10.0, "Kupa");
         actionPerformed(gift);
-        
-        
+   
     }//GEN-LAST:event_jButton_KupaActionPerformed
 
     private void kucukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kucukActionPerformed
@@ -3825,16 +3844,17 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void siparisresetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siparisresetActionPerformed
         // TODO add your handling code here:
-        Payment.clear();
-        order.setText(Payment.displayOrder());
-        calculation.setText(Payment.displayCalculation());
+        SystemClass.clear();
+        order.setText(SystemClass.displayOrder());
+        calculation.setText(SystemClass.displayCalculation());
         setAllDisble();
     }//GEN-LAST:event_siparisresetActionPerformed
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso" ,12 ,"Gingerbreat Latte");
-        actionPerformedDrinks(drink);
+        actionPerformed(drink);
+        size.setEnabled(true);
 
     }//GEN-LAST:event_jButton35ActionPerformed
 
@@ -3863,13 +3883,15 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso", 12, "Coffee Mocha");
-        actionPerformedDrinks(drink);
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton39ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso", 12, "Tuffee Nut Latte");
-        actionPerformedDrinks(drink);
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton36ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -3939,7 +3961,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton108ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton108ActionPerformed
         // TODO add your handling code here:
-        PacketedProducts packetedProducts = new PacketedProducts("Espresso Roast", "Blonde", 15);
+        PacketedProducts packetedProducts = new PacketedProducts("Espresso Roast", "Dark", 15);
         actionPerformed(packetedProducts);
     }//GEN-LAST:event_jButton108ActionPerformed
 
@@ -3957,7 +3979,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton109ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton109ActionPerformed
         // TODO add your handling code here:
-        PacketedProducts packetedProducts = new PacketedProducts("Sumatra", "Blonde", 15);
+        PacketedProducts packetedProducts = new PacketedProducts("Sumatra", "Dark", 15);
         actionPerformed(packetedProducts);
     }//GEN-LAST:event_jButton109ActionPerformed
 
@@ -4005,7 +4027,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton119ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton119ActionPerformed
         // TODO add your handling code here:
-        PacketedProducts packetedProducts = new PacketedProducts("Espresso Roast", "Blonde", 15);
+        PacketedProducts packetedProducts = new PacketedProducts("Espresso Roast", "Dark", 15);
         actionPerformed(packetedProducts);
     }//GEN-LAST:event_jButton119ActionPerformed
 
@@ -4017,38 +4039,43 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton120ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton120ActionPerformed
         // TODO add your handling code here:
-        PacketedProducts packetedProducts = new PacketedProducts("Sumatra", "Blonde", 15);
+        PacketedProducts packetedProducts = new PacketedProducts("Sumatra", "Dark", 15);
         actionPerformed(packetedProducts);
     }//GEN-LAST:event_jButton120ActionPerformed
 
     private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso", 12, "Buzlu Caffè Mocha");
-        actionPerformedDrinks(drink);
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton40ActionPerformed
 
     private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso", 12, "Espresso Con Panna");
-        actionPerformedDrinks(drink);
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton42ActionPerformed
 
     private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso", 12, "Caffe Latte");
-        actionPerformedDrinks(drink);
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton37ActionPerformed
 
     private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso", 12, "Espresso Macchiato");
-        actionPerformedDrinks(drink);
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton43ActionPerformed
 
     private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Espresso", 12, "Flat White");
-        actionPerformedDrinks(drink);
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton38ActionPerformed
 
     private void jButton98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton98ActionPerformed
@@ -4089,8 +4116,9 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton92ActionPerformed
         // TODO add your handling code here:
-        Drinks drink= new Drinks("Turk Kahvesi", 12, "Türk Kahvesi");
-        choosenDrink = drink;
+        Drinks drink = new Drinks("Turk Kahvesi", 12, "Türk Kahvesi");
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton92ActionPerformed
 
     private void sizeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sizeActionPerformed
@@ -4099,13 +4127,10 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         size = buttonGroup1.getSelection().getActionCommand().split(",", 2);
         Property choosenSize = new Property("Size", size[0], Integer.parseInt(size[1]));
         
-        Products.addSub_price(Integer.parseInt(size[1]));
-        Products.setTotal_price();
-        Products.setTaxed_price();
+        choosenSize.calculate_and_add();
         
-        givenOrder.add(choosenSize);
-        order.setText(Payment.displayOrder());
-        calculation.setText(Payment.displayCalculation());
+        order.setText(SystemClass.displayOrder());
+        calculation.setText(SystemClass.displayCalculation());
         
         this.size.setEnabled(false);
         milk.setEnabled(true);
@@ -4117,13 +4142,10 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         milk = buttonGroup2.getSelection().getActionCommand().split(",", 2);
         Property choosenMilk = new Property("Milk", milk[0], Integer.parseInt(milk[1]));
         
-        Products.addSub_price(Integer.parseInt(milk[1]));
-        Products.setTotal_price();
-        Products.setTaxed_price();
+        choosenMilk.calculate_and_add();
         
-        givenOrder.add(choosenMilk);
-        order.setText(Payment.displayOrder());
-        calculation.setText(Payment.displayCalculation());
+        order.setText(SystemClass.displayOrder());
+        calculation.setText(SystemClass.displayCalculation());
         
         this.milk.setEnabled(false);
         this.syrup.setEnabled(true);
@@ -4139,17 +4161,13 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             {
                 syrup = checkbox.getActionCommand().split(",", 2);
                 Property choosenSyrup = new Property("Syrup", syrup[0], Integer.parseInt(syrup[1]));
-                Products.addSub_price(Integer.parseInt(syrup[1]));
-                Products.setTotal_price();
-                Products.setTaxed_price();
-                
-                givenOrder.add(choosenSyrup);
+                choosenSyrup.calculate_and_add();
                 
             }
         }
         
-        order.setText(Payment.displayOrder());
-        calculation.setText(Payment.displayCalculation());
+        order.setText(SystemClass.displayOrder());
+        calculation.setText(SystemClass.displayCalculation());
         
         this.syrup.setEnabled(false);
 
@@ -4158,103 +4176,87 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton72ActionPerformed
         // TODO add your handling code here:
-        Drinks drink= new Drinks("Vanilla Cream Frappuccino" , 12,"Espresso");
-        actionPerformedDrinks(drink);
+        Drinks drink= new Drinks("Frappucino" , 12,"Vanilla Cream Frappuccino");
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton72ActionPerformed
 
     private void jButton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton70ActionPerformed
         // TODO add your handling code here:
-        Drinks drink= new Drinks("Toffee Nut Frappuccino" , 12,"Espresso");
-        actionPerformedDrinks(drink);
+        Drinks drink= new Drinks("Frappucino" , 12,"Toffee Nut Frappuccino");
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton70ActionPerformed
 
     private void jButton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton73ActionPerformed
         // TODO add your handling code here:
-        Drinks drink= new Drinks("Strawberries & Cream Frappuccino" , 12, "Espresso");
-        actionPerformedDrinks(drink);
+        Drinks drink= new Drinks("Frappucino" , 12, "Strawberries & Cream Frappuccino");
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton73ActionPerformed
 
     private void jButton71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton71ActionPerformed
         // TODO add your handling code here:
-        Drinks drink= new Drinks("Caramel Frappuccino" , 12,"Espresso");
-        actionPerformedDrinks(drink);
+        Drinks drink= new Drinks("Frappucino" , 12,"Caramel Frappuccino");
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton71ActionPerformed
 
     private void jButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton74ActionPerformed
         // TODO add your handling code here:
-        Drinks drink= new Drinks("Chai Cream Frappuccino" , 12,"Espresso");
-        actionPerformedDrinks(drink);
+        Drinks drink= new Drinks("Frappucino" , 12,"Chai Cream Frappuccino");
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton74ActionPerformed
 
     private void jButton80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton80ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Çay" ,12 ,"English Breakfast");
-        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)))
-        {
-            actionPerformed(drink);
-            size.setEnabled(true);
-        }
+        actionPerformed(drink);
+        size.setEnabled(true);
         
     }//GEN-LAST:event_jButton80ActionPerformed
 
     private void jButton84ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton84ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Çay", 12, "Peach Green Tea & Lemonade");
-        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)))
-        {
-            actionPerformed(drink);
-            size.setEnabled(true);
-        }
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton84ActionPerformed
 
     private void jButton81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton81ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Çay", 12, "Earl Grey");
-        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)))
-        {
-            actionPerformed(drink);
-            size.setEnabled(true);
-        }
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton81ActionPerformed
 
     private void jButton85ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton85ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Çay", 12, "Iced Shaken Black Tea");
-        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)))
-        {
-            actionPerformed(drink);
-            size.setEnabled(true);
-        }
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton85ActionPerformed
 
     private void jButton82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton82ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Çay", 12, "Hibiscus");
-        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)))
-        {
-            actionPerformed(drink);
-            size.setEnabled(true);
-        }
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton82ActionPerformed
 
     private void jButton86ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton86ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Çay", 12, "Hibiscus");
-        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)))
-        {
-            actionPerformed(drink);
-            size.setEnabled(true);
-        }
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton86ActionPerformed
 
     private void jButton83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton83ActionPerformed
         // TODO add your handling code here:
         Drinks drink= new Drinks("Çay", 12, "Youthberry");
-        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)))
-        {
-            actionPerformed(drink);
-            size.setEnabled(true);
-        }
+        actionPerformed(drink);
+        size.setEnabled(true);
     }//GEN-LAST:event_jButton83ActionPerformed
 
     /**

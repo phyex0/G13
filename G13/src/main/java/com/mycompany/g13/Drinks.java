@@ -1,8 +1,10 @@
 package com.mycompany.g13;
 
+import static com.mycompany.g13.SystemClass.givenOrder;
+
 public  class Drinks extends Products{
     
-    private String type;
+    public String type;
 
     public Drinks() {}
     
@@ -19,7 +21,17 @@ public  class Drinks extends Products{
     public String getType() {
         return type;
     }
-
+    
+    public void calculate_and_add() {
+        if(givenOrder.size() == 0 || (!(givenOrder.get(givenOrder.size() - 1) instanceof Drinks) && !(givenOrder.get(givenOrder.size() - 1).getType().equals("Size"))))
+        {
+            Products.addSub_price(this.getProduct_price());
+            Products.setTotal_price();
+            Products.setTaxed_price();
+            SystemClass.givenOrder.add(this);
+        }
+    }
+    
     
      @Override
     public String toString() {

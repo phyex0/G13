@@ -1,5 +1,7 @@
 package com.mycompany.g13;
 
+import static com.mycompany.g13.SystemClass.givenOrder;
+
 public class PacketedProducts extends Products {
     
     private String profile;
@@ -18,11 +20,21 @@ public class PacketedProducts extends Products {
     public void setProfile(String profile) {
         this.profile = profile;
     }
+    
+    public void calculate_and_add() {
+        if(givenOrder.size() == 0 || (!(givenOrder.get(givenOrder.size() - 1) instanceof Drinks) && !(givenOrder.get(givenOrder.size() - 1).getType().equals("Size"))))
+        {
+            Products.addSub_price(this.getProduct_price());
+            Products.setTotal_price();
+            Products.setTaxed_price();
+            SystemClass.givenOrder.add(this);
+        }
+    }
 
     
     @Override
     public String toString() {
-        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+        return "=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n" + this.profile + "-" + this.product_name + " => " + this.product_price+"$\n";
     }
     
 }

@@ -3,7 +3,7 @@ package com.mycompany.g13;
 import java.util.ArrayList;
 
 
-public class Payment {
+public class SystemClass {
     
     public static ArrayList<Products> givenOrder = new ArrayList<Products>();
    

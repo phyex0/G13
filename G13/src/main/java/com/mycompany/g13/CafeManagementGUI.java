@@ -124,7 +124,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     }
     
     public void actionPerformed(Products product) {
-        if(givenOrder.size() == 0 || (!(givenOrder.get(givenOrder.size() - 1) instanceof Drinks) && !(givenOrder.get(givenOrder.size() - 1) instanceof Size)))
+        if(givenOrder.size() == 0 || (!(givenOrder.get(givenOrder.size() - 1) instanceof Drinks) && !(givenOrder.get(givenOrder.size() - 1).getType().equals("Size"))))
         {
             Products.addSub_price(product.getProduct_price());
             Products.setTotal_price();
@@ -139,7 +139,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     
     public void actionPerformedDrinks(Products product)
     {
-        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks) && !(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Size)))
+        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks) && !(Payment.givenOrder.get(givenOrder.size() - 1).getType().equals("Size"))))
         {
             actionPerformed(product);
             size.setEnabled(true);
@@ -1924,6 +1924,11 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jButton70.setText("Toffee Nut Frappuccino");
         jButton70.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton70.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton70.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton70ActionPerformed(evt);
+            }
+        });
 
         jButton71.setBackground(new java.awt.Color(14, 30, 21));
         jButton71.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1932,6 +1937,11 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jButton71.setText("Caramel Frappuccino");
         jButton71.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton71.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton71.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton71ActionPerformed(evt);
+            }
+        });
 
         jButton72.setBackground(new java.awt.Color(14, 30, 21));
         jButton72.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1940,6 +1950,11 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jButton72.setText("Vanilla Cream Frappuccino");
         jButton72.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton72.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton72.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton72ActionPerformed(evt);
+            }
+        });
 
         jButton73.setBackground(new java.awt.Color(14, 30, 21));
         jButton73.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1948,6 +1963,11 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jButton73.setText("Strawberries & Cream Frappuccino");
         jButton73.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton73.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton73.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton73ActionPerformed(evt);
+            }
+        });
 
         jButton74.setBackground(new java.awt.Color(14, 30, 21));
         jButton74.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1956,6 +1976,11 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jButton74.setText("Chai Cream Frappuccino");
         jButton74.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton74.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton74.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton74ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
@@ -2099,6 +2124,11 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jButton80.setText("English Breakfast");
         jButton80.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton80.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton80.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton80ActionPerformed(evt);
+            }
+        });
 
         jButton81.setBackground(new java.awt.Color(14, 30, 21));
         jButton81.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -2107,6 +2137,11 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jButton81.setText("Earl Grey");
         jButton81.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton81.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton81.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton81ActionPerformed(evt);
+            }
+        });
 
         jButton82.setBackground(new java.awt.Color(14, 30, 21));
         jButton82.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -2115,6 +2150,11 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jButton82.setText("Hibiscus");
         jButton82.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton82.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton82.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton82ActionPerformed(evt);
+            }
+        });
 
         jButton83.setBackground(new java.awt.Color(14, 30, 21));
         jButton83.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -2123,6 +2163,11 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jButton83.setText("Youthberry ");
         jButton83.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton83.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton83.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton83ActionPerformed(evt);
+            }
+        });
 
         jButton84.setBackground(new java.awt.Color(14, 30, 21));
         jButton84.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -2131,6 +2176,11 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jButton84.setText("Peach Green Tea & Lemonade");
         jButton84.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton84.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton84.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton84ActionPerformed(evt);
+            }
+        });
 
         jButton85.setBackground(new java.awt.Color(14, 30, 21));
         jButton85.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -2139,6 +2189,11 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jButton85.setText("Iced Shaken Black Tea");
         jButton85.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton85.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton85.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton85ActionPerformed(evt);
+            }
+        });
 
         jButton86.setBackground(new java.awt.Color(14, 30, 21));
         jButton86.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -2147,6 +2202,11 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jButton86.setText("Iced Shaken Green Tea");
         jButton86.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton86.setMargin(new java.awt.Insets(2, 2, 2, 14));
+        jButton86.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton86ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
         jPanel18.setLayout(jPanel18Layout);
@@ -3237,7 +3297,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         MainPanelLayout.setVerticalGroup(
             MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 830, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -3249,7 +3309,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 772, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 772, Short.MAX_VALUE)
         );
 
         pack();
@@ -3484,18 +3544,24 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         // TODO add your handling code here:
         if(givenOrder.size() != 0)
         {
-            if(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Size)
+            if(Payment.givenOrder.get(givenOrder.size() - 1).getType().equals("Size"))
             {
                 size.setEnabled(true);
+                milk.setEnabled(false);
+                syrup.setEnabled(false);
             }
         
-            else if(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Milk)
+            else if(Payment.givenOrder.get(givenOrder.size() - 1).getType().equals("Milk"))
             {
+                size.setEnabled(false);
                 milk.setEnabled(true);
+                syrup.setEnabled(false);
             }
         
-            else if(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Syrup)
+            else if(Payment.givenOrder.get(givenOrder.size() - 1).getType().equals("Syrup"))
             {
+                size.setEnabled(false);
+                milk.setEnabled(false);
                 syrup.setEnabled(true);
             }
             
@@ -3514,6 +3580,8 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
         // TODO add your handling code here:
+        Drinks drink= new Drinks("Gingerbread Frappuccino" ,12 ,"Espresso");
+        actionPerformedDrinks(drink);
     }//GEN-LAST:event_jButton59ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -4029,7 +4097,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         // TODO add your handling code here:
         String size[] = new String[2];
         size = buttonGroup1.getSelection().getActionCommand().split(",", 2);
-        Size choosenSize = new Size(size[0], Integer.parseInt(size[1]));
+        Property choosenSize = new Property("Size", size[0], Integer.parseInt(size[1]));
         
         Products.addSub_price(Integer.parseInt(size[1]));
         Products.setTotal_price();
@@ -4047,7 +4115,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         // TODO add your handling code here:
         String milk[] = new String[2];
         milk = buttonGroup2.getSelection().getActionCommand().split(",", 2);
-        Milk choosenMilk = new Milk(milk[0], Integer.parseInt(milk[1]));
+        Property choosenMilk = new Property("Milk", milk[0], Integer.parseInt(milk[1]));
         
         Products.addSub_price(Integer.parseInt(milk[1]));
         Products.setTotal_price();
@@ -4070,7 +4138,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             if( checkbox.isSelected() )
             {
                 syrup = checkbox.getActionCommand().split(",", 2);
-                Syrup choosenSyrup = new Syrup(syrup[0], Integer.parseInt(syrup[1]));
+                Property choosenSyrup = new Property("Syrup", syrup[0], Integer.parseInt(syrup[1]));
                 Products.addSub_price(Integer.parseInt(syrup[1]));
                 Products.setTotal_price();
                 Products.setTaxed_price();
@@ -4087,6 +4155,107 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
 
     }//GEN-LAST:event_syrupActionPerformed
+
+    private void jButton72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton72ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Vanilla Cream Frappuccino" , 12,"Espresso");
+        actionPerformedDrinks(drink);
+    }//GEN-LAST:event_jButton72ActionPerformed
+
+    private void jButton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton70ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Toffee Nut Frappuccino" , 12,"Espresso");
+        actionPerformedDrinks(drink);
+    }//GEN-LAST:event_jButton70ActionPerformed
+
+    private void jButton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton73ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Strawberries & Cream Frappuccino" , 12, "Espresso");
+        actionPerformedDrinks(drink);
+    }//GEN-LAST:event_jButton73ActionPerformed
+
+    private void jButton71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton71ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Caramel Frappuccino" , 12,"Espresso");
+        actionPerformedDrinks(drink);
+    }//GEN-LAST:event_jButton71ActionPerformed
+
+    private void jButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton74ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Chai Cream Frappuccino" , 12,"Espresso");
+        actionPerformedDrinks(drink);
+    }//GEN-LAST:event_jButton74ActionPerformed
+
+    private void jButton80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton80ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Çay" ,12 ,"English Breakfast");
+        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)))
+        {
+            actionPerformed(drink);
+            size.setEnabled(true);
+        }
+        
+    }//GEN-LAST:event_jButton80ActionPerformed
+
+    private void jButton84ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton84ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Çay", 12, "Peach Green Tea & Lemonade");
+        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)))
+        {
+            actionPerformed(drink);
+            size.setEnabled(true);
+        }
+    }//GEN-LAST:event_jButton84ActionPerformed
+
+    private void jButton81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton81ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Çay", 12, "Earl Grey");
+        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)))
+        {
+            actionPerformed(drink);
+            size.setEnabled(true);
+        }
+    }//GEN-LAST:event_jButton81ActionPerformed
+
+    private void jButton85ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton85ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Çay", 12, "Iced Shaken Black Tea");
+        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)))
+        {
+            actionPerformed(drink);
+            size.setEnabled(true);
+        }
+    }//GEN-LAST:event_jButton85ActionPerformed
+
+    private void jButton82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton82ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Çay", 12, "Hibiscus");
+        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)))
+        {
+            actionPerformed(drink);
+            size.setEnabled(true);
+        }
+    }//GEN-LAST:event_jButton82ActionPerformed
+
+    private void jButton86ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton86ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Çay", 12, "Hibiscus");
+        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)))
+        {
+            actionPerformed(drink);
+            size.setEnabled(true);
+        }
+    }//GEN-LAST:event_jButton86ActionPerformed
+
+    private void jButton83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton83ActionPerformed
+        // TODO add your handling code here:
+        Drinks drink= new Drinks("Çay", 12, "Youthberry");
+        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)))
+        {
+            actionPerformed(drink);
+            size.setEnabled(true);
+        }
+    }//GEN-LAST:event_jButton83ActionPerformed
 
     /**
      * @param args the command line arguments

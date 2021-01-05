@@ -1,12 +1,12 @@
 package com.mycompany.g13;
 
-public abstract class Products {
+public  class Products implements P_Interface{
     
-    private double product_price;
-    private String product_name;
+    public double product_price;
+    public String product_name;
+    public String type = "";
     private static double sub_price;
     private static double taxed_price;
-    private static double tax = 18;
     private static double total_price;
 
     public Products()
@@ -22,6 +22,10 @@ public abstract class Products {
     public String getProduct_name() {
         return product_name;
     }
+
+    public String getType() {
+        return type;
+    }
     
 
     public static double getSub_price() {
@@ -35,14 +39,6 @@ public abstract class Products {
     public static void addSub_price(double product_price)
     {
         Products.sub_price += product_price;
-    }
-    
-    public static double getTax() {
-        return tax;
-    }
-
-    public static void setTax(double tax) {
-        Products.tax = tax;
     }
 
     public static double getTotal_price() {
@@ -67,7 +63,6 @@ public abstract class Products {
         return product_price;
     }
     
-    @Override
     public String toString(){
         return "=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n" + this.product_name + " => " + this.product_price+"$\n";
     }

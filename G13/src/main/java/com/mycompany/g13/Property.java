@@ -2,13 +2,12 @@ package com.mycompany.g13;
 
 import static com.mycompany.g13.SystemClass.givenOrder;
 
-public class Property extends Products
+public class Property extends Drinks
 {
 
     public Property(String type, String product_name, double product_price) 
     {
-        super(product_price, product_name);
-        this.type = type;
+        super(type, product_price, product_name);
 
     }
     

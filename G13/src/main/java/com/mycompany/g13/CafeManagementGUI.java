@@ -155,7 +155,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     public void actionPerformed(Products product)
     {
         
-        if(givenOrder.size() == 0 || (!(SystemClass.givenOrder.get(givenOrder.size() - 1) instanceof Drinks) && !(SystemClass.givenOrder.get(givenOrder.size() - 1).getType().equals("Size"))))
+        if(givenOrder.size() == 0 || (!(SystemClass.isMatched("Espresso")) && !(SystemClass.isMatched("Frappucino")) && !(SystemClass.isMatched("Çay"))))
         {
             product.calculate_and_add();
             order.setText(SystemClass.displayOrder());
@@ -3562,31 +3562,30 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         // TODO add your handling code here:
         if(givenOrder.size() != 0)
         {
-            if(SystemClass.givenOrder.get(givenOrder.size() - 1).getType().equals("Size"))
+            if(SystemClass.isMatched("Size"))
             {
                 size.setEnabled(true);
                 milk.setEnabled(false);
                 syrup.setEnabled(false);
             }
         
-            else if(SystemClass.givenOrder.get(givenOrder.size() - 1).getType().equals("Milk"))
+            else if(SystemClass.isMatched("Milk"))
             {
                 size.setEnabled(false);
                 milk.setEnabled(true);
                 syrup.setEnabled(false);
             }
         
-            else if(SystemClass.givenOrder.get(givenOrder.size() - 1).getType().equals("Syrup"))
+            else if(SystemClass.isMatched("Syrup"))
             {
                 size.setEnabled(false);
                 milk.setEnabled(false);
                 syrup.setEnabled(true);
             }
             
-            else if(SystemClass.givenOrder.get(givenOrder.size() - 1) instanceof Drinks)
+            else if(givenOrder.size() == 0 || (SystemClass.isMatched("Espresso")) || (SystemClass.isMatched("Frappucino")) || (SystemClass.isMatched("Çay")))
             {
-                setAllDisble();
-                
+                setAllDisble();    
             }
         
             SystemClass.removeLastOrder();
@@ -4080,43 +4079,44 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton98ActionPerformed
         // TODO add your handling code here:
-        Bottled bottled = new Bottled("Su", 5);
-        actionPerformed(bottled);
+        Drinks drink = new Drinks("Bottled", 5, "Su");
+        actionPerformed(drink);
     }//GEN-LAST:event_jButton98ActionPerformed
 
     private void jButton99ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton99ActionPerformed
         // TODO add your handling code here:
-        Bottled bottled = new Bottled("Karışık Meyve Suyu", 5);
-        actionPerformed(bottled);
+        Drinks drink = new Drinks("Bottled", 5, "Karışık Meyve Suyu");
+        actionPerformed(drink);
     }//GEN-LAST:event_jButton99ActionPerformed
 
     private void jButton103ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton103ActionPerformed
         // TODO add your handling code here:
-        Bottled bottled = new Bottled("Limonlu Gazlı İçecek", 5);
-        actionPerformed(bottled);
+        Drinks drink = new Drinks("Bottled", 5, "Limonlu Gazlı İçecek");
+        actionPerformed(drink);
     }//GEN-LAST:event_jButton103ActionPerformed
 
     private void jButton100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton100ActionPerformed
         // TODO add your handling code here:
-        Bottled bottled = new Bottled("Portakal Suyu", 5);
-        actionPerformed(bottled);
+        Drinks drink = new Drinks("Bottled", 5, "Portakal Suyu");
+        actionPerformed(drink);
+
     }//GEN-LAST:event_jButton100ActionPerformed
 
     private void jButton102ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton102ActionPerformed
         // TODO add your handling code here:
-        Bottled bottled = new Bottled("Portakallı Gazlı İçecek", 5);
-        actionPerformed(bottled);
+        Drinks drink = new Drinks("Bottled", 5, "Portakallı Gazlı İçecek");
+        actionPerformed(drink);
     }//GEN-LAST:event_jButton102ActionPerformed
 
     private void jButton101ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton101ActionPerformed
         // TODO add your handling code here:
-        Bottled bottled = new Bottled("Limonata", 5);
-        actionPerformed(bottled);
+        Drinks drink = new Drinks("Bottled", 5, "Limonata");
+        actionPerformed(drink);
     }//GEN-LAST:event_jButton101ActionPerformed
 
     private void jButton92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton92ActionPerformed
         // TODO add your handling code here:
-        Drinks drink = new Drinks("Turk Kahvesi", 12, "Türk Kahvesi");
+        Drinks drink = new Drinks("Bottled", 12, "Türk Kahvesi");
         actionPerformed(drink);
         size.setEnabled(true);
     }//GEN-LAST:event_jButton92ActionPerformed

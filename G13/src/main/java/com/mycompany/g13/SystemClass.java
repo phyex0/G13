@@ -8,6 +8,16 @@ public class SystemClass {
     public static ArrayList<Products> givenOrder = new ArrayList<Products>();
    
     
+    public static boolean isMatched(String str)
+    {
+       return (givenOrder.get(givenOrder.size() - 1).getType().equals(str));
+    }
+    
+    public static void add(Products product)
+    {
+        givenOrder.add(product);
+    }
+    
     public static String displayOrder()
     {
         String result = "";

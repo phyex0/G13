@@ -1,8 +1,8 @@
 package com.mycompany.g13;
 
 import static com.mycompany.g13.CafeManagementGUI.error;
+import static com.mycompany.g13.CafeManagementGUI.loginClient;
 import static com.mycompany.g13.CafeManagementGUI.repo;
-import com.mycompany.g13.Model.Client;
 import javax.swing.JOptionPane;
 
 
@@ -107,7 +107,7 @@ public class Uyegiris extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(error,"SUCCESS!!");
                 uyebilgileri.setText(loginClient.toString());
                 CafeManagementGUI.packedcafchange( CafeManagementGUI.userpan);
-                CafeManagementGUI.jTextArea5.setText(loginClient.toString());
+                CafeManagementGUI.userData.setText(loginClient.toString());
                 this.dispose();
         
             }catch(Exception e){
@@ -117,7 +117,7 @@ public class Uyegiris extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_telnobuttonActionPerformed
-public  Client loginClient;
+
     /**
      * @param args the command line arguments
      */

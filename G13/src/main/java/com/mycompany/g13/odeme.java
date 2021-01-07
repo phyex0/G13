@@ -1,5 +1,11 @@
 package com.mycompany.g13;
 
+import static com.mycompany.g13.CafeManagementGUI.loginClient;
+import static com.mycompany.g13.CafeManagementGUI.repo;
+import static com.mycompany.g13.CafeManagementGUI.userData;
+
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -143,6 +149,16 @@ public class odeme extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+     
+        if(loginClient!= null){
+            loginClient.setStar(loginClient.getStar()+ SystemClass.calculateStar());
+            repo.save(loginClient);
+            userData.setText(loginClient.toString());
+           
+        }
+        
+        SystemClass.collectAllOrders();
+        
         
         
         

@@ -6,6 +6,15 @@ import java.util.ArrayList;
 public class SystemClass {
     
     public static ArrayList<Products> givenOrder = new ArrayList<Products>();
+    public static ArrayList<Products> allOrders = new ArrayList<Products>();
+    
+    //keep all the orders until program shutting down
+    public static void collectAllOrders(){
+        
+        allOrders.addAll(givenOrder);
+        givenOrder.clear();
+        
+    }
    
     
     public static boolean isMatched(String str)

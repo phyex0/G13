@@ -1,12 +1,15 @@
 package com.mycompany.g13;
 
 import static com.mycompany.g13.CafeManagementGUI.error;
+import static com.mycompany.g13.CafeManagementGUI.loginClient;
 import static com.mycompany.g13.CafeManagementGUI.repo;
 import com.mycompany.g13.Model.Client;
 import javax.swing.JOptionPane;
 
 
 public class YeniUye extends javax.swing.JFrame {
+
+   
     /**
      * Creates new form YeniUye
      */
@@ -112,11 +115,7 @@ public class YeniUye extends javax.swing.JFrame {
     private void yeniuyebActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yeniuyebActionPerformed
         // TODO add your handling code here:
          String name= nameTextfield.getText(),phoneNumber=phoneNumberTextfield.getText();
-         System.out.println(name.matches("^[a-zA-Z ]{3,100}$"));
-         System.out.println(phoneNumber.trim().matches("\\d{10}"));
-         System.out.println(name);
-         System.out.println(phoneNumber);
-         
+   
         
         if(name.matches("^[a-zA-Z ]{3,100}$")&& phoneNumber.trim().matches("\\d{10}")){
             Client c= new Client(phoneNumber,name,0);
@@ -124,9 +123,10 @@ public class YeniUye extends javax.swing.JFrame {
             try{
                 repo.save(c);
                 JOptionPane.showMessageDialog(error,"SUCCESS!!");
+                loginClient=c;
                  CafeManagementGUI.packedcafchange( CafeManagementGUI.userpan);
                  
-                 CafeManagementGUI.jTextArea5.setText(c.toString());
+                 CafeManagementGUI.userData.setText(loginClient.toString());
                  this.dispose();
           
             }catch(Exception e){

@@ -63,6 +63,6 @@ public abstract class Products implements P_Interface{
     }
     
     public String toString(){
-        return "=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n" + this.product_name + " => " + this.product_price+"$\n";
+        return "=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n" + this.product_name + " => " + this.product_price+"₺\n";
     }
 }

@@ -32,7 +32,7 @@ public class SystemClass {
     
     public static void removeLastOrder(){
         
-        if(givenOrder.size() == 0)
+        if(givenOrder.isEmpty())
         {
             System.out.println("Empty list");
         }

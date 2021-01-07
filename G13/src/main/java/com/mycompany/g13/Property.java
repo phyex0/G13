@@ -1,7 +1,5 @@
 package com.mycompany.g13;
 
-import static com.mycompany.g13.SystemClass.givenOrder;
-
 public class Property extends Drinks
 {
 
@@ -11,6 +9,7 @@ public class Property extends Drinks
 
     }
     
+    @Override
     public void calculate_and_add() {
 
          Products.addSub_price(this.getProduct_price());

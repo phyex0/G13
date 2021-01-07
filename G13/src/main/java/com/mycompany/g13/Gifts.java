@@ -11,8 +11,9 @@ public class Gifts extends Products {
     }
     
     
+    @Override
     public void calculate_and_add() {
-        if(givenOrder.size() == 0 || !(SystemClass.isMatched("Espresso")) && !(SystemClass.isMatched("Frappucino")) && !(SystemClass.isMatched("Çay")))
+        if(givenOrder.isEmpty() || !(SystemClass.isMatched("Espresso")) && !(SystemClass.isMatched("Frappucino")) && !(SystemClass.isMatched("Çay")))
         {
             Products.addSub_price(this.getProduct_price());
             Products.setTotal_price();

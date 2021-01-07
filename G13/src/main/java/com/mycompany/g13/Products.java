@@ -1,7 +1,5 @@
 package com.mycompany.g13;
 
-import static com.mycompany.g13.SystemClass.givenOrder;
-
 public abstract class Products implements P_Interface{
     
     public double product_price;
@@ -12,8 +10,7 @@ public abstract class Products implements P_Interface{
     private static double total_price;
     final static double tax = 18;
 
-    public Products()
-    {
+    public Products(){
     }
     
     public Products(double product_price, String product_name) {

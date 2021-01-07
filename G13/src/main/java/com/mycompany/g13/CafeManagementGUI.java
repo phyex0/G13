@@ -34,6 +34,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
    //Update Time
    public static void updateDate(){
         Thread Clock = new Thread(){
+            @Override
             public void run(){
                 for(;;){
                     try {
@@ -155,7 +156,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     public void actionPerformed(Products product)
     {
         
-        if(givenOrder.size() == 0 || (!(SystemClass.isMatched("Espresso")) && !(SystemClass.isMatched("Frappucino")) && !(SystemClass.isMatched("Çay"))))
+        if(givenOrder.isEmpty() || (!(SystemClass.isMatched("Espresso")) && !(SystemClass.isMatched("Frappucino")) && !(SystemClass.isMatched("Çay"))))
         {
             product.calculate_and_add();
             order.setText(SystemClass.displayOrder());

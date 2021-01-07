@@ -449,8 +449,8 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         findik = new javax.swing.JCheckBox();
         cilek = new javax.swing.JCheckBox();
         ahududu = new javax.swing.JCheckBox();
-        jButton6 = new javax.swing.JButton();
         syrup = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -626,17 +626,17 @@ public class CafeManagementGUI extends javax.swing.JFrame{
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(girispan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27))
         );
 
         jPanel2.setBackground(new java.awt.Color(249, 244, 244));
@@ -799,7 +799,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
                 .addComponent(jButton104)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -876,7 +876,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jPanel4.setBackground(new java.awt.Color(236, 231, 231));
         jPanel4.setPreferredSize(new java.awt.Dimension(650, 400));
 
-        jButton_Kupa.setBackground(new java.awt.Color(0, 102, 51));
+        jButton_Kupa.setBackground(new java.awt.Color(14, 30, 21));
         jButton_Kupa.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton_Kupa.setForeground(new java.awt.Color(255, 255, 255));
         jButton_Kupa.setText("KUPA");
@@ -886,7 +886,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton11.setBackground(new java.awt.Color(0, 102, 51));
+        jButton11.setBackground(new java.awt.Color(14, 30, 21));
         jButton11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton11.setForeground(new java.awt.Color(255, 255, 255));
         jButton11.setText("TERMOS");
@@ -2636,7 +2636,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton28.setBackground(new java.awt.Color(0, 102, 51));
+        jButton28.setBackground(new java.awt.Color(14, 30, 21));
         jButton28.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton28.setForeground(new java.awt.Color(255, 255, 255));
         jButton28.setText("Blonde Espresso");
@@ -2646,7 +2646,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton29.setBackground(new java.awt.Color(0, 102, 51));
+        jButton29.setBackground(new java.awt.Color(14, 30, 21));
         jButton29.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton29.setForeground(new java.awt.Color(255, 255, 255));
         jButton29.setText("VERANDA BLEND");
@@ -2656,7 +2656,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton30.setBackground(new java.awt.Color(0, 102, 51));
+        jButton30.setBackground(new java.awt.Color(14, 30, 21));
         jButton30.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton30.setForeground(new java.awt.Color(255, 255, 255));
         jButton30.setText("COLOMBİA NARİNO");
@@ -2666,7 +2666,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton31.setBackground(new java.awt.Color(0, 102, 51));
+        jButton31.setBackground(new java.awt.Color(14, 30, 21));
         jButton31.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton31.setForeground(new java.awt.Color(255, 255, 255));
         jButton31.setText("ETHİOPİA");
@@ -2676,7 +2676,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton32.setBackground(new java.awt.Color(0, 102, 51));
+        jButton32.setBackground(new java.awt.Color(14, 30, 21));
         jButton32.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton32.setForeground(new java.awt.Color(255, 255, 255));
         jButton32.setText("PIKE PLACE ROAST");
@@ -2686,7 +2686,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton33.setBackground(new java.awt.Color(0, 102, 51));
+        jButton33.setBackground(new java.awt.Color(14, 30, 21));
         jButton33.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton33.setForeground(new java.awt.Color(255, 255, 255));
         jButton33.setText("KENYA");
@@ -2696,7 +2696,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton34.setBackground(new java.awt.Color(0, 102, 51));
+        jButton34.setBackground(new java.awt.Color(14, 30, 21));
         jButton34.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton34.setForeground(new java.awt.Color(255, 255, 255));
         jButton34.setText("HOUSE BLEND");
@@ -2706,7 +2706,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton105.setBackground(new java.awt.Color(0, 102, 51));
+        jButton105.setBackground(new java.awt.Color(14, 30, 21));
         jButton105.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton105.setForeground(new java.awt.Color(255, 255, 255));
         jButton105.setText("GUATEMALA ANTIGUA");
@@ -2716,7 +2716,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton106.setBackground(new java.awt.Color(0, 102, 51));
+        jButton106.setBackground(new java.awt.Color(14, 30, 21));
         jButton106.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton106.setForeground(new java.awt.Color(255, 255, 255));
         jButton106.setText("CAFFE VERONA");
@@ -2726,7 +2726,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton107.setBackground(new java.awt.Color(0, 102, 51));
+        jButton107.setBackground(new java.awt.Color(14, 30, 21));
         jButton107.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton107.setForeground(new java.awt.Color(255, 255, 255));
         jButton107.setText("DECAF ESPRESSO ROAST");
@@ -2736,7 +2736,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton108.setBackground(new java.awt.Color(0, 102, 51));
+        jButton108.setBackground(new java.awt.Color(14, 30, 21));
         jButton108.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton108.setForeground(new java.awt.Color(255, 255, 255));
         jButton108.setText("ESPRESSO ROAST");
@@ -2746,7 +2746,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton109.setBackground(new java.awt.Color(0, 102, 51));
+        jButton109.setBackground(new java.awt.Color(14, 30, 21));
         jButton109.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton109.setForeground(new java.awt.Color(255, 255, 255));
         jButton109.setText("SUMATRA");
@@ -2844,7 +2844,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton115.setBackground(new java.awt.Color(0, 102, 51));
+        jButton115.setBackground(new java.awt.Color(14, 30, 21));
         jButton115.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton115.setForeground(new java.awt.Color(255, 255, 255));
         jButton115.setText("Blonde Espresso");
@@ -2854,7 +2854,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton116.setBackground(new java.awt.Color(0, 102, 51));
+        jButton116.setBackground(new java.awt.Color(14, 30, 21));
         jButton116.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton116.setForeground(new java.awt.Color(255, 255, 255));
         jButton116.setText("VERANDA BLEND");
@@ -2897,7 +2897,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
         jPanel30.setBackground(new java.awt.Color(234, 229, 229));
 
-        jButton110.setBackground(new java.awt.Color(0, 102, 51));
+        jButton110.setBackground(new java.awt.Color(14, 30, 21));
         jButton110.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton110.setForeground(new java.awt.Color(255, 255, 255));
         jButton110.setText("KENYA");
@@ -2907,7 +2907,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton111.setBackground(new java.awt.Color(0, 102, 51));
+        jButton111.setBackground(new java.awt.Color(14, 30, 21));
         jButton111.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton111.setForeground(new java.awt.Color(255, 255, 255));
         jButton111.setText("COLOMBİA NARİNO");
@@ -2917,7 +2917,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton112.setBackground(new java.awt.Color(0, 102, 51));
+        jButton112.setBackground(new java.awt.Color(14, 30, 21));
         jButton112.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton112.setForeground(new java.awt.Color(255, 255, 255));
         jButton112.setText("HOUSE BLEND");
@@ -2927,7 +2927,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton113.setBackground(new java.awt.Color(0, 102, 51));
+        jButton113.setBackground(new java.awt.Color(14, 30, 21));
         jButton113.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton113.setForeground(new java.awt.Color(255, 255, 255));
         jButton113.setText("GUATEMALA ANTIGUA");
@@ -2937,7 +2937,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton114.setBackground(new java.awt.Color(0, 102, 51));
+        jButton114.setBackground(new java.awt.Color(14, 30, 21));
         jButton114.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton114.setForeground(new java.awt.Color(255, 255, 255));
         jButton114.setText("PIKE PLACE ROAST");
@@ -3001,7 +3001,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
         jPanel31.setBackground(new java.awt.Color(234, 229, 229));
 
-        jButton117.setBackground(new java.awt.Color(0, 102, 51));
+        jButton117.setBackground(new java.awt.Color(14, 30, 21));
         jButton117.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton117.setForeground(new java.awt.Color(255, 255, 255));
         jButton117.setText("CAFFE VERONA");
@@ -3011,7 +3011,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton118.setBackground(new java.awt.Color(0, 102, 51));
+        jButton118.setBackground(new java.awt.Color(14, 30, 21));
         jButton118.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton118.setForeground(new java.awt.Color(255, 255, 255));
         jButton118.setText("DECAF ESPRESSO ROAST");
@@ -3021,7 +3021,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton119.setBackground(new java.awt.Color(0, 102, 51));
+        jButton119.setBackground(new java.awt.Color(14, 30, 21));
         jButton119.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton119.setForeground(new java.awt.Color(255, 255, 255));
         jButton119.setText("ESPRESSO ROAST");
@@ -3031,7 +3031,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
-        jButton120.setBackground(new java.awt.Color(0, 102, 51));
+        jButton120.setBackground(new java.awt.Color(14, 30, 21));
         jButton120.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton120.setForeground(new java.awt.Color(255, 255, 255));
         jButton120.setText("SUMATRA");
@@ -3141,11 +3141,11 @@ public class CafeManagementGUI extends javax.swing.JFrame{
                 .addComponent(orta)
                 .addGap(37, 37, 37)
                 .addComponent(buyuk)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
                 .addComponent(size, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 470, -1, 280));
+        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 470, -1, 320));
 
         jPanel8.setBackground(new java.awt.Color(232, 230, 191));
         jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SÜT", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
@@ -3211,11 +3211,11 @@ public class CafeManagementGUI extends javax.swing.JFrame{
                 .addComponent(bademsutu)
                 .addGap(15, 15, 15)
                 .addComponent(soyasutu)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 5, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addComponent(milk, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel3.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(166, 470, -1, 280));
+        jPanel3.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(166, 470, -1, 320));
 
         jPanel9.setBackground(new java.awt.Color(232, 230, 191));
         jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ŞURUP", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
@@ -3244,6 +3244,13 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         ahududu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         ahududu.setText("Ahududu");
 
+        syrup.setText("OK");
+        syrup.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                syrupActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
@@ -3260,6 +3267,10 @@ public class CafeManagementGUI extends javax.swing.JFrame{
                     .addComponent(cilek, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(ahududu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(syrup, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(41, 41, 41))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3280,10 +3291,12 @@ public class CafeManagementGUI extends javax.swing.JFrame{
                 .addComponent(cilek)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(ahududu)
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(syrup, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 470, -1, 280));
+        jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 470, -1, 320));
 
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/github.png"))); // NOI18N
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -3292,14 +3305,6 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
         jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 470, 160, 80));
-
-        syrup.setText("OK");
-        syrup.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                syrupActionPerformed(evt);
-            }
-        });
-        jPanel3.add(syrup, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 700, 60, 30));
 
         javax.swing.GroupLayout MainPanelLayout = new javax.swing.GroupLayout(MainPanel);
         MainPanel.setLayout(MainPanelLayout);
@@ -3316,8 +3321,8 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         MainPanelLayout.setVerticalGroup(
             MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -3328,7 +3333,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 772, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 822, Short.MAX_VALUE)
         );
 
         pack();

@@ -3591,11 +3591,12 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
             
             else if(givenOrder.size() == 0 || (SystemClass.isMatched("Espresso")) || (SystemClass.isMatched("Frappucino")) || (SystemClass.isMatched("Çay")))
-            {
+            {   
                 setAllDisble();    
             }
-        
+            SystemClass.removeLastConditionStar();
             SystemClass.removeLastOrder();
+           
             order.setText(SystemClass.displayOrder(givenOrder));
             calculation.setText(SystemClass.displayCalculation());
         }
@@ -3652,13 +3653,17 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("House Blend", "Medium", 30);
+         
         actionPerformed(packetedProducts);
+        addConditionStar();
     }//GEN-LAST:event_jButton34ActionPerformed
 
     private void jButton112ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton112ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("House Blend", "Medium", 30);
+         
         actionPerformed(packetedProducts);
+        addConditionStar();
     }//GEN-LAST:event_jButton112ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
@@ -3763,7 +3768,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         // TODO add your handling code here:
         Gifts gift = new Gifts(90.0, "Kupa");
         actionPerformed(gift);
-   
+        addConditionStar();
     }//GEN-LAST:event_jButton_KupaActionPerformed
 
     private void kucukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kucukActionPerformed
@@ -3773,103 +3778,130 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     private void jButton_FiestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_FiestaActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Sandviç", 16.0, "Fiesta");
+         
         actionPerformed(food);
+        addConditionStar();
     }//GEN-LAST:event_jButton_FiestaActionPerformed
 
     private void jButton_ReyhanliTostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ReyhanliTostActionPerformed
         // TODO add your handling code here:
-        Food food = new Food("Sandviç", 13.0, "Reyhanlı Peynirli Tost");
-        actionPerformed(food);
+        Food food = new Food("Sandviç", 13.0, "Reyhanlı Peynirli Tost");     
+        actionPerformed(food); 
+        addConditionStar();
     }//GEN-LAST:event_jButton_ReyhanliTostActionPerformed
 
     private void jButton_EzineliSandvicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_EzineliSandvicActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Sandviç", 12.50, "Ezine Peynirli Sandviç");
         actionPerformed(food);
+        addConditionStar();
     }//GEN-LAST:event_jButton_EzineliSandvicActionPerformed
 
     private void jButton_MozarellaSandvicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_MozarellaSandvicActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Sandviç", 12.50, "Mozzarella Sandviç");
         actionPerformed(food);
+        addConditionStar();
     }//GEN-LAST:event_jButton_MozarellaSandvicActionPerformed
 
     private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Kurabiye", 8.0, "Triple Chocolate Cookie");
         actionPerformed(food);
+        addConditionStar();
     }//GEN-LAST:event_jButton49ActionPerformed
 
     private void jButton_MistoCookieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_MistoCookieActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Kurabiye", 11.0, "Misto Cookie");
         actionPerformed(food);
+        addConditionStar();
     }//GEN-LAST:event_jButton_MistoCookieActionPerformed
 
     private void jButton_DopdoluFitCookieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_DopdoluFitCookieActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Kurabiye", 13.0, "Dopdolu Fit Cookie");
-        actionPerformed(food);
+         actionPerformed(food);
+         addConditionStar();
+
     }//GEN-LAST:event_jButton_DopdoluFitCookieActionPerformed
 
     private void jButton_BrownieCheesecakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_BrownieCheesecakeActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Pasta", 14.0, "Brownie Cheesecake");
-        actionPerformed(food);
+        
+        actionPerformed(food); 
+        addConditionStar();
     }//GEN-LAST:event_jButton_BrownieCheesecakeActionPerformed
 
     private void jButton_KremalıHavucluKekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_KremalıHavucluKekActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Pasta", 15.75, "Kremalı Havuçlu Kek");
+         
         actionPerformed(food);
+        addConditionStar();
     }//GEN-LAST:event_jButton_KremalıHavucluKekActionPerformed
 
     private void jButton_ProfiterolluPastaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ProfiterolluPastaActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Pasta", 13.50, "Profiterollü Pasta");
-        actionPerformed(food);
+        
+        actionPerformed(food); 
+        addConditionStar();
     }//GEN-LAST:event_jButton_ProfiterolluPastaActionPerformed
 
     private void jButton_LimonluCheesecakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_LimonluCheesecakeActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Pasta", 14.25, "Limonlu Cheesecake");
-        actionPerformed(food);
+        
+        actionPerformed(food); 
+        addConditionStar();
     }//GEN-LAST:event_jButton_LimonluCheesecakeActionPerformed
 
     private void jButton_KinoalıSalataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_KinoalıSalataActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Salata", 22.0, "Kinoalı Salata");
+        
         actionPerformed(food);
+        addConditionStar();
     }//GEN-LAST:event_jButton_KinoalıSalataActionPerformed
 
     private void jButton_MeyveliveYogurtluParfeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_MeyveliveYogurtluParfeActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Salata", 16.75, "Meyveli ve Yoğurtlu Parfe");
-        actionPerformed(food);
+       
+        actionPerformed(food); 
+        addConditionStar();
     }//GEN-LAST:event_jButton_MeyveliveYogurtluParfeActionPerformed
 
     private void jButton_IzgaraTavukluSalataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_IzgaraTavukluSalataActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Salata", 18.50, "Izgara Tavuklu Salata");
+       
         actionPerformed(food);
+        addConditionStar();
     }//GEN-LAST:event_jButton_IzgaraTavukluSalataActionPerformed
 
     private void jButton_AnanaslıChiaPudingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_AnanaslıChiaPudingActionPerformed
         // TODO add your handling code here:
         Food food = new Food("Salata", 17.0, "Ananaslı Chia Salata");
-        actionPerformed(food);
+        
+        actionPerformed(food); 
+        addConditionStar();
     }//GEN-LAST:event_jButton_AnanaslıChiaPudingActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Blonde Espresso", "Blonde", 35);
+         
         actionPerformed(packetedProducts);
-        
+        addConditionStar();
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void siparisresetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siparisresetActionPerformed
         // TODO add your handling code here:
         SystemClass.clear();
+        conditionStar.clear();
         order.setText(SystemClass.displayOrder(givenOrder));
         calculation.setText(SystemClass.displayCalculation());
         setAllDisble();
@@ -3941,25 +3973,33 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
         Gifts gift = new Gifts(229.99, "Termos");
+         
         actionPerformed(gift);
+        addConditionStar();
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton105ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton105ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Guatemala Antigua", "Medium", 35);
+        
         actionPerformed(packetedProducts);
+        addConditionStar();
     }//GEN-LAST:event_jButton105ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Verande Blende", "Blonde", 38);
+         
         actionPerformed(packetedProducts);
+        addConditionStar();
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton106ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton106ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Caffe Verona", "Dark", 33);
+         
         actionPerformed(packetedProducts);
+        addConditionStar();
     }//GEN-LAST:event_jButton106ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -3970,103 +4010,137 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     private void jButton107ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton107ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Decaff Espresso", "Dark", 33);
-        actionPerformed(packetedProducts);
+       
+        actionPerformed(packetedProducts); 
+        addConditionStar();
     }//GEN-LAST:event_jButton107ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Colombia Narino", "Medium", 35);
+        
         actionPerformed(packetedProducts);
+        addConditionStar();
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Kenya", "Medium", 34);
+         
         actionPerformed(packetedProducts);
+        addConditionStar();
     }//GEN-LAST:event_jButton33ActionPerformed
 
     private void jButton108ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton108ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Espresso Roast", "Dark", 33);
+       
         actionPerformed(packetedProducts);
+        addConditionStar();
     }//GEN-LAST:event_jButton108ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Ethiopia", "Medium", 36);
-        actionPerformed(packetedProducts);
+       
+        actionPerformed(packetedProducts); 
+        addConditionStar();
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Pike Place Roast", "Medium", 34);
-        actionPerformed(packetedProducts);
+        
+        actionPerformed(packetedProducts); 
+        addConditionStar();
     }//GEN-LAST:event_jButton32ActionPerformed
 
     private void jButton109ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton109ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Sumatra", "Dark", 33);
+        
         actionPerformed(packetedProducts);
+        addConditionStar();
     }//GEN-LAST:event_jButton109ActionPerformed
 
     private void jButton115ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton115ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Blonde Espresso", "Blonde", 37);
+        
         actionPerformed(packetedProducts);
+        addConditionStar();
     }//GEN-LAST:event_jButton115ActionPerformed
 
     private void jButton116ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton116ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Veranda Blend", "Blonde", 37);
+        
         actionPerformed(packetedProducts);
+        addConditionStar();
     }//GEN-LAST:event_jButton116ActionPerformed
 
     private void jButton113ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton113ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Guatemala Antigua", "Medium", 38);
-        actionPerformed(packetedProducts);
+        
+        actionPerformed(packetedProducts); 
+        addConditionStar();
     }//GEN-LAST:event_jButton113ActionPerformed
 
     private void jButton114ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton114ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Pike Place Roast", "Medium", 37);
+         
         actionPerformed(packetedProducts);
+        addConditionStar();
     }//GEN-LAST:event_jButton114ActionPerformed
 
     private void jButton111ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton111ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Colombia Narino", "Medium", 35);
-        actionPerformed(packetedProducts);
+       
+        actionPerformed(packetedProducts);  
+        addConditionStar();
     }//GEN-LAST:event_jButton111ActionPerformed
 
     private void jButton110ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton110ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Kenya", "Medium", 35);
+         
         actionPerformed(packetedProducts);
+        addConditionStar();
     }//GEN-LAST:event_jButton110ActionPerformed
 
     private void jButton118ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton118ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Decaff Espresso", "Dark", 40);
-        actionPerformed(packetedProducts);
+        
+        actionPerformed(packetedProducts); 
+        addConditionStar();
     }//GEN-LAST:event_jButton118ActionPerformed
 
     private void jButton119ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton119ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Espresso Roast", "Dark", 39);
-        actionPerformed(packetedProducts);
+       
+        actionPerformed(packetedProducts);  
+        addConditionStar();
     }//GEN-LAST:event_jButton119ActionPerformed
 
     private void jButton117ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton117ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Caffe Verona", "Dark", 38);
-        actionPerformed(packetedProducts);
+        
+        actionPerformed(packetedProducts); 
+        addConditionStar();
     }//GEN-LAST:event_jButton117ActionPerformed
 
     private void jButton120ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton120ActionPerformed
         // TODO add your handling code here:
         PacketedProducts packetedProducts = new PacketedProducts("Sumatra", "Dark", 38);
+      
         actionPerformed(packetedProducts);
+        addConditionStar();
     }//GEN-LAST:event_jButton120ActionPerformed
 
     private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed

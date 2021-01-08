@@ -59,3 +59,111 @@ Ahududulu => 2.0TL
 =O=O=O=O=O=O=O=O=O=O=O=O=O=O
 Y?ld?zl? Küçük Boy Kahve() => 0.0TL
 -----------------------------------------
+02:45:43 01/09/2021 
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Kupa => 90.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Kupa => 90.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Termos => 229.99TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Kupa => 90.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Y?ld?zl? Cookie => 0.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Y?ld?zl? Cookie => 0.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Y?ld?zl? Termos => 0.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Kupa => 90.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Y?ld?zl? Sandiviç => 0.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Kupa => 90.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Y?ld?zl? Cookie => 0.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Y?ld?zl? Cookie => 0.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-Guatemala Antigua => 35.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-House Blend => 30.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-Kenya => 34.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-Pike Place Roast => 34.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Dark-Sumatra => 33.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Dark-Espresso Roast => 33.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Dark-Decaff Espresso => 33.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Dark-Caffe Verona => 33.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Blonde-Blonde Espresso => 35.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Blonde-Verande Blende => 38.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-Colombia Narino => 35.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-Ethiopia => 36.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Blonde-Blonde Espresso => 37.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Blonde-Veranda Blend => 37.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-Guatemala Antigua => 38.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-House Blend => 30.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-Kenya => 35.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-Colombia Narino => 35.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-Pike Place Roast => 37.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Dark-Decaff Espresso => 40.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Dark-Caffe Verona => 38.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Dark-Sumatra => 38.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Dark-Espresso Roast => 39.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Fiesta => 16.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Ezine Peynirli Sandviç => 12.5TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Mozzarella Sandviç => 12.5TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Reyhanl? Peynirli Tost => 13.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Triple Chocolate Cookie => 8.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Misto Cookie => 11.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Dopdolu Fit Cookie => 13.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Brownie Cheesecake => 14.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Limonlu Cheesecake => 14.25TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Profiterollü Pasta => 13.5TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Kremal? Havuçlu Kek => 15.75TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Kinoal? Salata => 22.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Izgara Tavuklu Salata => 18.5TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Ananasl? Chia Salata => 17.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Meyveli ve Yo?urtlu Parfe => 16.75TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Y?ld?zl? Termos => 0.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Y?ld?zl? Termos => 0.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Y?ld?zl? Termos => 0.0TL
+-----------------------------------------

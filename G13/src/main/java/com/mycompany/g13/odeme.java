@@ -152,7 +152,7 @@ public class odeme extends javax.swing.JFrame {
         // TODO add your handling code here:
      
         if(loginClient!= null){
-            loginClient.setStar(loginClient.getStar()+ SystemClass.calculateStar()-SystemClass.totalStar(givenOrder));
+            loginClient.setStar(loginClient.getStar()+ SystemClass.calculateStar()-SystemClass.totalStar(givenOrder)+SystemClass.calculateConditionStar());
             repo.save(loginClient);
             userData.setText(loginClient.toString());
            

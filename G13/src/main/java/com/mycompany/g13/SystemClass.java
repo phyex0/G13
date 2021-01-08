@@ -1,5 +1,7 @@
 package com.mycompany.g13;
 
+import static com.mycompany.g13.CafeManagementGUI.loginClient;
+import static com.mycompany.g13.CafeManagementGUI.order;
 import java.util.ArrayList;
 
 
@@ -7,6 +9,7 @@ public class SystemClass {
     
     public static ArrayList<Products> givenOrder = new ArrayList<Products>();
     public static ArrayList<Products> allOrders = new ArrayList<Products>();
+    public static ArrayList<Integer> conditionStar =new ArrayList<Integer>();
     
     //keep all the orders until program shutting down
     public static void collectAllOrders(){
@@ -64,6 +67,9 @@ public class SystemClass {
         if(givenOrder.isEmpty())
         {
             System.out.println("Empty list");
+            order.setText(SystemClass.displayOrder(givenOrder));
+            
+            
         }
         else
         {
@@ -97,6 +103,40 @@ public class SystemClass {
         for(Products a: givenOrder)
             star+= a.getProduct_price();
         return star/10;
+    }
+    
+    public static void addConditionStar(){
+        if(loginClient!=null){
+            Products p = givenOrder.get(givenOrder.size()-1);
+
+            if(p instanceof Gifts)
+                conditionStar.add(100);
+            if(p instanceof PacketedProducts)
+                conditionStar.add(50);
+            if(p instanceof Food)
+                conditionStar.add(20);  
+        }
+    }
+    
+    public static int calculateConditionStar(){
+        
+        int sum=0;
+        for(Integer i: conditionStar)
+            sum+=i;
+        
+        return sum;
+        
+    }
+    
+    public static void removeLastConditionStar(){
+        if(loginClient!=null){
+            Products p = givenOrder.get(givenOrder.size()-1);
+
+            if(p.getProduct_price()!=0 &&(p instanceof Gifts || p instanceof PacketedProducts || p instanceof Food))
+                conditionStar.remove(conditionStar.size()-1);
+
+        }
+        
     }
     
     

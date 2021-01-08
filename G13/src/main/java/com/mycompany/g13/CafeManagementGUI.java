@@ -3619,15 +3619,12 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
        
-        if(loginClient!= null){
-            if(loginClient.getStar()< SystemClass.totalStar(givenOrder))
+        if(loginClient!= null && loginClient.getStar()< SystemClass.totalStar(givenOrder))
                 JOptionPane.showMessageDialog(error,"There is not enough STAR to accomplish operation.\nPlease remove STARED Product...");
-            else{
-                 new odeme().setVisible(true);
-                loginClient.setStar(loginClient.getStar()-SystemClass.totalStar(givenOrder));
-            
-            }
-        }
+        else
+            new odeme().setVisible(true);
+          
+        
        
         
     }//GEN-LAST:event_jButton3ActionPerformed

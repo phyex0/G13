@@ -15,6 +15,8 @@ public class SystemClass {
         givenOrder.clear();
         
     }
+    
+    //search order by their name
     public static Products searchOrder(ArrayList<Products> ar, String name){
             Products p = null;
         for(int i=0;i<ar.size();i++){
@@ -46,6 +48,8 @@ public class SystemClass {
         
         return result;
     }
+    
+    //if you use star menu then you're gonna pay that by star.
     public static int totalStar(ArrayList<Products> ar ){
         int star = 0;
         for(Products p:ar){
@@ -86,6 +90,8 @@ public class SystemClass {
         Products.setTaxed_price();
     }
     
+    
+    //10% of total cost gives you star
     public static int calculateStar(){
         int star =0;
         for(Products a: givenOrder)

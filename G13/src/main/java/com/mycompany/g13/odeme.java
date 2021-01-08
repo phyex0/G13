@@ -3,6 +3,7 @@ package com.mycompany.g13;
 import static com.mycompany.g13.CafeManagementGUI.loginClient;
 import static com.mycompany.g13.CafeManagementGUI.repo;
 import static com.mycompany.g13.CafeManagementGUI.userData;
+import static com.mycompany.g13.SystemClass.givenOrder;
 
 
 
@@ -151,7 +152,7 @@ public class odeme extends javax.swing.JFrame {
         // TODO add your handling code here:
      
         if(loginClient!= null){
-            loginClient.setStar(loginClient.getStar()+ SystemClass.calculateStar());
+            loginClient.setStar(loginClient.getStar()+ SystemClass.calculateStar()-SystemClass.totalStar(givenOrder));
             repo.save(loginClient);
             userData.setText(loginClient.toString());
            

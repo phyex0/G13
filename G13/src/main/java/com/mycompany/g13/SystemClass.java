@@ -27,12 +27,12 @@ public class SystemClass {
         givenOrder.add(product);
     }
     
-    public static String displayOrder()
+    public static String displayOrder(ArrayList<Products> order)
     {
         String result = "";
-        for(int i = 0; i < givenOrder.size(); i++)
+        for(int i = 0; i < order.size(); i++)
         {
-            Products product = givenOrder.get(i);
+            Products product = order.get(i);
             result += product.toString();
         }
         

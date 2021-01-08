@@ -159,7 +159,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         if(givenOrder.isEmpty() || (!(SystemClass.isMatched("Espresso")) && !(SystemClass.isMatched("Frappucino")) && !(SystemClass.isMatched("Çay"))))
         {
             product.calculate_and_add();
-            order.setText(SystemClass.displayOrder());
+            order.setText(SystemClass.displayOrder(givenOrder));
             calculation.setText(SystemClass.displayCalculation());
             setAllDisble();
         }
@@ -3595,7 +3595,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         
             SystemClass.removeLastOrder();
-            order.setText(SystemClass.displayOrder());
+            order.setText(SystemClass.displayOrder(givenOrder));
             calculation.setText(SystemClass.displayCalculation());
         }
 
@@ -3624,7 +3624,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         packedcafchange(buttonpan);
         loginClient = null;
         SystemClass.clear();
-        order.setText(SystemClass.displayOrder());
+        order.setText(SystemClass.displayOrder(givenOrder));
         calculation.setText(SystemClass.displayCalculation());
         setAllDisble();
         
@@ -3860,7 +3860,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     private void siparisresetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siparisresetActionPerformed
         // TODO add your handling code here:
         SystemClass.clear();
-        order.setText(SystemClass.displayOrder());
+        order.setText(SystemClass.displayOrder(givenOrder));
         calculation.setText(SystemClass.displayCalculation());
         setAllDisble();
     }//GEN-LAST:event_siparisresetActionPerformed
@@ -3954,7 +3954,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
        new kasayikapat().setVisible(true);
-       collectedData.setText(allOrders.toString());
+       collectedData.setText(SystemClass.displayOrder(allOrders));
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton107ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton107ActionPerformed
@@ -4146,7 +4146,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         
         choosenSize.calculate_and_add();
         
-        order.setText(SystemClass.displayOrder());
+        order.setText(SystemClass.displayOrder(givenOrder));
         calculation.setText(SystemClass.displayCalculation());
         
         this.size.setEnabled(false);
@@ -4161,7 +4161,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         
         choosenMilk.calculate_and_add();
         
-        order.setText(SystemClass.displayOrder());
+        order.setText(SystemClass.displayOrder(givenOrder));
         calculation.setText(SystemClass.displayCalculation());
         
         this.milk.setEnabled(false);
@@ -4183,7 +4183,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         }
         
-        order.setText(SystemClass.displayOrder());
+        order.setText(SystemClass.displayOrder(givenOrder));
         calculation.setText(SystemClass.displayCalculation());
         
         this.syrup.setEnabled(false);

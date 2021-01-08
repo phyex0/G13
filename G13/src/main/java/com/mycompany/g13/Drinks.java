@@ -37,7 +37,7 @@ public  class Drinks extends Products{
     
      @Override
     public String toString() {
-        return "=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n" + this.getProduct_name() + "(" + this.getType() + ") => " + this.getProduct_price()+"₺\n";
+        return "=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n" + this.getProduct_name() + "(" + this.getType() + ") => " + this.getProduct_price()+"TL\n";
     }
     
 

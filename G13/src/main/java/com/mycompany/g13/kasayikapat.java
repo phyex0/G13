@@ -6,7 +6,9 @@
 package com.mycompany.g13;
 
 
-import static com.mycompany.g13.CafeManagementGUI.*;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /**
  *
  * @author dell
@@ -92,7 +94,13 @@ public class kasayikapat extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        try {
+            
+            FileIO.fileOutput();
+        } catch (IOException ex) {
+            Logger.getLogger(kasayikapat.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
         this.dispose();
         System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed

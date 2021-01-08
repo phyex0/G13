@@ -15,6 +15,14 @@ public class SystemClass {
         givenOrder.clear();
         
     }
+    public static Products searchOrder(ArrayList<Products> ar, String name){
+            Products p = null;
+        for(int i=0;i<ar.size();i++){
+            if(ar.get(i).product_name.equalsIgnoreCase(name))
+                p = ar.get(i);
+        }
+        return p;
+    }
    
     
     public static boolean isMatched(String str)

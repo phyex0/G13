@@ -5,12 +5,14 @@
  */
 package com.mycompany.g13;
 
+import static com.mycompany.g13.SystemClass.givenOrder;
+
 /**
  *
  * @author Admin
  */
 public class star extends javax.swing.JFrame {
-
+    
     /**
      * Creates new form star
      */
@@ -57,6 +59,11 @@ public class star extends javax.swing.JFrame {
         smallcoffestar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/star.png"))); // NOI18N
         smallcoffestar.setText("10");
         smallcoffestar.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        smallcoffestar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                smallcoffestarActionPerformed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee-cup.png"))); // NOI18N
@@ -90,36 +97,71 @@ public class star extends javax.swing.JFrame {
         smallcoffestar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/star.png"))); // NOI18N
         smallcoffestar1.setText("20");
         smallcoffestar1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        smallcoffestar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                smallcoffestar1ActionPerformed(evt);
+            }
+        });
 
         smallcoffestar2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         smallcoffestar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/star.png"))); // NOI18N
         smallcoffestar2.setText("30");
         smallcoffestar2.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        smallcoffestar2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                smallcoffestar2ActionPerformed(evt);
+            }
+        });
 
         smallcoffestar3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         smallcoffestar3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/star.png"))); // NOI18N
         smallcoffestar3.setText("50");
         smallcoffestar3.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        smallcoffestar3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                smallcoffestar3ActionPerformed(evt);
+            }
+        });
 
         smallcoffestar4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         smallcoffestar4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/star.png"))); // NOI18N
         smallcoffestar4.setText("200");
         smallcoffestar4.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        smallcoffestar4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                smallcoffestar4ActionPerformed(evt);
+            }
+        });
 
         smallcoffestar5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         smallcoffestar5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/star.png"))); // NOI18N
         smallcoffestar5.setText("500");
         smallcoffestar5.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        smallcoffestar5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                smallcoffestar5ActionPerformed(evt);
+            }
+        });
 
         smallcoffestar6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         smallcoffestar6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/star.png"))); // NOI18N
         smallcoffestar6.setText("60");
         smallcoffestar6.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        smallcoffestar6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                smallcoffestar6ActionPerformed(evt);
+            }
+        });
 
         smallcoffestar7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         smallcoffestar7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/star.png"))); // NOI18N
         smallcoffestar7.setText("300");
         smallcoffestar7.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        smallcoffestar7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                smallcoffestar7ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -206,6 +248,71 @@ public class star extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void smallcoffestarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smallcoffestarActionPerformed
+        // TODO add your handling code here:
+        Drinks product = new Drinks("",0,"Yıldızlı Küçük Boy Kahve");
+        product.setStar(10);
+        SystemClass.add(product);
+        CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
+        
+    }//GEN-LAST:event_smallcoffestarActionPerformed
+
+    private void smallcoffestar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smallcoffestar1ActionPerformed
+        // TODO add your handling code here:
+        Drinks product = new Drinks("",0,"Yıldızlı Orta Boy Kahve");
+        product.setStar(20);
+        SystemClass.add(product);
+        CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
+    }//GEN-LAST:event_smallcoffestar1ActionPerformed
+
+    private void smallcoffestar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smallcoffestar2ActionPerformed
+        // TODO add your handling code here:
+        Drinks product = new Drinks("",0,"Yıldızlı Büyük Boy Kahve");
+        product.setStar(30);
+        SystemClass.add(product);
+        CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
+    }//GEN-LAST:event_smallcoffestar2ActionPerformed
+
+    private void smallcoffestar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smallcoffestar4ActionPerformed
+        // TODO add your handling code here:
+        PacketedProducts product = new PacketedProducts("Yızldızlı Paket Kahve","",0);
+        product.setStar(200);
+        SystemClass.add(product);
+        CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
+    }//GEN-LAST:event_smallcoffestar4ActionPerformed
+
+    private void smallcoffestar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smallcoffestar3ActionPerformed
+        // TODO add your handling code here:
+        Food product = new Food("",0,"Yıldızlı Cookie");
+        product.setStar(50);
+        SystemClass.add(product);
+        CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
+    }//GEN-LAST:event_smallcoffestar3ActionPerformed
+
+    private void smallcoffestar6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smallcoffestar6ActionPerformed
+        // TODO add your handling code here:
+        Food product = new Food("",0,"Yıldızlı Sandiviç");
+        product.setStar(60);
+        SystemClass.add(product);
+        CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
+    }//GEN-LAST:event_smallcoffestar6ActionPerformed
+
+    private void smallcoffestar5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smallcoffestar5ActionPerformed
+        // TODO add your handling code here:
+        Gifts product = new Gifts(0,"Yıldızlı Termos");
+        product.setStar(500);
+        SystemClass.add(product);
+        CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
+    }//GEN-LAST:event_smallcoffestar5ActionPerformed
+
+    private void smallcoffestar7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smallcoffestar7ActionPerformed
+        // TODO add your handling code here:
+        Gifts product = new Gifts(0,"Yıldızlı Kupa");
+        product.setStar(300);
+        SystemClass.add(product);
+        CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
+    }//GEN-LAST:event_smallcoffestar7ActionPerformed
 
     /**
      * @param args the command line arguments

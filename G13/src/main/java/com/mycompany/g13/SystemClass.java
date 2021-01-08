@@ -46,6 +46,14 @@ public class SystemClass {
         
         return result;
     }
+    public static int totalStar(ArrayList<Products> ar ){
+        int star = 0;
+        for(Products p:ar){
+            if(p.getStar()!=0)
+                star+= p.getStar();
+        }
+        return star;
+    }
     
     public static void removeLastOrder(){
         

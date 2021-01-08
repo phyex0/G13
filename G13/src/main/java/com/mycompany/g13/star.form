@@ -149,6 +149,9 @@
             <Property name="text" type="java.lang.String" value="10"/>
             <Property name="horizontalTextPosition" type="int" value="2"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="smallcoffestarActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
@@ -238,6 +241,9 @@
             <Property name="text" type="java.lang.String" value="20"/>
             <Property name="horizontalTextPosition" type="int" value="2"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="smallcoffestar1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="smallcoffestar2">
           <Properties>
@@ -250,6 +256,9 @@
             <Property name="text" type="java.lang.String" value="30"/>
             <Property name="horizontalTextPosition" type="int" value="2"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="smallcoffestar2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="smallcoffestar3">
           <Properties>
@@ -262,6 +271,9 @@
             <Property name="text" type="java.lang.String" value="50"/>
             <Property name="horizontalTextPosition" type="int" value="2"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="smallcoffestar3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="smallcoffestar4">
           <Properties>
@@ -274,6 +286,9 @@
             <Property name="text" type="java.lang.String" value="200"/>
             <Property name="horizontalTextPosition" type="int" value="2"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="smallcoffestar4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="smallcoffestar5">
           <Properties>
@@ -286,6 +301,9 @@
             <Property name="text" type="java.lang.String" value="500"/>
             <Property name="horizontalTextPosition" type="int" value="2"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="smallcoffestar5ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="smallcoffestar6">
           <Properties>
@@ -298,6 +316,9 @@
             <Property name="text" type="java.lang.String" value="60"/>
             <Property name="horizontalTextPosition" type="int" value="2"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="smallcoffestar6ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="smallcoffestar7">
           <Properties>
@@ -310,6 +331,9 @@
             <Property name="text" type="java.lang.String" value="300"/>
             <Property name="horizontalTextPosition" type="int" value="2"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="smallcoffestar7ActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

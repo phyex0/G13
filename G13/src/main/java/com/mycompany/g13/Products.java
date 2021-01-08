@@ -9,6 +9,7 @@ public abstract class Products implements P_Interface{
     private static double taxed_price;
     private static double total_price;
     final static double tax = 18;
+    private int star = 0;
 
     public Products(){
     }
@@ -17,6 +18,15 @@ public abstract class Products implements P_Interface{
         this.product_price = product_price;
         this.product_name = product_name;
     }
+
+    public int getStar() {
+        return star;
+    }
+
+    public void setStar(int star) {
+        this.star = star;
+    }
+    
 
     public String getProduct_name() {
         return product_name;

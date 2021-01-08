@@ -20,6 +20,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 
 @SpringBootApplication
@@ -809,7 +810,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addComponent(jButton104)
@@ -3610,11 +3611,23 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        new star().setVisible(true);
+        if(loginClient !=null)
+            new star().setVisible(true);
+        else
+             JOptionPane.showMessageDialog(error,"You cannot open the star menu until login..");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        new odeme().setVisible(true);
+       
+        if(loginClient!= null){
+            if(loginClient.getStar()< SystemClass.totalStar(givenOrder))
+                JOptionPane.showMessageDialog(error,"There is not enough STAR to accomplish operation.\nPlease remove STARED Product...");
+            else{
+                 new odeme().setVisible(true);
+                loginClient.setStar(loginClient.getStar()-SystemClass.totalStar(givenOrder));
+            
+            }
+        }
        
         
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -4531,7 +4544,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     private javax.swing.JRadioButton laktozsuz;
     private javax.swing.JPanel mediumpan;
     private javax.swing.JButton milk;
-    public java.awt.TextArea order;
+    public static java.awt.TextArea order;
     private javax.swing.JRadioButton orta;
     private javax.swing.JLayeredPane paketkahvepan;
     private javax.swing.JPanel pancay;

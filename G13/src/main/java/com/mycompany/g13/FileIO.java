@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.g13;
 
 import static com.mycompany.g13.SystemClass.allOrders;
@@ -17,7 +12,7 @@ import java.time.format.DateTimeFormatter;
  *
  * @author MONSTER
  */
-public class FileIO {
+public class FileIO implements FileIO_Interface{
 
     public FileIO() {
     }

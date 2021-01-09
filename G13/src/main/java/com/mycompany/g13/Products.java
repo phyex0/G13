@@ -5,9 +5,9 @@ public abstract class Products{
     public double product_price;
     public String product_name;
     public String type = "";
-    private static double sub_price;
-    private static double taxed_price;
-    private static double total_price;
+    public static double sub_price;
+    public static double taxed_price;
+    public static double total_price;
     final static double tax = 18;
     private int star = 0;
 

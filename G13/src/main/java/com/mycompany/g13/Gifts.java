@@ -16,8 +16,7 @@ public class Gifts extends Products {
         if(givenOrder.isEmpty() || !(SystemClass.isMatched("Espresso")) && !(SystemClass.isMatched("Frappucino")) && !(SystemClass.isMatched("Çay")))
         {
             Products.addSub_price(this.getProduct_price());
-            Products.setTotal_price();
-            Products.setTaxed_price();
+            Products.update_prices();
             SystemClass.add(this);
         }
     }

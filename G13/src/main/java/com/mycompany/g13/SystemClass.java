@@ -74,8 +74,7 @@ public class SystemClass {
         else
         {
             Products.setSub_price(Products.getSub_price() - givenOrder.get(givenOrder.size()-1).getProduct_price());
-            Products.setTotal_price();
-            Products.setTaxed_price();
+            Products.update_prices();
             givenOrder.remove(givenOrder.size()-1);
             
         }
@@ -92,8 +91,7 @@ public class SystemClass {
     {
         givenOrder.clear();
         Products.setSub_price(0);
-        Products.setTotal_price();
-        Products.setTaxed_price();
+        Products.update_prices();
     }
     
     

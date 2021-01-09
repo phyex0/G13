@@ -13,8 +13,7 @@ public class Property extends Drinks
     public void calculate_and_add() {
 
          Products.addSub_price(this.getProduct_price());
-         Products.setTotal_price();
-         Products.setTaxed_price();
+         Products.update_prices();
          SystemClass.givenOrder.add(this);
     }
     

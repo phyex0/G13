@@ -18,8 +18,13 @@ import java.time.format.DateTimeFormatter;
  * @author MONSTER
  */
 public class FileIO {
+
+    public FileIO() {
+    }
+   
+    
     //takes current time to add to begginig of the file -Burak
-    public static String setTime(){
+    public String setTime(){
         
           DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss MM/dd/yyyy ");
           LocalDateTime now = LocalDateTime.now();  
@@ -29,7 +34,7 @@ public class FileIO {
     
     }
     //adds date and given all of those orders to our txt file -Burak
-    public static void fileOutput() throws IOException{
+    public void fileOutput() throws IOException{
         
         try{
             File f = new File("src/main/java/com/mycompany/allOrders.txt");

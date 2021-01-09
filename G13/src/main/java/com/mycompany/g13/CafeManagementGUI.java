@@ -4413,17 +4413,17 @@ public class CafeManagementGUI extends javax.swing.JFrame{
    //if there is no data it'll create fake sample for Evren Hoca - Burak
    private static void loadData( ClientRepository  clientRepository){
       
-     if( clientRepository.findAll().isEmpty() ){
-         Client c = new Client("5462188698","Halit Burak Yeşildal", 250);
-         repo.save(c);
-         Client c2= new Client("5436684264","Melis Alpkaya",500);
-         repo.save(c2);
-         Client c3 = new Client("5538067619","Ali Er",0);
-         repo.save(c3);
-         Client c4= new Client("5350517263","Behlül Mansur Çıldır",10);
-         repo.save(c4);
-     } 
-
+     if(clientRepository.findAll().isEmpty() ){
+            Client c = new Client("5462188698","Halit Burak Yeşildal", 250);
+            clientRepository.save(c);
+            Client c2= new Client("5436684264","Melis Alpkaya",500);
+            clientRepository.save(c2);
+            Client c3 = new Client("5538067619","Ali Er",0);
+            clientRepository.save(c3);
+            Client c4= new Client("5350517263","Behlül Mansur Çıldır",10);
+           clientRepository.save(c4);
+    } 
+   
      
    
    

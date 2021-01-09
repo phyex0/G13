@@ -11,12 +11,14 @@ public class SystemClass {
     public static ArrayList<Products> allOrders = new ArrayList<Products>();
     public static ArrayList<Integer> conditionStar =new ArrayList<Integer>();
     
+   public FileIO fileIssue = new FileIO();
+    
     //keep all the orders until program shutting down
     public static void collectAllOrders(){
         
         allOrders.addAll(givenOrder);
         givenOrder.clear();
-        
+       
     }
     
     //search order by their name

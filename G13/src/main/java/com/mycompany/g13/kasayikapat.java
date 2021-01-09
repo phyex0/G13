@@ -130,8 +130,12 @@ public class kasayikapat extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
        //writes all the order to TXT file.
         try {
-            
-            FileIO.fileOutput();
+           SystemClass sC= new SystemClass();
+            sC.fileIssue.fileOutput();
+         
+          
+          
+           
         } catch (IOException ex) {
             Logger.getLogger(kasayikapat.class.getName()).log(Level.SEVERE, null, ex);
         }

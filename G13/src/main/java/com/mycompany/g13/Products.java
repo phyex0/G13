@@ -13,6 +13,7 @@ public abstract class Products implements P_Interface{
 
     public Products(){
     }
+    public abstract void calculate_and_add();
     
     public Products(double product_price, String product_name) {
         this.product_price = product_price;

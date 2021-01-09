@@ -3,9 +3,7 @@ package com.mycompany.g13;
 import static com.mycompany.g13.SystemClass.givenOrder;
 
 public class Food extends Products {
-    
-    private String type;
-
+   
     public Food() {}
     
     public Food(String type, double product_price, String product_name) {
@@ -13,15 +11,6 @@ public class Food extends Products {
         this.type = type;
     }
 
-    @Override
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-    
     @Override
     public void calculate_and_add() {
         if(givenOrder.isEmpty() || (!(SystemClass.isMatched("Espresso")) && !(SystemClass.isMatched("Frappucino")) && !(SystemClass.isMatched("Çay"))))

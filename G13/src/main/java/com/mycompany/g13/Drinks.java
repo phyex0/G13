@@ -3,8 +3,6 @@ package com.mycompany.g13;
 import static com.mycompany.g13.SystemClass.givenOrder;
 
 public  class Drinks extends Products{
-    
-    public String type;
 
     public Drinks() {}
     
@@ -12,15 +10,6 @@ public  class Drinks extends Products{
         super(product_price, product_name);
         this.type = type;
        
-    }
-    
-    public void setType(String type) {
-        this.type = type;
-    }
-    
-    @Override
-    public String getType() {
-        return type;
     }
     
     @Override
@@ -35,9 +24,9 @@ public  class Drinks extends Products{
     }
     
     
-     @Override
+    @Override
     public String toString() {
-        return "=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n" + this.getProduct_name() + "(" + this.getType() + ") => " + this.getProduct_price()+"₺\n";
+        return "=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n" + this.getProduct_name() + "(" + this.getType() + ") => " + this.getProduct_price()+"TL\n";
     }
     
 

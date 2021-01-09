@@ -35,7 +35,7 @@ public class PacketedProducts extends Products {
     
     @Override
     public String toString() {
-        return "=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n" + this.profile + "-" + this.product_name + " => " + this.product_price+"TL\n";
+        return "=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n" + this.profile + "-" + this.product_name + " => " + this.product_price+"₺\n";
     }
     
 }

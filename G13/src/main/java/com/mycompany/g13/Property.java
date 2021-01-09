@@ -21,7 +21,7 @@ public class Property extends Drinks
     
     @Override
     public String toString() {
-        return super.getProduct_name() + " => " + super.getProduct_price()+"TL\n"; 
+        return super.getProduct_name() + " => " + super.getProduct_price()+"₺\n"; 
     }
  
     

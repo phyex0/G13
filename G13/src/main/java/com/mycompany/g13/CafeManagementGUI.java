@@ -60,7 +60,9 @@ public class CafeManagementGUI extends javax.swing.JFrame{
      */
     public CafeManagementGUI() {
         initComponents();
-        setAllDisble();
+        setAllDefault();
+        order.setText(SystemClass.displayOrder(givenOrder));
+        calculation.setText(SystemClass.displayCalculation());
 
         kucuk.setActionCommand("Küçük,0");
         orta.setActionCommand("Orta,2");
@@ -106,14 +108,14 @@ public class CafeManagementGUI extends javax.swing.JFrame{
       
     }
     
-    public void setAllDisble()
+    public void setAllDefault()
     {
         size.setEnabled(false);
         milk.setEnabled(false);
         syrup.setEnabled(false);
         
-        buttonGroup1.clearSelection();
-        buttonGroup2.clearSelection();
+        kucuk.setSelected(true);
+        yagli.setSelected(true);
         karamel.setSelected(false);
         cikolata.setSelected(false);
         beyazcikolata.setSelected(false);
@@ -133,7 +135,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             product.calculate_and_add();
             order.setText(SystemClass.displayOrder(givenOrder));
             calculation.setText(SystemClass.displayCalculation());
-            setAllDisble();
+            setAllDefault();
         }
         
     }
@@ -615,6 +617,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         order.setBackground(new java.awt.Color(253, 253, 235));
+        order.setEditable(false);
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -3563,7 +3566,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             
             else if(givenOrder.size() == 0 || (SystemClass.isMatched("Espresso")) || (SystemClass.isMatched("Frappucino")) || (SystemClass.isMatched("Çay")))
             {   
-                setAllDisble();    
+                setAllDefault();    
             }
             SystemClass.removeLastConditionStar();
             SystemClass.removeLastOrder();
@@ -3608,7 +3611,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         SystemClass.clear();
         order.setText(SystemClass.displayOrder(givenOrder));
         calculation.setText(SystemClass.displayCalculation());
-        setAllDisble();
+        setAllDefault();
         
         
         
@@ -3875,7 +3878,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         conditionStar.clear();
         order.setText(SystemClass.displayOrder(givenOrder));
         calculation.setText(SystemClass.displayCalculation());
-        setAllDisble();
+        setAllDefault();
     }//GEN-LAST:event_siparisresetActionPerformed
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
@@ -4197,6 +4200,18 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void sizeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sizeActionPerformed
         // TODO add your handling code here:
+        
+        if(SystemClass.isMatched("Çay"))
+        {
+            this.size.setEnabled(false);
+        }
+        
+        else
+        {
+            this.size.setEnabled(false);
+            milk.setEnabled(true);
+        }
+
         String size[] = new String[2];
         size = buttonGroup1.getSelection().getActionCommand().split(",", 2);
         Property choosenSize = new Property("Size", size[0], Integer.parseInt(size[1]));
@@ -4205,13 +4220,14 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         
         order.setText(SystemClass.displayOrder(givenOrder));
         calculation.setText(SystemClass.displayCalculation());
-        
-        this.size.setEnabled(false);
-        milk.setEnabled(true);
+         
+
+
     }//GEN-LAST:event_sizeActionPerformed
 
     private void milkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_milkActionPerformed
         // TODO add your handling code here:
+
         String milk[] = new String[2];
         milk = buttonGroup2.getSelection().getActionCommand().split(",", 2);
         Property choosenMilk = new Property("Milk", milk[0], Integer.parseInt(milk[1]));
@@ -4223,10 +4239,12 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         
         this.milk.setEnabled(false);
         this.syrup.setEnabled(true);
+            
     }//GEN-LAST:event_milkActionPerformed
 
     private void syrupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_syrupActionPerformed
         // TODO add your handling code here:
+
         String syrup[] = new String[2];
         
         for ( JCheckBox checkbox : checkboxes ) 
@@ -4244,7 +4262,6 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         calculation.setText(SystemClass.displayCalculation());
         
         this.syrup.setEnabled(false);
-
 
     }//GEN-LAST:event_syrupActionPerformed
 

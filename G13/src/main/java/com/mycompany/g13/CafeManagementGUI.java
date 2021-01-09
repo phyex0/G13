@@ -443,7 +443,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jTextArea1.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
         jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea1.setRows(5);
-        jTextArea1.setText("10 ★\n➜Extra şurup eklendiğinde\n➜Süt cinsi değiştiğinde");
+        jTextArea1.setText(" ★\n➜Yapmış olduğunuz her \nalışverişin %10u kadar yıldız\nkazanırsınız\n");
         jScrollPane1.setViewportView(jTextArea1);
 
         jTextArea2.setEditable(false);

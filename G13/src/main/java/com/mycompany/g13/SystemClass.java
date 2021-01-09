@@ -1,11 +1,14 @@
 package com.mycompany.g13;
 
+import static com.mycompany.g13.CafeManagementGUI.jTextArea6;
 import static com.mycompany.g13.CafeManagementGUI.loginClient;
 import static com.mycompany.g13.CafeManagementGUI.order;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 
-public class SystemClass {
+public class SystemClass implements TimeInterface {
     
     public static ArrayList<Products> givenOrder = new ArrayList<Products>();
     public static ArrayList<Products> allOrders = new ArrayList<Products>();
@@ -137,6 +140,31 @@ public class SystemClass {
 
         }
         
+    }
+
+    @Override
+    public void setTime() {
+           //Update Time. Do not modify - Burak;
+   
+        Thread Clock = new Thread(){
+            @Override
+            public void run(){
+                for(;;){
+                    try {
+                        sleep(1000);
+                        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss MM/dd/yyyy "); 
+                        LocalDateTime now = LocalDateTime.now();  
+                        jTextArea6.setText("   "+dtf.format(now));
+                    
+                    }catch (Exception e){
+                        System.out.println("Error");
+                    }
+                }
+           }
+        };
+        Clock.start();
+    
+   
     }
     
     

@@ -134,10 +134,9 @@ public class kasayikapat extends javax.swing.JFrame {
             sC.fileIssue.fileOutput();
          
           
-          
-           
         } catch (IOException ex) {
             Logger.getLogger(kasayikapat.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("kasayı kapatta fail");
         }
         
         this.dispose();

@@ -12,34 +12,37 @@ import java.time.format.DateTimeFormatter;
  *
  * @author MONSTER
  */
-public class FileIO implements FileIO_Interface{
+public class FileIO implements TimeInterface{
+    String currentTime="";
 
     public FileIO() {
     }
    
     
     //takes current time to add to begginig of the file -Burak
-    public String setTime(){
+    @Override
+    public void setTime(){
         
           DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss MM/dd/yyyy ");
           LocalDateTime now = LocalDateTime.now();  
-          String currentTime = dtf.format(now);
+           currentTime = dtf.format(now)+"\n";
           
-          return currentTime+"\n";
+          
     
     }
     //adds date and given all of those orders to our txt file -Burak
     public void fileOutput() throws IOException{
         
         try{
+            
             File f = new File("src/main/java/com/mycompany/allOrders.txt");
             if(!f.exists())
                 f.createNewFile();
             
             FileWriter fw= new FileWriter(f,true);
             BufferedWriter bw = new BufferedWriter(fw); 
-            
-            bw.write(setTime());
+            setTime();
+            bw.write(currentTime);
             bw.write(SystemClass.displayOrder(allOrders));
             bw.write("-----------------------------------------\n");
             bw.flush();
@@ -47,6 +50,7 @@ public class FileIO implements FileIO_Interface{
             
             
         }catch(Exception e){
+            System.out.println("fileOutputta fail");
         
         }
     

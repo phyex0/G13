@@ -32,27 +32,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
    
    
    
-   //Update Time. Do not modify - Burak;
-   public static void updateDate(){
-        Thread Clock = new Thread(){
-            @Override
-            public void run(){
-                for(;;){
-                    try {
-                        sleep(1000);
-                        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss MM/dd/yyyy "); 
-                        LocalDateTime now = LocalDateTime.now();  
-                        jTextArea6.setText("   "+dtf.format(now));
-                    
-                    }catch (Exception e){
-                        System.out.println("Error");
-                    }
-                }
-           }
-        };
-        Clock.start();
-    }
-   
+
 
 
     /**
@@ -4362,9 +4342,8 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         repo = configurableApplicationContext.getBean(ClientRepository.class);
         
         error= new JFrame();
-        
-        
         loadData(repo);
+        SystemClass sClass= new SystemClass();
         
         
         /* Set the Nimbus look and feel */
@@ -4394,7 +4373,8 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new CafeManagementGUI().setVisible(true);
-                updateDate();
+                sClass.setTime();
+                
                 
                 
             }
@@ -4617,7 +4597,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
-    private static javax.swing.JTextArea jTextArea6;
+    public static javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JButton kahvelerb;
     private javax.swing.JCheckBox karamel;

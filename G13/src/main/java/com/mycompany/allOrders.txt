@@ -167,3 +167,14 @@ Y?ld?zl? Termos => 0.0TL
 =O=O=O=O=O=O=O=O=O=O=O=O=O=O
 Y?ld?zl? Termos => 0.0TL
 -----------------------------------------
+03:45:20 01/09/2021 
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Kupa => 90.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Y?ld?zl? Küçük Boy Kahve() => 0.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Reyhanl? Peynirli Tost => 13.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Toffee Nut Latte(Espresso) => 17.0TL
+Küçük => 0.0TL
+-----------------------------------------

@@ -32,7 +32,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
    
    
    
-   //Update Time
+   //Update Time. Do not modify - Burak;
    public static void updateDate(){
         Thread Clock = new Thread(){
             @Override
@@ -123,36 +123,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         cilek.setSelected(false);
         ahududu.setSelected(false);
     }
-    /*
-    public void actionPerformed(Products product) {
-        if(givenOrder.size() == 0 || (!(givenOrder.get(givenOrder.size() - 1) instanceof Drinks) && !(givenOrder.get(givenOrder.size() - 1).getType().equals("Size"))))
-        {
-            Products.addSub_price(product.getProduct_price());
-            Products.setTotal_price();
-            Products.setTaxed_price();
-            Payment.givenOrder.add(product);
-            order.setText(Payment.displayOrder());
-            calculation.setText(Payment.displayCalculation());
-            setAllDisble();
-        }
-    }
-    
-    public void actionPerformedDrinks(Products product)
-    {
-        if(givenOrder.size() == 0 || (!(Payment.givenOrder.get(givenOrder.size() - 1) instanceof Drinks) && !(Payment.givenOrder.get(givenOrder.size() - 1).getType().equals("Size"))))
-        {
-            //actionPerformed(product);
-            Products.addSub_price(product.getProduct_price());
-            Products.setTotal_price();
-            Products.setTaxed_price();
-            Payment.givenOrder.add(product);
-            order.setText(Payment.displayOrder());
-            calculation.setText(Payment.displayCalculation());
-            setAllDisble();
-            size.setEnabled(true);
-        }
-    }
-    */
+   
     
     public void actionPerformed(Products product)
     {
@@ -3954,6 +3925,8 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
         
+        //oppening urls do not modify -Burak
+        
          try {
             // TODO add your handling code here:
             final URI uri = new URI("https://github.com/phyex0");
@@ -4367,6 +4340,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     public static ClientRepository repo;
     
     public static void main(String args[]) {
+        //starting db issues do not modify -Burak
         ConfigurableApplicationContext configurableApplicationContext = SpringApplication.run(CafeManagementGUI.class,args);
         repo = configurableApplicationContext.getBean(ClientRepository.class);
         error= new JFrame();
@@ -4409,7 +4383,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         });
     }
     
-    //it opens our github profiles.
+    //it opens our github profiles. do not modify -Burak
    private static void open(URI uri) {
     if (Desktop.isDesktopSupported()) {
       try {

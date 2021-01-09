@@ -18,7 +18,7 @@ import java.time.format.DateTimeFormatter;
  * @author MONSTER
  */
 public class FileIO {
-    //takes current time to add to begginig of the file
+    //takes current time to add to begginig of the file -Burak
     public static String setTime(){
         
           DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss MM/dd/yyyy ");
@@ -28,7 +28,7 @@ public class FileIO {
           return currentTime+"\n";
     
     }
-    //adds date and given all of those orders to our txt file
+    //adds date and given all of those orders to our txt file -Burak
     public static void fileOutput() throws IOException{
         
         try{

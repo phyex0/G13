@@ -150,11 +150,14 @@ public class odeme extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-     
+        
+        
+        //if you login, we can update star info. - Burak
         if(loginClient!= null){
             loginClient.setStar(loginClient.getStar()+ SystemClass.calculateStar()-SystemClass.totalStar(givenOrder)+SystemClass.calculateConditionStar());
             repo.save(loginClient);
             userData.setText(loginClient.toString());
+            
            
         }
         

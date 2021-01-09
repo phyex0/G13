@@ -98,7 +98,7 @@ public class Uyegiris extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void telnobuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telnobuttonActionPerformed
-        // TODO add your handling code here:
+        // search by phone number and brings client if exists. number must be 10 digit -Burak
         String phoneNumber= telno.getText();
         if(phoneNumber.trim().matches("\\d{10}")){
            

@@ -6,6 +6,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/*
+This class creates a table to keep user datas. Do not modify- Halit Burak
+
+*/
+
+
+
 @Entity
 public class Client {
     

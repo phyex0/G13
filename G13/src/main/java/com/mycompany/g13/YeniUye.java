@@ -114,9 +114,9 @@ public class YeniUye extends javax.swing.JFrame {
 
     private void yeniuyebActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yeniuyebActionPerformed
         // TODO add your handling code here:
-         String name= nameTextfield.getText(),phoneNumber=phoneNumberTextfield.getText();
-   
-        
+        //name cannot include ö-ç-ü or any other characters except alphabet. Phone number must include 10 number without 0 at the beggining. 
+        //if there is no execuse or same data we can add client to our db. -Burak
+        String name= nameTextfield.getText(),phoneNumber=phoneNumberTextfield.getText();
         if(name.matches("^[a-zA-Z ]{3,100}$")&& phoneNumber.trim().matches("\\d{10}")){
             Client c= new Client(phoneNumber,name,0);
            

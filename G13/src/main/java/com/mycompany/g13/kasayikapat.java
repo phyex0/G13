@@ -128,6 +128,7 @@ public class kasayikapat extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       //writes all the order to TXT file.
         try {
             
             FileIO.fileOutput();
@@ -141,6 +142,7 @@ public class kasayikapat extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        //searches by product name.
        Products p = SystemClass.searchOrder(allOrders,jTextField1.getText());
        if(p== null)
            collectedData.setText("Searched order cannot find...");
@@ -150,6 +152,7 @@ public class kasayikapat extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        //reset orders in jTextArea
         collectedData.setText(SystemClass.displayOrder(allOrders));
     }//GEN-LAST:event_jButton3ActionPerformed
 

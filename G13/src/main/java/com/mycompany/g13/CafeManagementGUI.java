@@ -4360,11 +4360,11 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         //starting db issues do not modify -Burak
         ConfigurableApplicationContext configurableApplicationContext = SpringApplication.run(CafeManagementGUI.class,args);
         repo = configurableApplicationContext.getBean(ClientRepository.class);
-        loadData();
+        
         error= new JFrame();
         
         
-        
+        loadData(repo);
         
         
         /* Set the Nimbus look and feel */
@@ -4411,17 +4411,20 @@ public class CafeManagementGUI extends javax.swing.JFrame{
   }
    
    //if there is no data it'll create fake sample for Evren Hoca - Burak
-   private static void loadData(){
-     if( !repo.findAll().iterator().hasNext()){
-         Client c = new Client("Halit Burak Yeşildal", "5462188698",250);
+   private static void loadData( ClientRepository  clientRepository){
+      
+     if( clientRepository.findAll().isEmpty() ){
+         Client c = new Client("5462188698","Halit Burak Yeşildal", 250);
          repo.save(c);
-         c= new Client("Melis Alpkaya","5436684264",500);
-         repo.save(c);
-         c= new Client("Ali Er","5538067619",0);
-         repo.save(c);
-         c= new Client("Behlül Mansur Çıldır","5350517263",10);
-         repo.save(c);
-     }
+         Client c2= new Client("5436684264","Melis Alpkaya",500);
+         repo.save(c2);
+         Client c3 = new Client("5538067619","Ali Er",0);
+         repo.save(c3);
+         Client c4= new Client("5350517263","Behlül Mansur Çıldır",10);
+         repo.save(c4);
+     } 
+
+     
    
    
    }

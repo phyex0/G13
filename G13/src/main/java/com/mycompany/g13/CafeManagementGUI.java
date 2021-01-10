@@ -406,6 +406,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         syrup = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("G13 - COSMIC COFFEE CO");
         setBackground(new java.awt.Color(255, 255, 255));
         setResizable(false);
 

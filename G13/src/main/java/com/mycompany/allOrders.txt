@@ -246,3 +246,11 @@ Blonde-Blonde Espresso => 35.0TL
 =O=O=O=O=O=O=O=O=O=O=O=O=O=O
 Blonde-Veranda Blend => 37.0TL
 -----------------------------------------
+17:26:58 01/10/2021 
+O=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+(Espresso) Gingerbread Latte => 16.0TL
+Küçük => 0.0TL
+Yaðsýz => 0.0TL
+Çikolatalý => 2.0TL
+Beyaz Çikolatalý => 2.0TL
+-----------------------------------------

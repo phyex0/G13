@@ -13,6 +13,14 @@ public class Food extends Products {
         this.calorie = calorie;
     }
 
+    public String getCalorie() {
+        return calorie;
+    }
+
+    public void setCalorie(String calorie) {
+        this.calorie = calorie;
+    }
+
     @Override
     public void calculate_and_add() {
         if(givenOrder.isEmpty() || (!(SystemClass.isMatched("Espresso")) && !(SystemClass.isMatched("Frappucino")) && !(SystemClass.isMatched("Çay"))))

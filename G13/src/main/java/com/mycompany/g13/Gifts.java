@@ -11,6 +11,14 @@ public class Gifts extends Products {
         super(product_price, product_name);
         this.brand = brand;
     }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
     
     
     @Override

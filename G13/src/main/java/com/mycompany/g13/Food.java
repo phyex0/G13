@@ -3,12 +3,14 @@ package com.mycompany.g13;
 import static com.mycompany.g13.SystemClass.givenOrder;
 
 public class Food extends Products {
+    String calorie;
    
     public Food() {}
     
-    public Food(String type, double product_price, String product_name) {
+    public Food(String type, double product_price, String product_name, String calorie) {
         super(product_price, product_name);
         this.type = type;
+        this.calorie = calorie;
     }
 
     @Override
@@ -23,6 +25,6 @@ public class Food extends Products {
     
     @Override
     public String toString() {
-        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+        return "O=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n" + "(" + this.type+ ") " + "(Calorie: " + this.calorie + ") " + super.toString(); //To change body of generated methods, choose Tools | Templates.
     }
 }

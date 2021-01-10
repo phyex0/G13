@@ -3720,7 +3720,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton_KupaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_KupaActionPerformed
         // TODO add your handling code here:
-        Gifts gift = new Gifts(90.0, "Kupa");
+        Gifts gift = new Gifts(90.0, "Kupa", "Aladdin");
         actionPerformed(gift);
         addConditionStar();
     }//GEN-LAST:event_jButton_KupaActionPerformed
@@ -3731,7 +3731,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton_FiestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_FiestaActionPerformed
         // TODO add your handling code here:
-        Food food = new Food("Sandviç", 16.0, "Fiesta");
+        Food food = new Food("Sandviç", 16.0, "Fiesta", "452kcal");
          
         actionPerformed(food);
         addConditionStar();
@@ -3739,42 +3739,42 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton_ReyhanliTostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ReyhanliTostActionPerformed
         // TODO add your handling code here:
-        Food food = new Food("Sandviç", 13.0, "Reyhanlı Peynirli Tost");     
+        Food food = new Food("Sandviç", 13.0, "Reyhanlı Peynirli Tost", "415kcal");     
         actionPerformed(food); 
         addConditionStar();
     }//GEN-LAST:event_jButton_ReyhanliTostActionPerformed
 
     private void jButton_EzineliSandvicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_EzineliSandvicActionPerformed
         // TODO add your handling code here:
-        Food food = new Food("Sandviç", 12.50, "Ezine Peynirli Sandviç");
+        Food food = new Food("Sandviç", 12.50, "Ezine Peynirli Sandviç", "376kcal");
         actionPerformed(food);
         addConditionStar();
     }//GEN-LAST:event_jButton_EzineliSandvicActionPerformed
 
     private void jButton_MozarellaSandvicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_MozarellaSandvicActionPerformed
         // TODO add your handling code here:
-        Food food = new Food("Sandviç", 12.50, "Mozzarella Sandviç");
+        Food food = new Food("Sandviç", 12.50, "Mozzarella Sandviç", "390kcal");
         actionPerformed(food);
         addConditionStar();
     }//GEN-LAST:event_jButton_MozarellaSandvicActionPerformed
 
     private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
         // TODO add your handling code here:
-        Food food = new Food("Kurabiye", 8.0, "Triple Chocolate Cookie");
+        Food food = new Food("Kurabiye", 8.0, "Triple Chocolate Cookie", "370kcal");
         actionPerformed(food);
         addConditionStar();
     }//GEN-LAST:event_jButton49ActionPerformed
 
     private void jButton_MistoCookieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_MistoCookieActionPerformed
         // TODO add your handling code here:
-        Food food = new Food("Kurabiye", 11.0, "Misto Cookie");
+        Food food = new Food("Kurabiye", 11.0, "Misto Cookie", "309kcal");
         actionPerformed(food);
         addConditionStar();
     }//GEN-LAST:event_jButton_MistoCookieActionPerformed
 
     private void jButton_DopdoluFitCookieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_DopdoluFitCookieActionPerformed
         // TODO add your handling code here:
-        Food food = new Food("Kurabiye", 13.0, "Dopdolu Fit Cookie");
+        Food food = new Food("Kurabiye", 13.0, "Dopdolu Fit Cookie", "249kcal");
          actionPerformed(food);
          addConditionStar();
 
@@ -3782,7 +3782,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton_BrownieCheesecakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_BrownieCheesecakeActionPerformed
         // TODO add your handling code here:
-        Food food = new Food("Pasta", 14.0, "Brownie Cheesecake");
+        Food food = new Food("Pasta", 14.0, "Brownie Cheesecake", "759kcal");
         
         actionPerformed(food); 
         addConditionStar();
@@ -3790,7 +3790,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton_KremalıHavucluKekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_KremalıHavucluKekActionPerformed
         // TODO add your handling code here:
-        Food food = new Food("Pasta", 15.75, "Kremalı Havuçlu Kek");
+        Food food = new Food("Pasta", 15.75, "Kremalı Havuçlu Kek", "326kcal");
          
         actionPerformed(food);
         addConditionStar();
@@ -3798,7 +3798,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton_ProfiterolluPastaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ProfiterolluPastaActionPerformed
         // TODO add your handling code here:
-        Food food = new Food("Pasta", 13.50, "Profiterollü Pasta");
+        Food food = new Food("Pasta", 13.50, "Profiterollü Pasta", "316kcal");
         
         actionPerformed(food); 
         addConditionStar();
@@ -3806,7 +3806,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton_LimonluCheesecakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_LimonluCheesecakeActionPerformed
         // TODO add your handling code here:
-        Food food = new Food("Pasta", 14.25, "Limonlu Cheesecake");
+        Food food = new Food("Pasta", 14.25, "Limonlu Cheesecake", "516kcal");
         
         actionPerformed(food); 
         addConditionStar();
@@ -3814,7 +3814,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton_KinoalıSalataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_KinoalıSalataActionPerformed
         // TODO add your handling code here:
-        Food food = new Food("Salata", 22.0, "Kinoalı Salata");
+        Food food = new Food("Salata", 22.0, "Kinoalı Salata", "382kcal");
         
         actionPerformed(food);
         addConditionStar();
@@ -3822,7 +3822,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton_MeyveliveYogurtluParfeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_MeyveliveYogurtluParfeActionPerformed
         // TODO add your handling code here:
-        Food food = new Food("Salata", 16.75, "Meyveli ve Yoğurtlu Parfe");
+        Food food = new Food("Salata", 16.75, "Meyveli ve Yoğurtlu Parfe", "450kcal");
        
         actionPerformed(food); 
         addConditionStar();
@@ -3830,7 +3830,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton_IzgaraTavukluSalataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_IzgaraTavukluSalataActionPerformed
         // TODO add your handling code here:
-        Food food = new Food("Salata", 18.50, "Izgara Tavuklu Salata");
+        Food food = new Food("Salata", 18.50, "Izgara Tavuklu Salata", "124kcal");
        
         actionPerformed(food);
         addConditionStar();
@@ -3838,7 +3838,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton_AnanaslıChiaPudingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_AnanaslıChiaPudingActionPerformed
         // TODO add your handling code here:
-        Food food = new Food("Salata", 17.0, "Ananaslı Chia Salata");
+        Food food = new Food("Salata", 17.0, "Ananaslı Chia Salata", "270kcal");
         
         actionPerformed(food); 
         addConditionStar();
@@ -3928,7 +3928,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
-        Gifts gift = new Gifts(229.99, "Termos");
+        Gifts gift = new Gifts(229.99, "Termos", "Stanley");
          
         actionPerformed(gift);
         addConditionStar();

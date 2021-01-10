@@ -71,6 +71,6 @@ public abstract class Products{
     }
     
     public String toString(){
-        return "=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n" + this.product_name + " => " + this.product_price+"TL\n";
+        return this.product_name + " => " + this.product_price+"TL\n";
     }
 }

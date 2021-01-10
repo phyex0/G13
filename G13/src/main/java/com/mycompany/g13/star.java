@@ -284,7 +284,7 @@ public class star extends javax.swing.JFrame {
 
     private void smallcoffestar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smallcoffestar3ActionPerformed
         // TODO add your handling code here:
-        Food product = new Food("",0,"Yıldızlı Cookie");
+        Food product = new Food("",0,"Yıldızlı Cookie", "501,9kcal");
         product.setStar(50);
         SystemClass.add(product);
         CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
@@ -292,7 +292,7 @@ public class star extends javax.swing.JFrame {
 
     private void smallcoffestar6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smallcoffestar6ActionPerformed
         // TODO add your handling code here:
-        Food product = new Food("",0,"Yıldızlı Sandiviç");
+        Food product = new Food("",0,"Yıldızlı Sandiviç", "244kcal");
         product.setStar(60);
         SystemClass.add(product);
         CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
@@ -300,7 +300,7 @@ public class star extends javax.swing.JFrame {
 
     private void smallcoffestar5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smallcoffestar5ActionPerformed
         // TODO add your handling code here:
-        Gifts product = new Gifts(0,"Yıldızlı Termos");
+        Gifts product = new Gifts(0,"Yıldızlı Termos", "Stanley");
         product.setStar(500);
         SystemClass.add(product);
         CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
@@ -308,7 +308,7 @@ public class star extends javax.swing.JFrame {
 
     private void smallcoffestar7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smallcoffestar7ActionPerformed
         // TODO add your handling code here:
-        Gifts product = new Gifts(0,"Yıldızlı Kupa");
+        Gifts product = new Gifts(0,"Yıldızlı Kupa", "Aladdin");
         product.setStar(300);
         SystemClass.add(product);
         CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));

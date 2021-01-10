@@ -5,9 +5,11 @@ import static com.mycompany.g13.SystemClass.givenOrder;
 public class Gifts extends Products {
 
     public Gifts() {}
+    String brand;
 
-    public Gifts(double product_price, String product_name) {
+    public Gifts(double product_price, String product_name, String brand) {
         super(product_price, product_name);
+        this.brand = brand;
     }
     
     
@@ -23,6 +25,6 @@ public class Gifts extends Products {
     
     @Override
     public String toString() {
-        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+        return "O=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n" + "(" + this.brand + ") "+ super.toString(); //To change body of generated methods, choose Tools | Templates.
     }
 }

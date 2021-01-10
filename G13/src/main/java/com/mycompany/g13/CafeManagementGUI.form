@@ -4497,6 +4497,7 @@
                                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                                   <Component id="jButton111" max="32767" attributes="0"/>
                                                   <Component id="jButton114" max="32767" attributes="0"/>
+                                                  <Component id="jButton44" max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <Component id="jComboBox3" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
@@ -4519,7 +4520,10 @@
                                           <Component id="jButton111" alignment="3" min="-2" pref="56" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                                      <Component id="jButton110" min="-2" pref="56" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jButton44" max="32767" attributes="0"/>
+                                          <Component id="jButton110" pref="56" max="32767" attributes="0"/>
+                                      </Group>
                                       <EmptySpace pref="165" max="32767" attributes="0"/>
                                       <Component id="jComboBox3" min="-2" pref="33" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -4631,6 +4635,23 @@
                               <AuxValues>
                                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                               </AuxValues>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="jButton44">
+                              <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="15" green="1e" red="e" type="rgb"/>
+                                </Property>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Tahoma" size="14" style="1"/>
+                                </Property>
+                                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="ETH&#x130;OP&#x130;A"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton44ActionPerformed"/>
+                              </Events>
                             </Component>
                           </SubComponents>
                         </Container>

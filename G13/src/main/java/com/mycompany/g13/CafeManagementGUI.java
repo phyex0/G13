@@ -373,6 +373,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jButton113 = new javax.swing.JButton();
         jButton114 = new javax.swing.JButton();
         jComboBox3 = new javax.swing.JComboBox<>();
+        jButton44 = new javax.swing.JButton();
         darkpan = new javax.swing.JPanel();
         jPanel31 = new javax.swing.JPanel();
         jButton117 = new javax.swing.JButton();
@@ -2921,6 +2922,16 @@ public class CafeManagementGUI extends javax.swing.JFrame{
             }
         });
 
+        jButton44.setBackground(new java.awt.Color(14, 30, 21));
+        jButton44.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton44.setForeground(new java.awt.Color(255, 255, 255));
+        jButton44.setText("ETHİOPİA");
+        jButton44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton44ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel30Layout = new javax.swing.GroupLayout(jPanel30);
         jPanel30.setLayout(jPanel30Layout);
         jPanel30Layout.setHorizontalGroup(
@@ -2936,7 +2947,8 @@ public class CafeManagementGUI extends javax.swing.JFrame{
                         .addGap(18, 18, 18)
                         .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton111, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton114, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(jButton114, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton44, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(236, Short.MAX_VALUE))
         );
@@ -2952,7 +2964,9 @@ public class CafeManagementGUI extends javax.swing.JFrame{
                     .addComponent(jButton112, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton111, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
-                .addComponent(jButton110, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton44, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton110, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 165, Short.MAX_VALUE)
                 .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -4172,7 +4186,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton92ActionPerformed
         // TODO add your handling code here:
-        Drinks drink = new Drinks("Bottled", 12, "Türk Kahvesi");
+        Drinks drink = new Drinks("Türk Kahvesi", 12, "Türk Kahvesi");
         actionPerformed(drink);
         size.setEnabled(true);
     }//GEN-LAST:event_jButton92ActionPerformed
@@ -4328,6 +4342,14 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         actionPerformed(drink);
         size.setEnabled(true);
     }//GEN-LAST:event_jButton83ActionPerformed
+
+    private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
+        // TODO add your handling code here:
+          PacketedProducts packetedProducts = new PacketedProducts("Ethiopia", "Medium", 36);
+       
+        actionPerformed(packetedProducts); 
+        addConditionStar();
+    }//GEN-LAST:event_jButton44ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -4486,6 +4508,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
     private javax.swing.JButton jButton41;
     private javax.swing.JButton jButton42;
     private javax.swing.JButton jButton43;
+    private javax.swing.JButton jButton44;
     private javax.swing.JButton jButton49;
     private javax.swing.JButton jButton59;
     private javax.swing.JButton jButton6;

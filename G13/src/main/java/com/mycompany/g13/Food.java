@@ -9,7 +9,7 @@ public class Food extends Products {
     
     public Food(String type, double product_price, String product_name, String calorie) {
         super(product_price, product_name);
-        this.type = type;
+        super.setType(type);
         this.calorie = calorie;
     }
 
@@ -33,6 +33,6 @@ public class Food extends Products {
     
     @Override
     public String toString() {
-        return "O=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n" + "(" + this.type+ ") " + "(Calorie: " + this.calorie + ") " + super.toString(); //To change body of generated methods, choose Tools | Templates.
+        return "O=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n" + "(" + super.getType()+ ") " + "(Calorie: " + this.calorie + ") " + super.toString(); //To change body of generated methods, choose Tools | Templates.
     }
 }

@@ -108,6 +108,7 @@ public class SystemClass implements TimeInterface {
         return star/10;
     }
     
+    //if you're buy some of those products you're going to earn extra star.
     public static void addConditionStar(){
         if(loginClient!=null){
             Products p = givenOrder.get(givenOrder.size()-1);

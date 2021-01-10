@@ -8,7 +8,8 @@ public  class Drinks extends Products{
     
     public Drinks(String type, double product_price, String product_name) {
         super(product_price, product_name);
-        this.type = type;
+        super.setType(type);
+       
        
     }
     
@@ -25,7 +26,7 @@ public  class Drinks extends Products{
     
     @Override
     public String toString() {
-        return "O=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n"+ "(" + this.getType() + ") " + super.toString();
+        return "O=O=O=O=O=O=O=O=O=O=O=O=O=O=O\n"+ "(" + super.getType() + ") " + super.toString();
     }
     
 

@@ -186,3 +186,63 @@ Su(Bottled) => 5.0TL
 =O=O=O=O=O=O=O=O=O=O=O=O=O=O
 Termos => 229.99TL
 -----------------------------------------
+15:56:20 01/10/2021 
+O=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+(Stanley) Termos => 229.99TL
+O=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+(Aladdin) Kupa => 90.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Blonde-Blonde Espresso => 35.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Blonde-Verande Blende => 38.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-Colombia Narino => 35.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-Ethiopia => 36.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-Pike Place Roast => 34.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-Kenya => 34.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-House Blend => 30.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Medium-Guatemala Antigua => 35.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Dark-Caffe Verona => 33.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Dark-Decaff Espresso => 33.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Dark-Espresso Roast => 33.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Dark-Sumatra => 33.0TL
+O=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+(Espresso) Coffee Mocha => 14.0TL
+Küçük => 0.0TL
+O=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+(Espresso) Flat White => 17.0TL
+Küçük => 0.0TL
+O=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+(Espresso) Flat White => 17.0TL
+Küçük => 0.0TL
+Soya Sütlü => 2.0TL
+Beyaz Çikolatal? => 2.0TL
+Hindistan Cevizli => 2.0TL
+-----------------------------------------
+15:58:02 01/10/2021 
+O=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+(Star) Y?ld?zl? Küçük Boy Kahve => 0.0TL
+O=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+(Star) Y?ld?zl? Orta Boy Kahve => 0.0TL
+O=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+(Star) Y?ld?zl? Büyük Boy Kahve => 0.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+-Y?zld?zl? Paket Kahve => 0.0TL
+O=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+(Stanley) Termos => 229.99TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Blonde-Blonde Espresso => 35.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+-Y?zld?zl? Paket Kahve => 0.0TL
+=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+Blonde-Veranda Blend => 37.0TL
+-----------------------------------------

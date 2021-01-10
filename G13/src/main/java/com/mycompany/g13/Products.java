@@ -4,7 +4,7 @@ public abstract class Products{
     
     public double product_price;
     public String product_name;
-    public String type = "";
+    private String type = "" ;
     public static double sub_price;
     public static double taxed_price;
     public static double total_price;
@@ -20,7 +20,7 @@ public abstract class Products{
         this.product_price = product_price;
         this.product_name = product_name;
     }
-
+    
     public int getStar() {
         return star;
     }
@@ -36,6 +36,10 @@ public abstract class Products{
 
     public String getType() {
         return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
     
     public static double getSub_price() {

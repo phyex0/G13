@@ -104,15 +104,15 @@ public class Uyegiris extends javax.swing.JFrame {
            
             try{
                 loginClient = repo.findByPhoneNumber(phoneNumber);
-                JOptionPane.showMessageDialog(error,"SUCCESS!!");
                 uyebilgileri.setText(loginClient.toString());
                 CafeManagementGUI.packedcafchange( CafeManagementGUI.userpan);
                 CafeManagementGUI.userData.setText(loginClient.toString());
+                JOptionPane.showMessageDialog(error,"SUCCESS!!");
                 this.dispose();
         
             }catch(Exception e){
                 System.out.println("not found");
-                JOptionPane.showMessageDialog(error,"FAILED!!");
+                JOptionPane.showMessageDialog(error,"User doesn't exist!!");
             
             }
         }

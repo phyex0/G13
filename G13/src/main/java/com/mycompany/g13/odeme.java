@@ -1,9 +1,11 @@
 package com.mycompany.g13;
 
+import static com.mycompany.g13.CafeManagementGUI.error;
 import static com.mycompany.g13.CafeManagementGUI.loginClient;
 import static com.mycompany.g13.CafeManagementGUI.repo;
 import static com.mycompany.g13.CafeManagementGUI.userData;
 import static com.mycompany.g13.SystemClass.givenOrder;
+import javax.swing.JOptionPane;
 
 
 
@@ -169,7 +171,7 @@ public class odeme extends javax.swing.JFrame {
         
         
         
-        
+        JOptionPane.showMessageDialog(error,"SUCCESS!!");
         //pencereyi kapatacak olan method aşşağıda
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed

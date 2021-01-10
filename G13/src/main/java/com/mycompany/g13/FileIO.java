@@ -33,29 +33,9 @@ public class FileIO implements TimeInterface{
     //adds date and given all of those orders to our txt file -Burak
     public void fileOutput() throws IOException{
         
-        try{
-            
-            File f = new File("src/main/java/com/mycompany/allOrders.txt");
-           
-            if(!f.exists())
-                f.createNewFile();
-          
-            FileWriter fw= new FileWriter(f,true);
-            BufferedWriter bw = new BufferedWriter(fw); 
-           
+        try{  
             setTime();
-            bw.write(currentTime);
-            bw.write(SystemClass.displayOrder(allOrders));
-            bw.write("-----------------------------------------\n");
-            bw.flush();
-            bw.close();
-           
             //if you get the jar form of project then you can't get the log of all orders. 
-            
-           String userName = new com.sun.security.auth.module.NTSystem().getName();
-         
-           //detecting current language of os
-           
             File fBackup= new File(javax.swing.filechooser.FileSystemView.getFileSystemView().getHomeDirectory()+"\\allOrders.txt");
             if(!fBackup.exists())
                     fBackup.createNewFile();
@@ -68,6 +48,27 @@ public class FileIO implements TimeInterface{
             bw2.write("-----------------------------------------\n");
             bw2.flush();
             bw2.close();;
+            
+            
+            
+            
+            //during ide runs
+            File f = new File("src/main/java/com/mycompany/allOrders.txt");
+           
+            if(!f.exists())
+                f.createNewFile();
+          
+            FileWriter fw= new FileWriter(f,true);
+            BufferedWriter bw = new BufferedWriter(fw); 
+           
+           
+            bw.write(currentTime);
+            bw.write(SystemClass.displayOrder(allOrders));
+            bw.write("-----------------------------------------\n");
+            bw.flush();
+            bw.close();
+           
+          
             
             
         }catch(Exception e){

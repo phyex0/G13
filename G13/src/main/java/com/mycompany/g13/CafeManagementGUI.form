@@ -162,6 +162,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
+                    <Property name="lineWrap" type="boolean" value="true"/>
                     <Property name="rows" type="int" value="5"/>
                     <Property name="text" type="java.lang.String" value=" &#x2605;&#xa;&#x279c;Yapm&#x131;&#x15f; oldu&#x11f;unuz her &#xa;al&#x131;&#x15f;veri&#x15f;in %10u kadar y&#x131;ld&#x131;z&#xa;kazan&#x131;rs&#x131;n&#x131;z&#xa;"/>
                   </Properties>
@@ -188,6 +189,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
+                    <Property name="lineWrap" type="boolean" value="true"/>
                     <Property name="rows" type="int" value="5"/>
                     <Property name="text" type="java.lang.String" value="20 &#x2605;&#xa;&#x279c;Yiyecek b&#xf6;l&#xfc;m&#xfc;nden&#xa;sat&#x131;n al&#x131;nd&#x131;&#x11f;&#x131;nda"/>
                   </Properties>
@@ -214,6 +216,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
+                    <Property name="lineWrap" type="boolean" value="true"/>
                     <Property name="rows" type="int" value="5"/>
                     <Property name="text" type="java.lang.String" value="50 &#x2605;&#xa;&#x279c;Paketli &#xc7;ekirdek Kahve &#xa;al&#x131;m&#x131;nda"/>
                   </Properties>
@@ -240,6 +243,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
+                    <Property name="lineWrap" type="boolean" value="true"/>
                     <Property name="rows" type="int" value="5"/>
                     <Property name="text" type="java.lang.String" value="100  &#x2605;&#xa;&#x279c;Hediyelik b&#xf6;l&#xfc;m&#xfc;nden &#xfc;r&#xfc;n &#xa;al&#x131;nd&#x131;&#x11f;&#x131;nda"/>
                   </Properties>

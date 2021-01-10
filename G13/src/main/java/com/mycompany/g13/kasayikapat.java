@@ -42,9 +42,11 @@ public class kasayikapat extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(26, 89, 120));
 
+        collectedData.setEditable(false);
         collectedData.setColumns(20);
         collectedData.setRows(5);
         jScrollPane1.setViewportView(collectedData);

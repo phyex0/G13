@@ -422,6 +422,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
         jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
         jTextArea1.setText(" ★\n➜Yapmış olduğunuz her \nalışverişin %10u kadar yıldız\nkazanırsınız\n");
         jScrollPane1.setViewportView(jTextArea1);
@@ -431,6 +432,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
         jTextArea2.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea2.setLineWrap(true);
         jTextArea2.setRows(5);
         jTextArea2.setText("20 ★\n➜Yiyecek bölümünden\nsatın alındığında");
         jScrollPane2.setViewportView(jTextArea2);
@@ -440,6 +442,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jTextArea4.setColumns(20);
         jTextArea4.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
         jTextArea4.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea4.setLineWrap(true);
         jTextArea4.setRows(5);
         jTextArea4.setText("50 ★\n➜Paketli Çekirdek Kahve \nalımında");
         jScrollPane4.setViewportView(jTextArea4);
@@ -449,6 +452,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         jTextArea3.setColumns(20);
         jTextArea3.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
         jTextArea3.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea3.setLineWrap(true);
         jTextArea3.setRows(5);
         jTextArea3.setText("100  ★\n➜Hediyelik bölümünden ürün \nalındığında");
         jScrollPane3.setViewportView(jTextArea3);

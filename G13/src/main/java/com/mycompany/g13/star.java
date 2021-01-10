@@ -253,6 +253,7 @@ public class star extends javax.swing.JFrame {
         // TODO add your handling code here:
         Drinks product = new Drinks("",0,"Yıldızlı Küçük Boy Kahve");
         product.setStar(10);
+        product.type="Star";
         SystemClass.add(product);
         CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
         
@@ -262,6 +263,7 @@ public class star extends javax.swing.JFrame {
         // TODO add your handling code here:
         Drinks product = new Drinks("",0,"Yıldızlı Orta Boy Kahve");
         product.setStar(20);
+        product.type="Star";
         SystemClass.add(product);
         CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
     }//GEN-LAST:event_smallcoffestar1ActionPerformed
@@ -270,6 +272,7 @@ public class star extends javax.swing.JFrame {
         // TODO add your handling code here:
         Drinks product = new Drinks("",0,"Yıldızlı Büyük Boy Kahve");
         product.setStar(30);
+        product.type="Star";
         SystemClass.add(product);
         CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
     }//GEN-LAST:event_smallcoffestar2ActionPerformed
@@ -278,6 +281,7 @@ public class star extends javax.swing.JFrame {
         // TODO add your handling code here:
         PacketedProducts product = new PacketedProducts("Yızldızlı Paket Kahve","",0);
         product.setStar(200);
+        product.type="Star";
         SystemClass.add(product);
         CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
     }//GEN-LAST:event_smallcoffestar4ActionPerformed
@@ -286,6 +290,7 @@ public class star extends javax.swing.JFrame {
         // TODO add your handling code here:
         Food product = new Food("",0,"Yıldızlı Cookie", "501,9kcal");
         product.setStar(50);
+        product.type="Star";
         SystemClass.add(product);
         CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
     }//GEN-LAST:event_smallcoffestar3ActionPerformed
@@ -294,6 +299,7 @@ public class star extends javax.swing.JFrame {
         // TODO add your handling code here:
         Food product = new Food("",0,"Yıldızlı Sandiviç", "244kcal");
         product.setStar(60);
+        product.type="Star";
         SystemClass.add(product);
         CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
     }//GEN-LAST:event_smallcoffestar6ActionPerformed
@@ -302,6 +308,7 @@ public class star extends javax.swing.JFrame {
         // TODO add your handling code here:
         Gifts product = new Gifts(0,"Yıldızlı Termos", "Stanley");
         product.setStar(500);
+        product.type="Star";
         SystemClass.add(product);
         CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
     }//GEN-LAST:event_smallcoffestar5ActionPerformed
@@ -310,6 +317,7 @@ public class star extends javax.swing.JFrame {
         // TODO add your handling code here:
         Gifts product = new Gifts(0,"Yıldızlı Kupa", "Aladdin");
         product.setStar(300);
+        product.type="Star";
         SystemClass.add(product);
         CafeManagementGUI.order.setText(SystemClass.displayOrder(givenOrder));
     }//GEN-LAST:event_smallcoffestar7ActionPerformed

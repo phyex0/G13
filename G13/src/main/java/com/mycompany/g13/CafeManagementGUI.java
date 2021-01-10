@@ -8,8 +8,6 @@ import java.awt.Desktop;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLayeredPane;

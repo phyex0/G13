@@ -5,7 +5,7 @@ import static com.mycompany.g13.SystemClass.givenOrder;
 public class Gifts extends Products {
 
     public Gifts() {}
-    String brand;
+    private String brand;
 
     public Gifts(double product_price, String product_name, String brand) {
         super(product_price, product_name);

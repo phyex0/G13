@@ -3,7 +3,7 @@ package com.mycompany.g13;
 import static com.mycompany.g13.SystemClass.givenOrder;
 
 public class Food extends Products {
-    String calorie;
+    private String calorie;
    
     public Food() {}
     

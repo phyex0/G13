@@ -3297,13 +3297,14 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void uyegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uyegActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(error,"Kayıtlı telefon numarasını başında 0 olmadan giriniz (ör:5550001234)");
         new Uyegiris().setVisible(true);  
        
     }//GEN-LAST:event_uyegActionPerformed
 
     private void yenigActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yenigActionPerformed
         // TODO add your handling code here:
-        
+        JOptionPane.showMessageDialog(error,"Telefon numarası 0 olmadan 10 haneli olmak zorundadr (5551110036)\nİsim ve soy isim İngiliz alfabesine uygun olmalıdır(ü-ğ-ö-ç gibi harfler geçersiz)");
        new YeniUye().setVisible(true);
       
         

@@ -14,13 +14,13 @@ public abstract class Products{
     public Products(){
     }
     
-    public abstract void calculate_and_add();
-    
     public Products(double product_price, String product_name) {
         this.product_price = product_price;
         this.product_name = product_name;
     }
     
+    public abstract void calculate_and_add();
+     
     public int getStar() {
         return star;
     }

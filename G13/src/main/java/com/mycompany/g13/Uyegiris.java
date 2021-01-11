@@ -116,6 +116,9 @@ public class Uyegiris extends javax.swing.JFrame {
             
             }
         }
+        else
+            JOptionPane.showMessageDialog(error,"Wrong phone number!!");
+            
     }//GEN-LAST:event_telnobuttonActionPerformed
 
     /**

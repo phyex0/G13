@@ -154,7 +154,8 @@ public class odeme extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         
-        //if you login, we can update star info. - Burak
+        //if you login and try to buy any item by star issue than we check this; -Burak
+        //You got enough star? if you got we're going to update your current star and save this into db. - Burak
         if(loginClient!= null){
             loginClient.setStar(loginClient.getStar()+ SystemClass.calculateStar()-SystemClass.totalStar(givenOrder)+SystemClass.calculateConditionStar());
             repo.save(loginClient);

@@ -14,7 +14,7 @@ public class SystemClass implements TimeInterface {
     public static ArrayList<Products> allOrders = new ArrayList<Products>();
     public static ArrayList<Integer> conditionStar =new ArrayList<Integer>();
     
-   public FileIO fileIssue = new FileIO();
+    public FileIO fileIssue = new FileIO();
     
     //keep all the orders until program shutting down
     public static void collectAllOrders(){
@@ -108,7 +108,7 @@ public class SystemClass implements TimeInterface {
         return star/10;
     }
     
-    //if you're buy some of those products you're going to earn extra star.
+    //if you're buy some of those products you're going to earn extra star. -Burak
     public static void addConditionStar(){
         if(loginClient!=null){
             Products p = givenOrder.get(givenOrder.size()-1);
@@ -122,6 +122,7 @@ public class SystemClass implements TimeInterface {
         }
     }
     
+    //calculates total star of condition buys. Burak
     public static int calculateConditionStar(){
         
         int sum=0;
@@ -132,6 +133,7 @@ public class SystemClass implements TimeInterface {
         
     }
     
+    //if you delete last item and last item includes condition star than removes it. -Burak
     public static void removeLastConditionStar(){
         if(loginClient!=null){
             Products p = givenOrder.get(givenOrder.size()-1);
@@ -142,10 +144,11 @@ public class SystemClass implements TimeInterface {
         }
         
     }
-
+    
+    //Updates Time. Do not modify - Burak;
     @Override
     public void setTime() {
-           //Update Time. Do not modify - Burak;
+           
    
         Thread Clock = new Thread(){
             @Override

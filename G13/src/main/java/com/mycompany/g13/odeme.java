@@ -172,7 +172,7 @@ public class odeme extends javax.swing.JFrame {
         
         
         
-        JOptionPane.showMessageDialog(error,"SUCCESS!!");
+        JOptionPane.showMessageDialog(error,"Ödeme Başarılı!!");
         //pencereyi kapatacak olan method aşşağıda
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed

@@ -150,7 +150,7 @@ public class kasayikapat extends javax.swing.JFrame {
         //searches by product name.
        Products p = SystemClass.searchOrder(allOrders,jTextField1.getText());
        if(p== null)
-           collectedData.setText("Searched order cannot find...");
+           collectedData.setText("Ürün bulunamadı...");
        else
           collectedData.setText(p.toString());
     }//GEN-LAST:event_jButton2ActionPerformed

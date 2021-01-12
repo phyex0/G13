@@ -122,7 +122,7 @@ public class YeniUye extends javax.swing.JFrame {
            
             try{
                 repo.save(c);
-                JOptionPane.showMessageDialog(error,"SUCCESS!!");
+                JOptionPane.showMessageDialog(error,"Başarılı!!");
                 loginClient=c;
                  CafeManagementGUI.packedcafchange( CafeManagementGUI.userpan);
                  
@@ -131,7 +131,7 @@ public class YeniUye extends javax.swing.JFrame {
           
             }catch(Exception e){
                 //TODO: print a message this user already exists..
-                JOptionPane.showMessageDialog(error,"This user already exists!!");
+                JOptionPane.showMessageDialog(error,"Var olan kullanıcı tekrardan eklenemez!!");
             
             }
         
@@ -139,7 +139,7 @@ public class YeniUye extends javax.swing.JFrame {
         }
         else{
             //TODO:print a message wrong input
-            JOptionPane.showMessageDialog(error,"Your Phone number or Name includes wrong characters!");
+            JOptionPane.showMessageDialog(error,"İsim yada numara yanlış karakterler içeriyor!");
         }
         
     }//GEN-LAST:event_yeniuyebActionPerformed
@@ -184,7 +184,7 @@ public class YeniUye extends javax.swing.JFrame {
             @Override
             public void run() {
                 new YeniUye().setVisible(true); 
-                System.out.println("denemeee");
+                
             }
         });
         

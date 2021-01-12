@@ -3587,13 +3587,13 @@ public class CafeManagementGUI extends javax.swing.JFrame{
         if(loginClient !=null)
             new star().setVisible(true);
         else
-             JOptionPane.showMessageDialog(error,"You cannot open the star menu until login..");
+             JOptionPane.showMessageDialog(error,"Üye girişi yapılana kadar Yıldız menüsü açılamaz..");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
        
         if(loginClient!= null && loginClient.getStar()< SystemClass.totalStar(givenOrder))
-                JOptionPane.showMessageDialog(error,"There is not enough STAR to accomplish operation.\nPlease remove STARED Product...");
+                JOptionPane.showMessageDialog(error,"Yeterli yıldızınız yok.\nYıldız menüsünden eklenen ürünü siliniz...");
         else
             new odeme().setVisible(true);
           

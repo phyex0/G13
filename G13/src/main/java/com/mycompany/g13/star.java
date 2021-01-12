@@ -288,7 +288,7 @@ public class star extends javax.swing.JFrame {
 
     private void smallcoffestar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_smallcoffestar3ActionPerformed
         // TODO add your handling code here:
-        Food product = new Food("",0,"Yıldızlı Cookie", "501,9kcal");
+        Food product = new Food("",0,"Yıldızlı Kurabiye", "501,9kcal");
         product.setStar(50);
         product.setType("Star");
         SystemClass.add(product);

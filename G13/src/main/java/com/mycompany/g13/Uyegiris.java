@@ -107,17 +107,17 @@ public class Uyegiris extends javax.swing.JFrame {
                 uyebilgileri.setText(loginClient.toString());
                 CafeManagementGUI.packedcafchange( CafeManagementGUI.userpan);
                 CafeManagementGUI.userData.setText(loginClient.toString());
-                JOptionPane.showMessageDialog(error,"SUCCESS!!");
+                JOptionPane.showMessageDialog(error,"Başarılı!!");
                 this.dispose();
         
             }catch(Exception e){
                 System.out.println("not found");
-                JOptionPane.showMessageDialog(error,"User doesn't exist!!");
+                JOptionPane.showMessageDialog(error,"Üye bulunamadı!!");
             
             }
         }
         else
-            JOptionPane.showMessageDialog(error,"Wrong phone number!!");
+            JOptionPane.showMessageDialog(error,"Telefon numarasını yanlış girdiniz!!");
             
     }//GEN-LAST:event_telnobuttonActionPerformed
 

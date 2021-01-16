@@ -4191,7 +4191,7 @@ public class CafeManagementGUI extends javax.swing.JFrame{
 
     private void jButton92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton92ActionPerformed
         // TODO add your handling code here:
-        Drinks drink = new Drinks("Türk Kahvesi", 12, "Türk Kahvesi");
+        Drinks drink = new Drinks("Espresso", 12, "Türk Kahvesi");
         actionPerformed(drink);
         size.setEnabled(true);
     }//GEN-LAST:event_jButton92ActionPerformed
